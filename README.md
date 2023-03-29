@@ -1,7 +1,7 @@
 ____________________________________________________________________________________________________________________________________________________________________
-                                                                 Written by Houman Hafez
+                                               Written by Houman Hafez
 
-                                                                         NOTE!
+                                                      NOTE!
      
 !This Application is in Alpha and still does not work as intended!
 In later alpha/beta versions, it will be able to send requests to kbdfans, drop and etc. and get the newest price or status of an item (kit, keycap set or switch set)
