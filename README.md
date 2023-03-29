@@ -1,5 +1,6 @@
-  __________________________________________
-            Written by Houman Hafez
-              (Written in Python)
-       Please Always download it as a zip
-  __________________________________________
+  _______________________________________________________________________
+                           Written by Houman Hafez
+                            (Written in Python)
+                                   NOTE!
+     !This Application is in Alpha and still does not work as intended!
+  _______________________________________________________________________
