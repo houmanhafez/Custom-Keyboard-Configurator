@@ -1,2 +1,5 @@
-# Custom-Keyboard-Configurator
-An Application with a GUI, designed to make you pick keyboard parts that fit your liking the best 
+  __________________________________________
+            Written by Houman Hafez
+              (Written in Python)
+       Please Always download it as a zip
+  __________________________________________
