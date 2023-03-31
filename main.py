@@ -239,51 +239,51 @@ tm680_1 = customtkinter.CTkImage(light_image=Image.open("Keeb/TM680.jpg"),
 
 gmk_dots_1 = customtkinter.CTkImage(light_image=Image.open("keycap sets/gmkdots.jpg"),
                                           dark_image=Image.open("keycap sets/gmkdots.jpg"),
-                                        size=(300, 90))
+                                         size=(350, 120))
         
 gmk_armstrong_1 = customtkinter.CTkImage(light_image=Image.open("keycap sets/gmkarmstrong.jpg"),
                                           dark_image=Image.open("keycap sets/gmkarmstrong.jpg"),
-                                          size=(100, 30))
+                                         size=(350, 120))
 
 gmk_bluesamurai_1 = customtkinter.CTkImage(light_image=Image.open("keycap sets/gmkbluesamurai.jpg"),
                                           dark_image=Image.open("keycap sets/gmkbluesamurai.jpg"),
-                                          size=(100, 30))
+                                         size=(350, 120))
 
 gmk_kaiju_1 = customtkinter.CTkImage(light_image=Image.open("keycap sets/gmkkaiju.jpg"),
                                           dark_image=Image.open("keycap sets/gmkkaiju.jpg"),
-                                          size=(100, 30))
+                                         size=(350, 120))
         
 gmk_laser_1 = customtkinter.CTkImage(light_image=Image.open("keycap sets/gmklaser.jpg"),
                                           dark_image=Image.open("keycap sets/gmklaser.jpg"),
-                                          size=(100, 30))
+                                         size=(350, 120))
         
 dcx_9009_1 = customtkinter.CTkImage(light_image=Image.open("keycap sets/dcx9009.jpg"),
                                           dark_image=Image.open("keycap sets/dcx9009.jpg"),
-                                          size=(100, 30))
+                                         size=(350, 120))
         
 dcx_blackonwhite_1 = customtkinter.CTkImage(light_image=Image.open("keycap sets/dcxblackonwhite.jpg"),
                                           dark_image=Image.open("keycap sets/dcxblackonwhite.jpg"),
-                                          size=(100, 30))
+                                         size=(350, 120))
         
 dcx_whiteonblack_1 = customtkinter.CTkImage(light_image=Image.open("keycap sets/dcxwhiteonblack.jpg"),
                                           dark_image=Image.open("keycap sets/dcxwhiteonblack.jpg"),
-                                          size=(100, 30))
+                                         size=(350, 120))
         
 dcx_cyber_1 = customtkinter.CTkImage(light_image=Image.open("keycap sets/dcxcyber.jpg"),
                                           dark_image=Image.open("keycap sets/dcxcyber.jpg"),
-                                          size=(100, 30))
+                                         size=(350, 120))
         
 dcx_hyperfuse_1 = customtkinter.CTkImage(light_image=Image.open("keycap sets/dcxhyperfuse.jpg"),
                                           dark_image=Image.open("keycap sets/dcxhyperfuse.jpg"),
-                                          size=(100, 30))
+                                         size=(350, 120))
         
 dcx_keyman_1 = customtkinter.CTkImage(light_image=Image.open("keycap sets/dcxkeyman.jpg"),
                                           dark_image=Image.open("keycap sets/dcxkeyman.jpg"),
-                                          size=(100, 30))
+                                         size=(350, 120))
         
 dcx_violac_1 = customtkinter.CTkImage(light_image=Image.open("keycap sets/dcxviolac.jpg"),
                                           dark_image=Image.open("keycap sets/dcxviolac.jpg"),
-                                          size=(100, 30))
+                                         size=(350, 120))
 
 
 
@@ -389,10 +389,11 @@ class App(customtkinter.CTk):
 
         self.sidebar_frame = customtkinter.CTkFrame(self,
                                                     width=120,
-                                                    corner_radius=0)
+                                                    corner_radius=5)
         
         self.logo_label = customtkinter.CTkLabel(self.sidebar_frame,
-                                                 text="Keeb Configurator", 
+                                                 text="Keeb Configurator",
+                                                 compound= 'left', 
                                                  font=customtkinter.CTkFont(size=20, weight="bold"))
 
         new_tab = customtkinter.CTkImage(light_image=Image.open("icons/newtab.png"),
@@ -403,9 +404,9 @@ class App(customtkinter.CTk):
                                         dark_image=Image.open("icons/zoo65.png"),
                                           size=(200, 170))
         
-        widget1 = customtkinter.CTkImage(light_image=Image.open("icons/order.png"),
+        '''    widget1 = customtkinter.CTkImage(light_image=Image.open("icons/order.png"),
                                         dark_image=Image.open("icons/order.png"),
-                                          size=(200, 170))
+                                          size=(200, 170))'''
         
         self.start = customtkinter.CTkButton(self,
                                             fg_color=("#468499"),
@@ -660,7 +661,7 @@ class App(customtkinter.CTk):
 
         # ALL THE KEYCAPS
         self.dcx9009 = customtkinter.CTkButton(master=self.keycaps_frame,
-                                               command=self.button_event,
+                                               command=self.dcx_9009,
                                                image=dcx_9009,
                                                text='DCX 9009')
 
@@ -670,7 +671,7 @@ class App(customtkinter.CTk):
 
 
         self.dcxblackonwhite = customtkinter.CTkButton(master=self.keycaps_frame,
-                                                       command=self.button_event,
+                                                       command=self.dcx_black_on_white,
                                                        image=dcx_whiteonblack,
                                                        text='DCX White')
 
@@ -680,7 +681,7 @@ class App(customtkinter.CTk):
 
 
         self.dcxwhiteonblack = customtkinter.CTkButton(master=self.keycaps_frame,
-                                                       command=self.button_event,
+                                                       command=self.dcx_white_on_black,
                                                        image=dcx_blackonwhite,
                                                        text='DCX Black')
 
@@ -690,7 +691,7 @@ class App(customtkinter.CTk):
 
 
         self.dcxcyber = customtkinter.CTkButton(master=self.keycaps_frame,
-                                                command=self.button_event,
+                                                command=self.dcx_cyber,
                                                 image=dcx_cyber,
                                                 text='DCX Cyber')
 
@@ -700,7 +701,7 @@ class App(customtkinter.CTk):
 
 
         self.dcxhyperfuse = customtkinter.CTkButton(master=self.keycaps_frame,
-                                                    command=self.button_event,
+                                                    command=self.dcx_hyperfuse,
                                                     image=dcx_hyperfuse,
                                                     text='DCX Hyperfuse')
 
@@ -710,7 +711,7 @@ class App(customtkinter.CTk):
 
 
         self.dcxkeyman = customtkinter.CTkButton(master=self.keycaps_frame,
-                                                 command=self.button_event,
+                                                 command=self.dcx_keyman,
                                                  image=dcx_keyman,
                                                  text='DCX Keyman')
 
@@ -720,7 +721,7 @@ class App(customtkinter.CTk):
 
 
         self.dcxviolac = customtkinter.CTkButton(master=self.keycaps_frame,
-                                                 command=self.button_event,
+                                                 command=self.dcx_violac,
                                                  image=dcx_violac,
                                                  text='DCX Violac')
         self.keycaps_frame_switches.append(self.dcxviolac)
@@ -729,7 +730,7 @@ class App(customtkinter.CTk):
 
 
         self.gmkarmstrong = customtkinter.CTkButton(master=self.keycaps_frame,
-                                                    command=self.button_event,
+                                                    command=self.gmk_armstrong,
                                                     image=gmk_armstrong,
                                                     text='GMK Armstrong')
 
@@ -739,7 +740,7 @@ class App(customtkinter.CTk):
 
 
         self.gmkbluesamurai = customtkinter.CTkButton(master=self.keycaps_frame,
-                                                      command=self.button_event,
+                                                      command=self.gmk_bluesamurai,
                                                       image=gmk_bluesamurai,
                                                       text='GMK BlueSamurai')
 
@@ -749,7 +750,7 @@ class App(customtkinter.CTk):
 
 
         self.gmkdots = customtkinter.CTkButton(master=self.keycaps_frame,
-                                               command=self.button_event,
+                                               command=self.gmk_dots,
                                                image=gmk_dots,
                                                text='GMK Dots')
 
@@ -759,7 +760,7 @@ class App(customtkinter.CTk):
 
 
         self.gmkkaiju = customtkinter.CTkButton(master=self.keycaps_frame,
-                                                command=self.button_event,
+                                                command=self.gmk_kaiju,
                                                 image=gmk_kaiju,
                                                 text='GMK Kaiju')
 
@@ -769,7 +770,7 @@ class App(customtkinter.CTk):
 
 
         self.gmklaser = customtkinter.CTkButton(master=self.keycaps_frame,
-                                                command=self.button_event,
+                                                command=self.gmk_laser,
                                                 image=gmk_laser,
                                                 text='GMK Laser')
 
@@ -1161,8 +1162,9 @@ class App(customtkinter.CTk):
                                                 fg_color=("#242424"),
                                                 compound="top",                            
                                                 hover_color=("#242424"),
+                                                command = self.tofu60_review,
                                                 image=tofu60_1,
-                                                text= 'Tofu 60',
+                                                text= 'Tofu 60 2.0',
                                                 font=customtkinter.CTkFont(weight="bold"),
                                                 height=130,
                                                 width=350)
@@ -1175,8 +1177,9 @@ class App(customtkinter.CTk):
                                                 fg_color=("#242424"),
                                                 compound="top",                            
                                                 hover_color=("#242424"),
+                                                command = self.tofu65_review,
                                                 image=tofu65_1,
-                                                text= 'Tofu 65',
+                                                text= 'Tofu 65 2.0',
                                                 font=customtkinter.CTkFont(weight="bold"),
                                                 height=130,
                                                 width=350)
@@ -1187,6 +1190,7 @@ class App(customtkinter.CTk):
                                                 fg_color=("#242424"),
                                                 compound="top",                            
                                                 hover_color=("#242424"),
+                                                command = self.tester68_review,
                                                 image=tester68_1,
                                                 text= 'Tester 68',
                                                 font=customtkinter.CTkFont(weight="bold"),
@@ -1199,6 +1203,7 @@ class App(customtkinter.CTk):
                                                 fg_color=("#242424"),
                                                 compound="top",                            
                                                 hover_color=("#242424"),
+                                                command = self.tester84_review,
                                                 image=tester84_1,
                                                 text= 'Tester 84',
                                                 font=customtkinter.CTkFont(weight="bold"),
@@ -1211,6 +1216,7 @@ class App(customtkinter.CTk):
                                                 fg_color=("#242424"),
                                                 compound="top",                            
                                                 hover_color=("#242424"),
+                                                command = self.gmk67_review,
                                                 image=gmk67_1,
                                                 text= 'GMK 67',
                                                 font=customtkinter.CTkFont(weight="bold"),
@@ -1223,6 +1229,7 @@ class App(customtkinter.CTk):
                                                 fg_color=("#242424"),
                                                 compound="top",                            
                                                 hover_color=("#242424"),
+                                                command = self.gas67_review,
                                                 image=gas67_1,
                                                 text= 'Gas 67',
                                                 font=customtkinter.CTkFont(weight="bold"),
@@ -1235,6 +1242,7 @@ class App(customtkinter.CTk):
                                                 fg_color=("#242424"),
                                                 compound="top",                            
                                                 hover_color=("#242424"),
+                                                command = self.everglide75_review,
                                                 image=everglide75_1,
                                                 text= 'Everglide Lite 75',
                                                 font=customtkinter.CTkFont(weight="bold"),
@@ -1247,6 +1255,7 @@ class App(customtkinter.CTk):
                                                 fg_color=("#242424"),
                                                 compound="top",                            
                                                 hover_color=("#242424"),
+                                                command = self.mk870_review,
                                                 image=mk870_1,
                                                 text= 'MK 870',
                                                 font=customtkinter.CTkFont(weight="bold"),
@@ -1259,6 +1268,7 @@ class App(customtkinter.CTk):
                                                 fg_color=("#242424"),
                                                 compound="top",                            
                                                 hover_color=("#242424"),
+                                                command = self.monsgeek_m1_review,
                                                 image=monsgeekm1_1,
                                                 text= 'Monsgeek M1',
                                                 font=customtkinter.CTkFont(weight="bold"),
@@ -1271,6 +1281,7 @@ class App(customtkinter.CTk):
                                                 fg_color=("#242424"),
                                                 compound="top",                            
                                                 hover_color=("#242424"),
+                                                command = self.nexttime75_review,
                                                 image=nexttime75_1,
                                                 text= 'Next Time 75',
                                                 font=customtkinter.CTkFont(weight="bold"),
@@ -1284,6 +1295,7 @@ class App(customtkinter.CTk):
                                                 fg_color=("#242424"),
                                                 compound="top",                            
                                                 hover_color=("#242424"),
+                                                command = self.nj80_review,
                                                 image=nj80_1,
                                                 text= 'NJ 80',
                                                 font=customtkinter.CTkFont(weight="bold"),
@@ -1297,6 +1309,7 @@ class App(customtkinter.CTk):
                                                 fg_color=("#242424"),
                                                 compound="top",                            
                                                 hover_color=("#242424"),
+                                                command = self.tm680_review,
                                                 image=tm680_1,
                                                 text= 'TM 680',
                                                 font=customtkinter.CTkFont(weight="bold"),
@@ -1313,11 +1326,176 @@ class App(customtkinter.CTk):
 
 
 
+    def gmk_dots(self):
+        self.main_keycapset = customtkinter.CTkButton(self,
+                                                fg_color=("#242424"),
+                                                compound="top",                            
+                                                hover_color=("#242424"),
+                                                command = self.gmk_dots_review,
+                                                image=gmk_dots_1,
+                                                text= 'GMK Dots',
+                                                font=customtkinter.CTkFont(weight="bold"),
+                                                height=130,
+                                                width=350)
+        self.main_keycapset.grid(row=1, column=1,padx=0, pady=(10, 20))    
+
+
+
+    def gmk_armstrong(self):
+        self.main_keycapset = customtkinter.CTkButton(self,
+                                                fg_color=("#242424"),
+                                                compound="top",                            
+                                                hover_color=("#242424"),
+                                                command = self.gmk_armstrong_review,
+                                                image=gmk_armstrong_1,
+                                                text= 'GMK Armstrong',
+                                                font=customtkinter.CTkFont(weight="bold"),
+                                                height=130,
+                                                width=350)
+        self.main_keycapset.grid(row=1, column=1,padx=0, pady=(10, 20))    
+
+    def gmk_bluesamurai(self):
+        self.main_keycapset = customtkinter.CTkButton(self,
+                                                fg_color=("#242424"),
+                                                compound="top",                            
+                                                hover_color=("#242424"),
+                                                command = self.gmk_bluesamurai_review,
+                                                image=gmk_bluesamurai_1,
+                                                text= 'GMK Blue Samurai',
+                                                font=customtkinter.CTkFont(weight="bold"),
+                                                height=130,
+                                                width=350)
+        self.main_keycapset.grid(row=1, column=1,padx=0, pady=(10, 20))    
+
+    def gmk_kaiju(self):
+        self.main_keycapset = customtkinter.CTkButton(self,
+                                                fg_color=("#242424"),
+                                                compound="top",                            
+                                                hover_color=("#242424"),
+                                                command = self.gmk_kaiju_review,
+                                                image=gmk_kaiju_1,
+                                                text= 'GMK Kaiju',
+                                                font=customtkinter.CTkFont(weight="bold"),
+                                                height=130,
+                                                width=350)
+        self.main_keycapset.grid(row=1, column=1,padx=0, pady=(10, 20))    
+
+    def gmk_laser(self):
+        self.main_keycapset = customtkinter.CTkButton(self,
+                                                fg_color=("#242424"),
+                                                compound="top",                            
+                                                hover_color=("#242424"),
+                                                command = self.gmk_laser_review,
+                                                image=gmk_laser_1,
+                                                text= 'GMK Laser',
+                                                font=customtkinter.CTkFont(weight="bold"),
+                                                height=130,
+                                                width=350)
+        self.main_keycapset.grid(row=1, column=1,padx=0, pady=(10, 20))    
+
+    def dcx_9009(self):
+        self.main_keycapset = customtkinter.CTkButton(self,
+                                                fg_color=("#242424"),
+                                                compound="top",                            
+                                                hover_color=("#242424"),
+                                                command = self.dcx_9009_review,
+                                                image=dcx_9009_1,
+                                                text= 'DCX 9009',
+                                                font=customtkinter.CTkFont(weight="bold"),
+                                                height=130,
+                                                width=350)
+        self.main_keycapset.grid(row=1, column=1,padx=0, pady=(10, 20))    
+
+    def dcx_black_on_white(self):
+        self.main_keycapset = customtkinter.CTkButton(self,
+                                                fg_color=("#242424"),
+                                                compound="top",                            
+                                                hover_color=("#242424"),
+                                                command = self.dcx_bow_review,
+                                                image=dcx_blackonwhite_1,
+                                                text= 'DCX Black On White',
+                                                font=customtkinter.CTkFont(weight="bold"),
+                                                height=130,
+                                                width=350)
+        self.main_keycapset.grid(row=1, column=1,padx=0, pady=(10, 20))    
+
+    def dcx_white_on_black(self):
+        self.main_keycapset = customtkinter.CTkButton(self,
+                                                fg_color=("#242424"),
+                                                compound="top",                            
+                                                hover_color=("#242424"),
+                                                command = self.dcx_wob_review,
+                                                image=dcx_whiteonblack_1,
+                                                text= 'DCX White On Black',
+                                                font=customtkinter.CTkFont(weight="bold"),
+                                                height=130,
+                                                width=350)
+        self.main_keycapset.grid(row=1, column=1,padx=0, pady=(10, 20))    
+    
+    def dcx_cyber(self):
+        self.main_keycapset = customtkinter.CTkButton(self,
+                                                fg_color=("#242424"),
+                                                compound="top",                            
+                                                hover_color=("#242424"),
+                                                command = self.dcx_cyber_review,
+                                                image=dcx_cyber_1,
+                                                text= 'DCX Cyber',
+                                                font=customtkinter.CTkFont(weight="bold"),
+                                                height=130,
+                                                width=350)
+        self.main_keycapset.grid(row=1, column=1,padx=0, pady=(10, 20))    
+                                 
+    def dcx_hyperfuse(self):
+        self.main_keycapset = customtkinter.CTkButton(self,
+                                                fg_color=("#242424"),
+                                                compound="top",                            
+                                                hover_color=("#242424"),
+                                                command = self.dcx_hyperfuse_review,
+                                                image=dcx_hyperfuse_1,
+                                                text= 'DCX Hyperfuse',
+                                                font=customtkinter.CTkFont(weight="bold"),
+                                                height=130,
+                                                width=350)
+        self.main_keycapset.grid(row=1, column=1,padx=0, pady=(10, 20))    
+
+    
+    def dcx_keyman(self):
+        self.main_keycapset = customtkinter.CTkButton(self,
+                                                fg_color=("#242424"),
+                                                compound="top",                            
+                                                hover_color=("#242424"),
+                                                command = self.dcx_keyman_review,
+                                                image=dcx_keyman_1,
+                                                text= 'DCX Keyman',
+                                                font=customtkinter.CTkFont(weight="bold"),
+                                                height=130,
+                                                width=350)
+        self.main_keycapset.grid(row=1, column=1,padx=0, pady=(10, 20))    
+
+
+    def dcx_violac(self):
+        self.main_keycapset = customtkinter.CTkButton(self,
+                                                fg_color=("#242424"),
+                                                compound="top",                            
+                                                hover_color=("#242424"),
+                                                command = self.dcx_violac_review,
+                                                image=dcx_violac_1,
+                                                text= 'DCX Violac',
+                                                font=customtkinter.CTkFont(weight="bold"),
+                                                height=130,
+                                                width=350)
+        self.main_keycapset.grid(row=1, column=1,padx=0, pady=(10, 20))    
+
+
+
+
+
     def c3_kiwi(self):
         self.main_switch = customtkinter.CTkButton(self,
                                                     fg_color=("#242424"),
                                                     compound="top",                            
                                                     hover_color=("#242424"),
+                                                    command = self.c3_kiwi_review,
                                                     image=c3kiwi_1,
                                                     text= 'C3 Kiwi',
                                                     font=customtkinter.CTkFont(weight="bold"),
@@ -1330,6 +1508,7 @@ class App(customtkinter.CTk):
                                                     fg_color=("#242424"),
                                                     compound="top",                            
                                                     hover_color=("#242424"),
+                                                    command = self.c3_tang_review,
                                                     image=c3tang_1,
                                                     text= 'C3 Tangerine V2',
                                                     font=customtkinter.CTkFont(weight="bold"),
@@ -1342,6 +1521,7 @@ class App(customtkinter.CTk):
                                                     fg_color=("#242424"),
                                                     compound="top",                            
                                                     hover_color=("#242424"),
+                                                    command = self.box_jade_review,
                                                     image=boxjade_1,
                                                     text= 'Box Jade',
                                                     font=customtkinter.CTkFont(weight="bold"),
@@ -1354,6 +1534,7 @@ class App(customtkinter.CTk):
                                                     fg_color=("#242424"),
                                                     compound="top",                            
                                                     hover_color=("#242424"),
+                                                    command = self.box_navy_review,
                                                     image=boxnavy_1,
                                                     text= 'Box Navy',
                                                     font=customtkinter.CTkFont(weight="bold"),
@@ -1366,6 +1547,7 @@ class App(customtkinter.CTk):
                                                     fg_color=("#242424"),
                                                     compound="top",                            
                                                     hover_color=("#242424"),
+                                                    command = self.holy_panda_review,
                                                     image=holpanda_1,
                                                     text= 'Holy Panda',
                                                     font=customtkinter.CTkFont(weight="bold"),
@@ -1378,6 +1560,7 @@ class App(customtkinter.CTk):
                                                     fg_color=("#242424"),
                                                     compound="top",                            
                                                     hover_color=("#242424"),
+                                                    command = self.glorious_panda_review,
                                                     image=glopanda_1,
                                                     text= 'Glorious Panda',
                                                     font=customtkinter.CTkFont(weight="bold"),
@@ -1390,6 +1573,7 @@ class App(customtkinter.CTk):
                                                     fg_color=("#242424"),
                                                     compound="top",                            
                                                     hover_color=("#242424"),
+                                                    command = self.gateron_ink_v2_review,
                                                     image=gateronblack_1,
                                                     text= 'Gateron Black Ink V2',
                                                     font=customtkinter.CTkFont(weight="bold"),
@@ -1402,6 +1586,7 @@ class App(customtkinter.CTk):
                                                     fg_color=("#242424"),
                                                     compound="top",                            
                                                     hover_color=("#242424"),
+                                                    command = self.gateron_oilking_review,
                                                     image=gatoilking_1,
                                                     text= 'Gateron Oil King',
                                                     font=customtkinter.CTkFont(weight="bold"),
@@ -1414,6 +1599,7 @@ class App(customtkinter.CTk):
                                                     fg_color=("#242424"),
                                                     compound="top",                            
                                                     hover_color=("#242424"),
+                                                    command = self.nk_creams_review,
                                                     image=nkcream_1,
                                                     text= 'Nk Cream',
                                                     font=customtkinter.CTkFont(weight="bold"),
@@ -1426,6 +1612,7 @@ class App(customtkinter.CTk):
                                                     fg_color=("#242424"),
                                                     compound="top",                            
                                                     hover_color=("#242424"),
+                                                    command = self.kang_white_v3,
                                                     image=kangwhitev3_1,
                                                     text= 'KTT Kang White V3',
                                                     font=customtkinter.CTkFont(weight="bold"),
@@ -1438,6 +1625,7 @@ class App(customtkinter.CTk):
                                                     fg_color=("#242424"),
                                                     compound="top",                            
                                                     hover_color=("#242424"),
+                                                    command = self.ktt_grapefruit_review,
                                                     image=grapefruit_1,
                                                     text= 'KTT Grapefruit',
                                                     font=customtkinter.CTkFont(weight="bold"),
@@ -1450,6 +1638,7 @@ class App(customtkinter.CTk):
                                                     fg_color=("#242424"),
                                                     compound="top",                            
                                                     hover_color=("#242424"),
+                                                    command = self.ktt_peach_review,
                                                     image=kttpeach_1,
                                                     text= 'KTT Peach',
                                                     font=customtkinter.CTkFont(weight="bold"),
@@ -1462,6 +1651,7 @@ class App(customtkinter.CTk):
                                                     fg_color=("#242424"),
                                                     compound="top",                            
                                                     hover_color=("#242424"),
+                                                    command = self.ktt_strawberry_review,
                                                     image=kttstrawberry_1,
                                                     text= 'KTT Strawberry',
                                                     font=customtkinter.CTkFont(weight="bold"),
@@ -1474,6 +1664,7 @@ class App(customtkinter.CTk):
                                                     fg_color=("#242424"),
                                                     compound="top",                            
                                                     hover_color=("#242424"),
+                                                    command = self.akko_purple_review,
                                                     image=lavenderpurp_1,
                                                     text= 'Akko CS Lavender Purple',
                                                     font=customtkinter.CTkFont(weight="bold"),
@@ -1486,6 +1677,7 @@ class App(customtkinter.CTk):
                                                     fg_color=("#242424"),
                                                     compound="top",                            
                                                     hover_color=("#242424"),
+                                                    command = self.akko_red_review,
                                                     image=radiantred_1,
                                                     text= 'Akko CS Radiant Red',
                                                     font=customtkinter.CTkFont(weight="bold"),
@@ -1498,6 +1690,7 @@ class App(customtkinter.CTk):
                                                     fg_color=("#242424"),
                                                     compound="top",                            
                                                     hover_color=("#242424"),
+                                                    command = self.akko_rosered_review,
                                                     image=rosered_1,
                                                     text= 'Akko CS Rose Red',
                                                     font=customtkinter.CTkFont(weight="bold"),
@@ -1510,6 +1703,7 @@ class App(customtkinter.CTk):
                                                     fg_color=("#242424"),
                                                     compound="top",                            
                                                     hover_color=("#242424"),
+                                                    command = self.zealios_v2_review,
                                                     image=zealiosv2_1,
                                                     text= 'Zealios V2',
                                                     font=customtkinter.CTkFont(weight="bold"),
@@ -1522,6 +1716,7 @@ class App(customtkinter.CTk):
                                                     fg_color=("#242424"),
                                                     compound="top",                            
                                                     hover_color=("#242424"),
+                                                    command = self.ktt_winered_review,
                                                     image=kttwinered_1,
                                                     text= 'KTT Wine Red',
                                                     font=customtkinter.CTkFont(weight="bold"),
@@ -1533,6 +1728,7 @@ class App(customtkinter.CTk):
                                                     fg_color=("#242424"),
                                                     compound="top",                            
                                                     hover_color=("#242424"),
+                                                    command = self.cherrymx_brown_review,
                                                     image=mxbrown_1,
                                                     text= 'Cherry MX Brown',
                                                     font=customtkinter.CTkFont(weight="bold"),
@@ -1545,12 +1741,212 @@ class App(customtkinter.CTk):
                                                     fg_color=("#242424"),
                                                     compound="top",                            
                                                     hover_color=("#242424"),
+                                                    command = self.cherrymx_clear_review,
                                                     image=mxclear_1,
                                                     text= 'Cherry MX Clear',
                                                     font=customtkinter.CTkFont(weight="bold"),
                                                     height=180,
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
+
+
+
+
+    def tofu60_review(self):    
+        url = "https://www.youtube.com/watch?v=QlFToB8WEPU"
+        webbrowser.open_new_tab(url)
+
+    def tofu65_review(self):    
+        url = "https://www.youtube.com/watch?v=Dgmexo2VGgY"
+        webbrowser.open_new_tab(url)
+        
+    def tester68_review(self):    
+        url = "https://www.youtube.com/watch?v=3t-iJWSJP5Y&t"
+        webbrowser.open_new_tab(url)
+
+    def tester84_review(self):    
+        url = "https://www.youtube.com/watch?v=laEqQW-rqBc"
+        webbrowser.open_new_tab(url)
+    
+    def gmk67_review(self):    
+        url = "https://www.youtube.com/watch?v=ZiteK5F10CE"
+        webbrowser.open_new_tab(url)
+
+    def gas67_review(self):    
+        url = "https://www.youtube.com/watch?v=KCojSX6DtPo&t"
+        webbrowser.open_new_tab(url)
+
+    def everglide75_review(self):    
+        url = "https://www.youtube.com/watch?v=vAGXM12Ad7g&t"
+        webbrowser.open_new_tab(url)
+
+    def mk870_review(self):    
+        url = "https://www.youtube.com/watch?v=gfVgtNyP2sU"
+        webbrowser.open_new_tab(url)
+
+    def monsgeek_m1_review(self):    
+        url = "https://www.youtube.com/watch?v=W-624633HA4&t"
+        webbrowser.open_new_tab(url)
+
+    def nexttime75_review(self):    
+        url = "https://www.youtube.com/watch?v=pqXGeQ-mcPg&t"
+        webbrowser.open_new_tab(url)
+
+    def nj80_review(self):    
+        url = "https://www.youtube.com/watch?v=UDczD_Wx_PU"
+        webbrowser.open_new_tab(url)
+
+    def tm680_review(self):    
+        url = "https://www.youtube.com/watch?v=B_WFf07TrCo&t"
+        webbrowser.open_new_tab(url)
+
+
+
+
+
+
+
+
+
+
+
+    def dcx_9009_review(self):    
+        url = "https://www.youtube.com/watch?v=WjNa6f2oyc0"
+        webbrowser.open_new_tab(url)
+
+    def dcx_wob_review(self):    
+        url = "https://www.youtube.com/watch?v=cGqz9q4B54E"
+        webbrowser.open_new_tab(url)
+        
+    def dcx_bow_review(self):    
+        url = "https://www.youtube.com/watch?v=S5ThKk9Ivig"
+        webbrowser.open_new_tab(url)
+
+    def dcx_cyber_review(self):    
+        url = "https://www.youtube.com/shorts/50YKJXj6UiY"
+        webbrowser.open_new_tab(url)
+    
+    def dcx_hyperfuse_review(self):    
+        url = "https://www.youtube.com/shorts/IJO9ylPLuDY"
+        webbrowser.open_new_tab(url)
+
+    def dcx_keyman_review(self):    
+        url = "https://drop.com/talk/121498/dcx-key-man-on-iron-165-pc"
+        webbrowser.open_new_tab(url)
+
+    def gmk_armstrong_review(self):    
+        url = "https://www.youtube.com/watch?v=8nwzD82pPOk"
+        webbrowser.open_new_tab(url)
+
+    def gmk_bluesamurai_review(self):    
+        url = "https://www.youtube.com/watch?v=GsePBZXmE50"
+        webbrowser.open_new_tab(url)
+
+    def gmk_dots_review(self):    
+        url = "https://www.youtube.com/watch?v=hCsikbZIqTA"
+        webbrowser.open_new_tab(url)
+
+    def gmk_kaiju_review(self):    
+        url = "https://www.youtube.com/watch?v=h_PCJb4Wz0E"
+        webbrowser.open_new_tab(url)
+
+    def gmk_laser_review(self):    
+        url = "https://www.youtube.com/watch?v=NpuGoeZQJW4"
+        webbrowser.open_new_tab(url)
+
+    def dcx_violac_review(self):    
+        url = "https://www.youtube.com/shorts/JmbAqMNOy68"
+        webbrowser.open_new_tab(url)
+
+
+
+
+
+
+
+    def c3_kiwi_review(self):    
+        url = "https://www.youtube.com/watch?v=zLXYKEs1tps"
+        webbrowser.open_new_tab(url)
+
+    def c3_tang_review(self):    
+        url = "https://www.youtube.com/watch?v=uRdvL5cSbHA&t"
+        webbrowser.open_new_tab(url)
+        
+    def box_jade_review(self):    
+        url = "https://www.youtube.com/watch?v=JaU3GkBKyNQ"
+        webbrowser.open_new_tab(url)
+
+    def box_navy_review(self):    
+        url = "https://www.youtube.com/watch?v=ipdoqGEAG9E"
+        webbrowser.open_new_tab(url)
+    
+    def holy_panda_review(self):    
+        url = "https://www.youtube.com/watch?v=gtujhG2JNrI"
+        webbrowser.open_new_tab(url)
+
+    def glorious_panda_review(self):    
+        url = "https://www.youtube.com/watch?v=aUnm2DFTrzo"
+        webbrowser.open_new_tab(url)
+
+    def gateron_ink_v2_review(self):    
+        url = "https://www.youtube.com/watch?v=2fe37TLjI5E"
+        webbrowser.open_new_tab(url)
+
+    def gateron_oilking_review(self):    
+        url = "https://www.youtube.com/watch?v=3joKjDwDkA8&t"
+        webbrowser.open_new_tab(url)
+
+    def nk_creams_review(self):    
+        url = "https://www.youtube.com/watch?v=iICikICuWa4&t"
+        webbrowser.open_new_tab(url)
+
+    def ktt_kw_v3_review(self):    
+        url = "https://www.youtube.com/watch?v=SxxBjl53VBo"
+        webbrowser.open_new_tab(url)
+
+    def ktt_grapefruit_review(self):    
+        url = "https://www.youtube.com/watch?v=oJWBMuPM12o&t"
+        webbrowser.open_new_tab(url)
+
+    def ktt_peach_review(self):    
+        url = "https://www.youtube.com/watch?v=GqvJDCxaCLU"
+        webbrowser.open_new_tab(url)
+
+    def ktt_strawberry_review(self):    
+        url = "https://www.youtube.com/watch?v=edF7kfYDERA&t"
+        webbrowser.open_new_tab(url)
+
+    def akko_purple_review(self):    
+        url = "https://www.youtube.com/watch?v=rDovZJKmUm4"
+        webbrowser.open_new_tab(url)
+        
+    def akko_red_review(self):    
+        url = "https://www.youtube.com/watch?v=ENNZS-GZ7t4"
+        webbrowser.open_new_tab(url)
+
+    def akko_rosered_review(self):    
+        url = "https://www.youtube.com/watch?v=YK63dwLdmAo&t"
+        webbrowser.open_new_tab(url)
+    
+    def zealios_v2_review(self):    
+        url = "https://www.youtube.com/watch?v=RL3DZD_cNng&t"
+        webbrowser.open_new_tab(url)
+
+    def ktt_winered_review(self):    
+        url = "https://www.youtube.com/watch?v=Kn67KIsf458"
+        webbrowser.open_new_tab(url)
+
+    def cherrymx_brown_review(self):    
+        url = "https://www.youtube.com/watch?v=Bc32Fv4P0tw"
+        webbrowser.open_new_tab(url)
+
+    def cherrymx_clear_review(self):    
+        url = "https://www.youtube.com/watch?v=dbRkFWabPew&t"
+        webbrowser.open_new_tab(url)
+
+
+
+
     def button_event(self):
         pass
     def click(self):
@@ -1590,4 +1986,3 @@ class App(customtkinter.CTk):
 if __name__ == "__main__":
     app = App()
     app.mainloop()
-
