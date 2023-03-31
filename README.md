@@ -1,13 +1,11 @@
 ____________________________________________________________________________________________________________________________________________________________________
-                                               Written by Houman Hafez
-
                                                       NOTE!
      
                           !This Application is in Alpha and still does not work as intended!
                                     
-                                    Welcome to Keyboard Configurator 
+                                      Welcome to the Custom Keyboard Configurator 
                                   
-This application is supposed to show you the available parts that are popular and you can choose a part to view and watch a review about it. You can also make a config that you prefer after watching the reviews and hear a sound test of the config you made. You can also see the price or find out about the status of each item. Furthermore, you can also see the newest events happening (The newest Keyboard kit that is on sale e.g). Right Now, I am working on it though :D
+You are interested in building a Custom Keyboard but you don't know which parts to pick. You have heard somewhere about a config but you don't know how much it'll cost or how it'll sound like or you just wanna explore builds and hear what they sound like or look like. If you find yourself in one of these situations, then this application is the right one for you. Simply choose a part and watch a recommended review about it. Then you can do the same for the other parts and at the end you can listen to a sound and see the config in all its glory. With the API Keys, you can see the up to date status of a keyboard part and if it's available, you can click on 'buy' and it'll redirect you to the website (in most cases it's either drop.com or kbdfans.com). In the future there is even more to come. Right now I need to work on it :D
 ____________________________________________________________________________________________________________________________________________________________________
 
 
