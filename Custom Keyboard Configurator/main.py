@@ -1072,22 +1072,36 @@ class App(customtkinter.CTk):
         new_scaling_float = int(new_scaling.replace("%", "")) / 100
         customtkinter.set_widget_scaling(new_scaling_float)
     
+
+
+
+
     def show_the_frame(self):
+
+        
         self.start.grid_forget()
         self.start_textbox.grid_forget()
         self.grid_columnconfigure(1, weight=1)
         self.grid_columnconfigure((2, 3), weight=0)
         self.grid_rowconfigure((0, 1, 2), weight=1)
 
+
+
         self.sidebar_frame.grid(row=0, column=0, rowspan=4, sticky="nsew")
         self.sidebar_frame.grid_rowconfigure(4, weight=1)
 
+
+
         self.logo_label.grid(row=0, column=0, padx=20, pady=(20, 10))
+
+
 
         self.sidebar_button_1.grid(row=1, column=0, padx=20, pady=15)
         self.sidebar_button_2.grid(row=2, column=0, padx=20, pady=15)
         self.sidebar_button_3.grid(row=3, column=0, padx=20, pady=15)
         self.sidebar_button_4.grid(row=4, column=0, padx=20, pady=15)
+
+
 
         self.appearance_mode_label.grid(row=5, column=0, padx=20, pady=(10, 0))
         self.appearance_mode_optionemenu.grid(row=6, column=0, padx=20, pady=(10, 10))
@@ -1095,21 +1109,35 @@ class App(customtkinter.CTk):
         self.scaling_optionemenu.grid(row=8, column=0, padx=20, pady=(10, 20))
         self.main_top.grid(row=0, column=1,padx=20, pady=(10, 20))
 
+
+
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))  
+
+
 
         self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
 
+
+
         self.main_keycapset.grid(row=1, column=1,padx=0, pady=(10, 20))               
+
+
 
         self.keyboardkit_frame.grid(row=0, column=3, padx=(20, 20), pady=(20, 0), sticky="nsew")
         self.keyboardkit_frame.grid_columnconfigure(0, weight=1)
 
+
+
         self.keycaps_frame.grid(row=1, column=3, padx=(20, 20), pady=(20, 0), sticky="nsew")
         self.keycaps_frame.grid_columnconfigure(0, weight=1)	
+
+
 
         self.switches_frame.grid(row=3, column=1, columnspan=3, sticky="nsew")
         self.switches_frame.grid_columnconfigure(0, weight=1)
         
+
+
         self.tofu60.grid(row=1, column=0, padx=10, pady=(0, 20))
         self.tofu65.grid(row=2, column=0, padx=10, pady=(0, 20))
         self.tester68.grid(row=3, column=0, padx=10, pady=(0, 20))
@@ -1123,6 +1151,8 @@ class App(customtkinter.CTk):
         self.nj80.grid(row=11, column=0, padx=10, pady=(0, 20))
         self.tm680.grid(row=12, column=0, padx=10, pady=(0, 20))
 
+
+
         self.dcx9009.grid(row=1, column=0, padx=10, pady=(0, 20))
         self.dcxblackonwhite.grid(row=2, column=0, padx=10, pady=(0, 20))
         self.dcxwhiteonblack.grid(row=3, column=0, padx=10, pady=(0, 20))
@@ -1135,6 +1165,8 @@ class App(customtkinter.CTk):
         self.gmkdots.grid(row=10, column=0, padx=10, pady=(0, 20))
         self.gmkkaiju.grid(row=11, column=0, padx=10, pady=(0, 20))
         self.gmklaser.grid(row=12, column=0, padx=10, pady=(0, 20))
+
+
 
         self.c3kiwi.grid(row=1, column=0, padx=10, pady=(0, 20))
         self.c3tang.grid(row=1, column=1, padx=10, pady=(0, 20))
@@ -1156,6 +1188,10 @@ class App(customtkinter.CTk):
         self.kttwinered.grid(row=1, column=17, padx=10, pady=(0, 20))
         self.cherrymxbrown.grid(row=1, column=18, padx=10, pady=(0, 20))
         self.cherrymxclear.grid(row=1, column=19, padx=10, pady=(0, 20))
+
+
+
+
 
     def tofu_60(self):
         self.main_kit = customtkinter.CTkButton(self,
