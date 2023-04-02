@@ -4,6 +4,7 @@ import tkinter.messagebox
 import customtkinter
 import webbrowser
 
+
 customtkinter.set_appearance_mode("System")  # Modes: "System" (standard), "Dark", "Light"
 customtkinter.set_default_color_theme('blue')  # Themes: "blue" (standard), "green", "dark-blue"
 tofu60 = customtkinter.CTkImage(light_image=Image.open("Keeb/Tofu60.jpg"),
@@ -369,19 +370,25 @@ mxclear_1 = customtkinter.CTkImage(light_image=Image.open("Switches/cherrymxclea
                                           dark_image=Image.open("Switches/cherrymxclear.jpg"),
                                           size=(100, 90))
 
+
+
+start_bg = customtkinter.CTkImage(Image.open("icons/start_bg.jpg"),
+                                          size=(1400, 900))
+
+github_logo = customtkinter.CTkImage(Image.open("icons/github.png"),
+                                          size=(60, 60))
+
+
 class App(customtkinter.CTk):
     def __init__(self):
         super().__init__()
         
-        # ALL THE PICTURES NEEDED FOR THE LABELS AND SO ON
         
         # THE WINDOW
         self.title("Custom Keyboard Configurator")
         self.geometry(f"{1300}x{900}")
         self.iconbitmap("icons/icon.ico")
 
-
-        # THE 4X4 GRID LAYOUT
 
 
         # SIDEBAR FRAME WITH THE WIDGETS
@@ -408,18 +415,57 @@ class App(customtkinter.CTk):
                                         dark_image=Image.open("icons/order.png"),
                                           size=(200, 170))'''
         
-        self.start = customtkinter.CTkButton(self,
-                                            fg_color=("#468499"),
+
+        # Start Menu
+
+        self.start_frame = customtkinter.CTkFrame(self,
+                                                    height= 900,
+                                                    width= 400,
+                                                    corner_radius=0)
+        self.start_frame.grid(row=0, column=1)
+
+
+        self.start_page_bg = customtkinter.CTkLabel(self.start_frame,
+                                                 image= start_bg,
+                                                 text="")
+        self.start_page_bg.grid(row=0, column= 1)
+
+        self.start_page_logos = customtkinter.CTkButton(self.start_frame,
+                                                 image= github_logo,
+                                                 command=self.github_acc,
+                                                fg_color=("#121214"),
+                                                bg_color=("#121214"),
+                                                hover_color=("#121214"),
+                                                 text="")
+        self.start_page_logos.grid(row=0, column= 1)
+        self.start_page_logos.place(x = 0, y = 820)
+
+
+        self.start_button = customtkinter.CTkButton(self.start_frame,
+                                            fg_color=("#f19dbb"),
+                                            bg_color=("Black"),
+                                            hover_color=("#b0e0e6"),
                                             text= 'Start',
                                             command=self.show_the_frame,
                                             font=customtkinter.CTkFont(weight="bold"),
-                                            height= 60,
-                                            width=120)
-        self.start.grid(row=2, column=1, columnspan= 4, rowspan= 4, padx=530, pady=100)
+                                            height= 65,
+                                            width=130)
+        self.start_button.grid(row=2, column=1, columnspan= 4, rowspan= 4)
+        self.start_button.place(x = 600, y = 700)
 
-        self.start_textbox = customtkinter.CTkTextbox(self, width=650)
-        self.start_textbox.grid(row=0, column=1, padx=300, pady=100)
-        self.start_textbox.insert("0.0", "Welcome to Keeb Configurator\n\n" + "Choose a Keyboard kit in your budget, choose the switches you like and  a keycap set and find out the price. You can also learn about mods that are generally available for the kit.\n\n")
+
+        self.start_textbox = customtkinter.CTkTextbox(self.start_frame, 
+                                                      width=750,
+                                                      height= 230,
+                                                      font=customtkinter.CTkFont(family= "Courier" ,size=20,weight="bold"))
+        self.start_textbox.grid(row=0, column=1, pady=100)
+        self.start_textbox.place(x = 300, y = 200)
+        self.start_textbox.insert("0.0", "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤWelcome to Keeb Configurator\n\n" +
+                                   "ㅤㅤㅤㅤㅤㅤㅤㅤChoose a Keyboard kit in your budget\nㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤChoose the switches you like\nㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤChoose a keycap set \nㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤSee the prices \nㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤListen to a sound test \n\nㅤㅤㅤㅤㅤ watch recommended reviews and learn about mods. ")
+
+
+
+
 
         self.sidebar_button_1 = customtkinter.CTkButton(self.sidebar_frame,
                                                         fg_color=("#468499"),
@@ -1079,8 +1125,11 @@ class App(customtkinter.CTk):
     def show_the_frame(self):
 
         
-        self.start.grid_forget()
+        self.start_button.grid_forget()
         self.start_textbox.grid_forget()
+        self.start_page_bg.grid_forget()
+        self.start_frame.grid_forget()
+        self.start_page_logos.grid_forget()
         self.grid_columnconfigure(1, weight=1)
         self.grid_columnconfigure((2, 3), weight=0)
         self.grid_rowconfigure((0, 1, 2), weight=1)
@@ -1786,6 +1835,9 @@ class App(customtkinter.CTk):
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
 
 
+    def github_acc(self):
+        url = "https://github.com/SpecialSpicy"
+        webbrowser.open_new_tab(url)
 
 
     def tofu60_review(self):    
