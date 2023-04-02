@@ -16,18 +16,7 @@ customtkinter.set_default_color_theme('blue')  # Themes: "blue", "green", "dark-
 tofu60 = customtkinter.CTkImage(light_image=Image.open("Keeb/Tofu60.jpg"),
                                           dark_image=Image.open("Keeb/Tofu60.jpg"),
                                           size=(100, 30))
-
-tofu60_link = 'https://kbdfans.com/products/tofu60-2-0'
-tofu60_response  = requests.get(tofu60_link)
-
-tf60_soup = BeautifulSoup(tofu60_response.content, 'html.parser')
-tofu60_tag = tf60_soup.find('span', {'class': 'theme-money large-title'})
-
-tofu60_price = tofu60_tag.text.strip()
-
-
-
-        
+    
 tofu65 = customtkinter.CTkImage(light_image=Image.open("Keeb/Tofu65.jpg"),
                                         dark_image=Image.open("Keeb/Tofu65.jpg"),
                                         size=(100, 30))
@@ -543,6 +532,13 @@ class App(customtkinter.CTk):
                                                 font=customtkinter.CTkFont(weight="bold"),
                                                 height=180,
                                                 width=400)
+        
+        self.main_switch_price = customtkinter.CTkLabel(self,
+                                                fg_color=("#242424"),                      
+                                                text= "",
+                                                font=customtkinter.CTkFont(size=12, weight="bold"),
+                                                height=80,
+                                                width=100)
 
 
         self.main_kit = customtkinter.CTkButton(self,
@@ -563,6 +559,7 @@ class App(customtkinter.CTk):
                                                 font=customtkinter.CTkFont(weight="bold"),
                                                 height=180,
                                                 width=400)
+        
  
         # ALL THE SCROLLABLE FRAMES (SWITCHES), (KEYCAPS) and (KEYBOARD KITS)
         self.keyboardkit_frame = customtkinter.CTkScrollableFrame(self,
@@ -1205,6 +1202,14 @@ class App(customtkinter.CTk):
 
         # all the functions to change the Main_Label's image to the clicked button's keyboard kit
     def tofu_60(self):
+        tofu60_link = 'https://kbdfans.com/products/tofu60-2-0'
+        tofu60_response  = requests.get(tofu60_link)
+
+        tf60_soup = BeautifulSoup(tofu60_response.content, 'html.parser')
+        tofu60_tag = tf60_soup.find('span', {'class': 'theme-money large-title'})
+
+        tofu60_price = tofu60_tag.text.strip()
+
         self.main_kit = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),
                                                 compound="top",                            
@@ -1216,11 +1221,26 @@ class App(customtkinter.CTk):
                                                 height=130,
                                                 width=350)
         self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
-
+        self.main_switch_price = customtkinter.CTkLabel(self,
+                                                fg_color=("#242424"),                      
+                                                text= tofu60_price,
+                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                height=80,
+                                                width=100)
+        self.main_switch_price.place(x= 320, y= 330)
 
 
 
     def tofu_65(self):
+
+        tofu65_link = 'https://kbdfans.com/collections/tofu65/products/tofu65-2-0'
+        tofu65_response  = requests.get(tofu65_link)
+
+        tf65_soup = BeautifulSoup(tofu65_response.content, 'html.parser')
+        tofu65_tag = tf65_soup.find('span', {'class': 'theme-money large-title'})
+
+        tofu65_price = tofu65_tag.text.strip()
+
         self.main_kit = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),
                                                 compound="top",                            
@@ -1233,7 +1253,25 @@ class App(customtkinter.CTk):
                                                 width=350)
         self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
 
+        self.main_switch_price = customtkinter.CTkLabel(self,
+                                                fg_color=("#242424"),                      
+                                                text= tofu65_price,
+                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                height=80,
+                                                width=100)
+        self.main_switch_price.place(x= 320, y= 330)
+
+    
     def tester_68(self):
+
+        tester68_link = 'https://www.yunzii.com/products/ciy-tester-68-hot-swappable-transparent-mechanical-keyboard-kit'
+        tester68_response  = requests.get(tester68_link)
+
+        tester68_soup = BeautifulSoup(tester68_response.content, 'html.parser')
+        tester68_tag = tester68_soup.find('span', {'class': 'money'})
+
+        tester68_price =  tester68_tag.text.strip()
+
         self.main_kit = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),
                                                 compound="top",                            
@@ -1246,7 +1284,24 @@ class App(customtkinter.CTk):
                                                 width=350)
         self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
 
+        self.main_switch_price = customtkinter.CTkLabel(self,
+                                                fg_color=("#242424"),                      
+                                                text= tester68_price,
+                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                height=80,
+                                                width=100)
+        self.main_switch_price.place(x= 320, y= 330)
+
     def tester_84(self):
+
+        tester84_link = 'https://www.yunzii.com/products/ciy-tester-84-hot-swappable-transparent-keyboard-kit'
+        tester84_response  = requests.get(tester84_link)
+
+        tester84_soup = BeautifulSoup(tester84_response.content, 'html.parser')
+        tester84_tag = tester84_soup.find('span', {'class': 'money'})
+
+        tester84_price = tester84_tag.text.strip()
+
         self.main_kit = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),
                                                 compound="top",                            
@@ -1259,7 +1314,17 @@ class App(customtkinter.CTk):
                                                 width=350)
         self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
 
+        self.main_switch_price = customtkinter.CTkLabel(self,
+                                                fg_color=("#242424"),                      
+                                                text= tester84_price,
+                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                height=80,
+                                                width=100)
+        self.main_switch_price.place(x= 320, y= 330)
+
+
     def gmk_67(self):
+
         self.main_kit = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),
                                                 compound="top",                            
@@ -1272,7 +1337,25 @@ class App(customtkinter.CTk):
                                                 width=350)
         self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
 
+        self.main_switch_price = customtkinter.CTkLabel(self,
+                                                fg_color=("#242424"),                      
+                                                text= "$30-$50",
+                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                height=80,
+                                                width=100)
+        self.main_switch_price.place(x= 320, y= 330)
+
     def gas_67(self):
+
+        gas67_link = 'https://landingpad.shop/products/ciy-gas67-keyboard-diy-kit'
+        gas67_response  = requests.get(gas67_link)
+
+        gas67_soup = BeautifulSoup(gas67_response.content, 'html.parser')
+        gas67_tag = gas67_soup.find('span', {'class': 'price-item price-item--regular !text-white'})
+
+        gas67_price = gas67_tag.text.strip()
+
+
         self.main_kit = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),
                                                 compound="top",                            
@@ -1285,7 +1368,26 @@ class App(customtkinter.CTk):
                                                 width=350)
         self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
 
+        self.main_switch_price = customtkinter.CTkLabel(self,
+                                                fg_color=("#242424"),                      
+                                                text= gas67_price,
+                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                height=80,
+                                                width=100)
+        self.main_switch_price.place(x= 320, y= 330)
+
     def everglide_75(self):
+
+        eg75_link = 'https://epomaker.com/products/everglide-lite-75-kit?variant=40026310279241'
+        eg75_response  = requests.get(eg75_link)
+
+        eg75_soup = BeautifulSoup(eg75_response.content, 'html.parser')
+        eg75_tag = eg75_soup.find('span', {'class': 'money'})
+
+        eg75_price = eg75_tag.text.strip()
+
+
+
         self.main_kit = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),
                                                 compound="top",                            
@@ -1298,7 +1400,27 @@ class App(customtkinter.CTk):
                                                 width=350)
         self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
 
+        self.main_switch_price = customtkinter.CTkLabel(self,
+                                                fg_color=("#242424"),                      
+                                                text= eg75_price,
+                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                height=80,
+                                                width=100)
+        self.main_switch_price.place(x= 320, y= 330)
+
+
     def mk_870(self):
+
+        mk_870_link = 'https://kprepublic.com/en-de/products/flesports-mk870-mechanical-keyboard-kit-full-rgb-backlit-led-hot-swappable-socket-nkro-programmable-usb-c-transparent-black-case'
+        mk_870_response  = requests.get(mk_870_link)
+
+        mk_870_soup = BeautifulSoup(mk_870_response.content, 'html.parser')
+        mk_870_tag = mk_870_soup.find('span', {'class': 'money'})
+
+        mk_870_price = mk_870_tag.text.strip()
+
+
+
         self.main_kit = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),
                                                 compound="top",                            
@@ -1311,7 +1433,17 @@ class App(customtkinter.CTk):
                                                 width=350)
         self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
 
+        self.main_switch_price = customtkinter.CTkLabel(self,
+                                                fg_color=("#242424"),                      
+                                                text= mk_870_price,
+                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                height=80,
+                                                width=100)
+        self.main_switch_price.place(x= 320, y= 330)
+
+
     def monsgeek_m1(self):
+
         self.main_kit = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),
                                                 compound="top",                            
@@ -1324,7 +1456,26 @@ class App(customtkinter.CTk):
                                                 width=350)
         self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
 
+        self.main_switch_price = customtkinter.CTkLabel(self,
+                                                fg_color=("#242424"),                      
+                                                text= "$99.99",
+                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                height=80,
+                                                width=100)
+        self.main_switch_price.place(x= 320, y= 330)
+
+
     def nexttime_75(self):
+
+        nt_75_link = 'https://kprepublic.com/en-de/products/nexttime-x75-75-gasket-mechanical-keyboard-kit-pcb-hot-swappable-switch-lighting-effects-rgb-switch-led-type-c-next-time-75'
+        nt_75_response  = requests.get(nt_75_link)
+
+        nt_75_soup = BeautifulSoup(nt_75_response.content, 'html.parser')
+        nt_75_tag = nt_75_soup.find('span', {'class': 'money'})
+
+        nt_75_price = nt_75_tag.text.strip()
+
+
         self.main_kit = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),
                                                 compound="top",                            
@@ -1337,8 +1488,28 @@ class App(customtkinter.CTk):
                                                 width=350)
         self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
 
+        self.main_switch_price = customtkinter.CTkLabel(self,
+                                                fg_color=("#242424"),                      
+                                                text= nt_75_price,
+                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                height=80,
+                                                width=100)
+        self.main_switch_price.place(x= 320, y= 330)
+
 
     def nj_80(self):
+
+        nj_80_link = 'https://www.keebmonkey.com/products/nj80'
+        nj_80_response  = requests.get(nj_80_link)
+
+        nj_80_soup = BeautifulSoup(nj_80_response.content, 'html.parser')
+        nj_80_tag = nj_80_soup.find('span', {'class': 'tlab-currency-format'})
+
+        nj_80_price = nj_80_tag.text.strip()
+
+
+
+
         self.main_kit = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),
                                                 compound="top",                            
@@ -1351,8 +1522,18 @@ class App(customtkinter.CTk):
                                                 width=350)
         self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
 
+        self.main_switch_price = customtkinter.CTkLabel(self,
+                                                fg_color=("#242424"),                      
+                                                text= nj_80_price,
+                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                height=80,
+                                                width=100)
+        self.main_switch_price.place(x= 320, y= 330)
+
 
     def tm_680(self):
+
+
         self.main_kit = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),
                                                 compound="top",                            
@@ -1365,6 +1546,13 @@ class App(customtkinter.CTk):
                                                 width=350)
         self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
 
+        self.main_switch_price = customtkinter.CTkLabel(self,
+                                                fg_color=("#242424"),                      
+                                                text= "$45 - $65",
+                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                height=80,
+                                                width=100)
+        self.main_switch_price.place(x= 320, y= 330)
 
 
 
