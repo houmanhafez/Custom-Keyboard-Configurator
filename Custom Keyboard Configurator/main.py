@@ -5,8 +5,11 @@ import customtkinter
 import webbrowser
 
 
-customtkinter.set_appearance_mode("System")  # Modes: "System" (standard), "Dark", "Light"
-customtkinter.set_default_color_theme('blue')  # Themes: "blue" (standard), "green", "dark-blue"
+customtkinter.set_appearance_mode("System")  # Modes: "System", "Dark", "Light"
+customtkinter.set_default_color_theme('blue')  # Themes: "blue", "green", "dark-blue"
+
+
+#Keyboard Kit Images
 tofu60 = customtkinter.CTkImage(light_image=Image.open("Keeb/Tofu60.jpg"),
                                           dark_image=Image.open("Keeb/Tofu60.jpg"),
                                           size=(100, 30))
@@ -49,7 +52,7 @@ tm680 = customtkinter.CTkImage(light_image=Image.open("Keeb/TM680.jpg"),
 
 
 
-
+#Keycap Set Images
 gmk_dots = customtkinter.CTkImage(light_image=Image.open("keycap sets/gmkdots.jpg"),
                                           dark_image=Image.open("keycap sets/gmkdots.jpg"),
                                           size=(100, 30))
@@ -100,6 +103,8 @@ dcx_violac = customtkinter.CTkImage(light_image=Image.open("keycap sets/dcxviola
 
 
 
+
+#Switch Set Images
 kttpeach = customtkinter.CTkImage(light_image=Image.open("Switches/kttpeach.jpg"),
                                           dark_image=Image.open("Switches/kttpeach.jpg"),
                                           size=(35, 35))
@@ -186,17 +191,7 @@ mxclear = customtkinter.CTkImage(light_image=Image.open("Switches/cherrymxclear.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+#Keyboard Kit Images for the Main_Frame
 tofu60_1 = customtkinter.CTkImage(light_image=Image.open("Keeb/Tofu60.jpg"),
                                           dark_image=Image.open("Keeb/Tofu60.jpg"),
                                           size=(350, 120))
@@ -237,7 +232,7 @@ tm680_1 = customtkinter.CTkImage(light_image=Image.open("Keeb/TM680.jpg"),
 
 
 
-
+#Keycap Set Images for the Main_Frame
 gmk_dots_1 = customtkinter.CTkImage(light_image=Image.open("keycap sets/gmkdots.jpg"),
                                           dark_image=Image.open("keycap sets/gmkdots.jpg"),
                                          size=(350, 120))
@@ -288,7 +283,7 @@ dcx_violac_1 = customtkinter.CTkImage(light_image=Image.open("keycap sets/dcxvio
 
 
 
-
+#Switch set Images for the Main_Frame
 kttpeach_1 = customtkinter.CTkImage(light_image=Image.open("Switches/kttpeach.jpg"),
                                           dark_image=Image.open("Switches/kttpeach.jpg"),
                                           size=(100, 90))
@@ -371,7 +366,7 @@ mxclear_1 = customtkinter.CTkImage(light_image=Image.open("Switches/cherrymxclea
                                           size=(100, 90))
 
 
-
+#icons and backgrounds
 start_bg = customtkinter.CTkImage(Image.open("icons/start_bg.jpg"),
                                           size=(1400, 900))
 
@@ -379,12 +374,15 @@ github_logo = customtkinter.CTkImage(Image.open("icons/github.png"),
                                           size=(60, 60))
 
 
+
+#MAIN CLASS 
 class App(customtkinter.CTk):
     def __init__(self):
         super().__init__()
         
         
         # THE WINDOW
+
         self.title("Custom Keyboard Configurator")
         self.geometry(f"{1300}x{900}")
         self.iconbitmap("icons/icon.ico")
@@ -392,8 +390,7 @@ class App(customtkinter.CTk):
 
 
         # SIDEBAR FRAME WITH THE WIDGETS
-        self.lines = customtkinter.CTkButton(self, command=self.click,text= '-\n-\n-')
-
+        
         self.sidebar_frame = customtkinter.CTkFrame(self,
                                                     width=120,
                                                     corner_radius=5)
@@ -416,7 +413,7 @@ class App(customtkinter.CTk):
                                           size=(200, 170))'''
         
 
-        # Start Menu
+        # START PAGE WITH THE WIDGETS
 
         self.start_frame = customtkinter.CTkFrame(self,
                                                     height= 900,
@@ -466,9 +463,10 @@ class App(customtkinter.CTk):
 
 
 
-
+        # SIDEBAR BUTTONS
         self.sidebar_button_1 = customtkinter.CTkButton(self.sidebar_frame,
-                                                        fg_color=("#468499"),
+                                                        fg_color=("#f19dbb"),
+                                                        hover_color=("#b0e0e6"),
                                                         command=self.kit_guide,                         
                                                         image=new_tab,
                                                         text= 'ㅤㅤKitsㅤGuideㅤㅤ',
@@ -476,7 +474,8 @@ class App(customtkinter.CTk):
                                                         width=170)                   
                                    
         self.sidebar_button_2 = customtkinter.CTkButton(self.sidebar_frame,
-                                                        fg_color=("#468499"),
+                                                        fg_color=("#f19dbb"),
+                                                        hover_color=("#b0e0e6"),
                                                         command=self.switches_guide,
                                                         image=new_tab,
                                                         text= 'ㅤSwitches Guideㅤ',
@@ -484,7 +483,8 @@ class App(customtkinter.CTk):
                                                         width=170)
         
         self.sidebar_button_3 = customtkinter.CTkButton(self.sidebar_frame,
-                                                        fg_color=("#468499"),
+                                                        fg_color=("#f19dbb"),
+                                                        hover_color=("#b0e0e6"),
                                                         command=self.mod_guide,
                                                         image=new_tab,
                                                         text= 'ㅤㅤMods Guideㅤㅤ',
@@ -506,7 +506,7 @@ class App(customtkinter.CTk):
                                                             anchor="w")
         
         self.appearance_mode_optionemenu = customtkinter.CTkOptionMenu(self.sidebar_frame,
-                                                                       fg_color=("#468499"),
+
                                                                        values=["Light", "Dark", "System"],
                                                                        command=self.change_appearance_mode_event)
         
@@ -515,9 +515,10 @@ class App(customtkinter.CTk):
                                                     anchor="w")
         
         self.scaling_optionemenu = customtkinter.CTkOptionMenu(self.sidebar_frame,
-                                                               fg_color=("#468499"),
+
                                                                values=["100%", "110%", "120%"],
                                                                command=self.change_scaling_event)
+
 
         # THE MAIN LABEL WITH THE MAIN FUNCTIONS ETC.
         self.main_top = customtkinter.CTkLabel(self,
@@ -580,7 +581,8 @@ class App(customtkinter.CTk):
 
         self.switches_frame_switches = []
 
-        # ALL THE KEYBOARD KITS 
+
+        # ALL THE KEYBOARD KITS BUTTONS 
         self.tofu60 = customtkinter.CTkButton(master=self.keyboardkit_frame,
                                               command=self.tofu_60,
                                               image=tofu60,
@@ -705,7 +707,7 @@ class App(customtkinter.CTk):
 
 
 
-        # ALL THE KEYCAPS
+        # ALL THE KEYCAP SET BUTTONS
         self.dcx9009 = customtkinter.CTkButton(master=self.keycaps_frame,
                                                command=self.dcx_9009,
                                                image=dcx_9009,
@@ -830,7 +832,7 @@ class App(customtkinter.CTk):
 
 
 
-        # ALL THE SWITCHES
+        # ALL THE SWITCHE SET BUTTONS
         self.c3kiwi = customtkinter.CTkButton(master=self.switches_frame,
                                               command=self.c3_kiwi,
                                               fg_color=("#420420"),
@@ -1106,6 +1108,7 @@ class App(customtkinter.CTk):
 
 
 
+
         # ALL THE FUNCTIONS FOR THE INPUT AND CLICK EVENTS ETC. 
     def open_input_dialog_event(self):
         dialog = customtkinter.CTkInputDialog(text="Type in a number:", title="CTkInputDialog")
@@ -1121,6 +1124,7 @@ class App(customtkinter.CTk):
 
 
 
+        # THE FUNCTION TO SHOW THE FRAME AFTER YOU CLICK ON START BUTTON
 
     def show_the_frame(self):
 
@@ -1241,7 +1245,7 @@ class App(customtkinter.CTk):
 
 
 
-
+        # all the functions to change the Main_Label's image to the clicked button's keyboard kit
     def tofu_60(self):
         self.main_kit = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),
@@ -1410,7 +1414,7 @@ class App(customtkinter.CTk):
 
 
 
-
+        # all the functions to change the Main_Label's image to the clicked button's keycap set
     def gmk_dots(self):
         self.main_keycapset = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),
@@ -1575,6 +1579,9 @@ class App(customtkinter.CTk):
 
 
 
+
+
+        # all the functions to change the Main_Label's image to the clicked button's switch set 
     def c3_kiwi(self):
         self.main_switch = customtkinter.CTkButton(self,
                                                     fg_color=("#242424"),
@@ -1835,6 +1842,8 @@ class App(customtkinter.CTk):
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
 
 
+
+    # All the keyboard kit, keycap set and switch set recommended videos + account links etc.
     def github_acc(self):
         url = "https://github.com/SpecialSpicy"
         webbrowser.open_new_tab(url)
@@ -2032,33 +2041,6 @@ class App(customtkinter.CTk):
         url = "https://www.youtube.com/watch?v=dbRkFWabPew&t"
         webbrowser.open_new_tab(url)
 
-
-
-
-    def button_event(self):
-        pass
-    def click(self):
-        pass
-    #def __init__(self):
-
-        super().__init__()
-
-
-        self.title("CustomTkinter complex_example.py")
-        self.geometry(f"{1100}x{780}")
-
-        self.textbox = customtkinter.CTkTextbox(self, width=0)
-        self.textbox.grid(row=3, column=3, padx=(20, 0), pady=(20, 0), sticky="nsew")
-        self.textbox.insert("0.0", "Welcome to Keeb Configurator\n\n" + "Choose a Keyboard kit in your budget, choose the switches you like and  a keycap set and find out the price. You can also learn about mods that are generally available for the kit.\n\n")
-
-    def sd(self, event= None):
-        if self.cget("state") != "disabled": #Ignore click if button is disabled
-            self.toggleState *= -1
-            if self.toggleState == -1:
-                self.config(image = self.clickedImage)
-            else:
-                self.config(image = self.unclickedImage)
-
     def kit_guide(self):
         url = 'https://www.youtube.com/watch?v=Sm1DVbyeDiI'
         webbrowser.open_new_tab(url)
@@ -2070,7 +2052,8 @@ class App(customtkinter.CTk):
     def mod_guide(self):
         url= 'https://www.youtube.com/watch?v=xY9z0RLitbA'
         webbrowser.open_new_tab(url)
-    # MULTIPROCESSING :D
+
+   # Creates an object and uses multiprocessing
 if __name__ == "__main__":
     app = App()
     app.mainloop()
