@@ -530,47 +530,46 @@ class App(customtkinter.CTk):
 
 
         self.main_switch = customtkinter.CTkButton(self,
-                                                    fg_color=("#242424"),
-                                                    compound="top",                            
-                                                    hover_color=("#242424"),
-                                                    text= 'Choose a Switch',
-                                                    font=customtkinter.CTkFont(weight="bold"),
-                                                    height=180,
-                                                    width=400)
+                                                fg_color=("#242424"),
+                                                compound="top",                            
+                                                hover_color=("#242424"),
+                                                text= 'Choose a Switch',
+                                                font=customtkinter.CTkFont(weight="bold"),
+                                                height=180,
+                                                width=400)
 
 
         self.main_kit = customtkinter.CTkButton(self,
-                                                    fg_color=("#242424"),
-                                                    compound="top",
-                                                        
-                                                    hover_color=("#242424"),
-                                                    text= 'Choose a Keyboard Kit',
-                                                    font=customtkinter.CTkFont(weight="bold"),
-                                                    height=180,
-                                                    width=400)
+                                                fg_color=("#242424"),
+                                                compound="top",
+                                                hover_color=("#242424"),
+                                                text= 'Choose a Keyboard Kit',
+                                                font=customtkinter.CTkFont(weight="bold"),
+                                                height=180,
+                                                width=400)
 
 
         self.main_keycapset = customtkinter.CTkButton(self,
-                                                    fg_color=("#242424"),
-                                                    compound="top",
-                                                    hover_color=("#242424"),
-                                                    text= 'Choose a Keycap Set',
-                                                    font=customtkinter.CTkFont(weight="bold"),
-                                                    height=180,
-                                                    width=400)
+                                                fg_color=("#242424"),
+                                                compound="top",
+                                                hover_color=("#242424"),
+                                                text= 'Choose a Keycap Set',
+                                                font=customtkinter.CTkFont(weight="bold"),
+                                                height=180,
+                                                width=400)
  
         # ALL THE SCROLLABLE FRAMES (SWITCHES), (KEYCAPS) and (KEYBOARD KITS)
         self.keyboardkit_frame = customtkinter.CTkScrollableFrame(self,
-                                                                  label_text="Keyboard Kits",
-                                                                  label_font=customtkinter.CTkFont(weight="bold"),
-                                                                  height= 300)
+                                                label_text="Keyboard Kits",
+                                                label_font=customtkinter.CTkFont(weight="bold"),
+                                                height= 300)
         self.keyboardkit_frame_switches = []
 
 
         self.keycaps_frame = customtkinter.CTkScrollableFrame(self,
-                                                              label_text="Keycaps",
-                                                              label_font=customtkinter.CTkFont(weight="bold"), 
-                                                              height= 300)
+                                                        label_text="Keycaps",
+                                                        label_font=customtkinter.CTkFont(weight="bold"), 
+                                                        height= 300)
         self.keycaps_frame_switches = []
 
         self.switches_frame = customtkinter.CTkScrollableFrame(self,
@@ -1843,11 +1842,7 @@ class App(customtkinter.CTk):
 
 
 
-    # All the keyboard kit, keycap set and switch set recommended videos + account links etc.
-    def github_acc(self):
-        url = "https://github.com/SpecialSpicy"
-        webbrowser.open_new_tab(url)
-
+    # All the keyboard kit recommended videos 
 
     def tofu60_review(self):    
         url = "https://www.youtube.com/watch?v=QlFToB8WEPU"
@@ -1906,7 +1901,7 @@ class App(customtkinter.CTk):
 
 
 
-
+    # All the keycap set recommended videos 
     def dcx_9009_review(self):    
         url = "https://www.youtube.com/watch?v=WjNa6f2oyc0"
         webbrowser.open_new_tab(url)
@@ -1960,7 +1955,7 @@ class App(customtkinter.CTk):
 
 
 
-
+    #All the switch set recommended videos
     def c3_kiwi_review(self):    
         url = "https://www.youtube.com/watch?v=zLXYKEs1tps"
         webbrowser.open_new_tab(url)
@@ -2041,6 +2036,10 @@ class App(customtkinter.CTk):
         url = "https://www.youtube.com/watch?v=dbRkFWabPew&t"
         webbrowser.open_new_tab(url)
 
+
+
+
+    # Guide link functions
     def kit_guide(self):
         url = 'https://www.youtube.com/watch?v=Sm1DVbyeDiI'
         webbrowser.open_new_tab(url)
@@ -2051,6 +2050,11 @@ class App(customtkinter.CTk):
     
     def mod_guide(self):
         url= 'https://www.youtube.com/watch?v=xY9z0RLitbA'
+        webbrowser.open_new_tab(url)
+
+    #Account link functions 
+    def github_acc(self):
+        url = "https://github.com/SpecialSpicy"
         webbrowser.open_new_tab(url)
 
    # Creates an object and uses multiprocessing
