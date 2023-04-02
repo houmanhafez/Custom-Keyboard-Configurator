@@ -396,8 +396,7 @@ class App(customtkinter.CTk):
         self.title("Custom Keyboard Configurator")
         self.geometry(f"{1300}x{900}")
         self.iconbitmap("icons/icon.ico")
-
-
+        self.resizable(False, False)
 
         # SIDEBAR FRAME WITH THE WIDGETS
         
