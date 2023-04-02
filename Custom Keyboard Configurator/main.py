@@ -1,3 +1,6 @@
+import time
+import requests
+from bs4 import BeautifulSoup
 from PIL import Image, ImageTk
 import PIL
 import tkinter.messagebox
@@ -13,6 +16,17 @@ customtkinter.set_default_color_theme('blue')  # Themes: "blue", "green", "dark-
 tofu60 = customtkinter.CTkImage(light_image=Image.open("Keeb/Tofu60.jpg"),
                                           dark_image=Image.open("Keeb/Tofu60.jpg"),
                                           size=(100, 30))
+
+tofu60_link = 'https://kbdfans.com/products/tofu60-2-0'
+tofu60_response  = requests.get(tofu60_link)
+
+tf60_soup = BeautifulSoup(tofu60_response.content, 'html.parser')
+tofu60_tag = tf60_soup.find('span', {'class': 'theme-money large-title'})
+
+tofu60_price = tofu60_tag.text.strip()
+
+
+
         
 tofu65 = customtkinter.CTkImage(light_image=Image.open("Keeb/Tofu65.jpg"),
                                         dark_image=Image.open("Keeb/Tofu65.jpg"),
@@ -373,6 +387,13 @@ start_bg = customtkinter.CTkImage(Image.open("icons/start_bg.jpg"),
 github_logo = customtkinter.CTkImage(Image.open("icons/github.png"),
                                           size=(60, 60))
 
+new_tab = customtkinter.CTkImage(light_image=Image.open("icons/newtab.png"),
+                                          dark_image=Image.open("icons/newtab.png"),
+                                          size=(20, 20))
+        
+widget0 = customtkinter.CTkImage(light_image=Image.open("icons/zoo65.png"),
+                                        dark_image=Image.open("icons/zoo65.png"),
+                                          size=(200, 170))
 
 
 #MAIN CLASS 
@@ -400,18 +421,11 @@ class App(customtkinter.CTk):
                                                  compound= 'left', 
                                                  font=customtkinter.CTkFont(size=20, weight="bold"))
 
-        new_tab = customtkinter.CTkImage(light_image=Image.open("icons/newtab.png"),
-                                          dark_image=Image.open("icons/newtab.png"),
-                                          size=(20, 20))
-        
-        widget0 = customtkinter.CTkImage(light_image=Image.open("icons/zoo65.png"),
-                                        dark_image=Image.open("icons/zoo65.png"),
-                                          size=(200, 170))
+
         
         '''    widget1 = customtkinter.CTkImage(light_image=Image.open("icons/order.png"),
                                         dark_image=Image.open("icons/order.png"),
                                           size=(200, 170))'''
-        
 
         # START PAGE WITH THE WIDGETS
 
@@ -444,7 +458,7 @@ class App(customtkinter.CTk):
                                             hover_color=("#b0e0e6"),
                                             text= 'Start',
                                             command=self.show_the_frame,
-                                            font=customtkinter.CTkFont(weight="bold"),
+                                            font=customtkinter.CTkFont(size=20, weight="bold"),
                                             height= 65,
                                             width=130)
         self.start_button.grid(row=2, column=1, columnspan= 4, rowspan= 4)
@@ -490,7 +504,7 @@ class App(customtkinter.CTk):
                                                         text= 'ㅤㅤMods Guideㅤㅤ',
                                                         font=customtkinter.CTkFont(weight="bold"),
                                                         width=170)
-        
+
         self.sidebar_button_4 = customtkinter.CTkButton(self.sidebar_frame,
                                                         fg_color=("gray17"),
                                                         hover_color=("gray17"),
@@ -501,14 +515,6 @@ class App(customtkinter.CTk):
                                                         height=220,
                                                         width=180)
         
-        self.appearance_mode_label = customtkinter.CTkLabel(self.sidebar_frame,
-                                                            text="Appearance Mode:",
-                                                            anchor="w")
-        
-        self.appearance_mode_optionemenu = customtkinter.CTkOptionMenu(self.sidebar_frame,
-
-                                                                       values=["Light", "Dark", "System"],
-                                                                       command=self.change_appearance_mode_event)
         
         self.scaling_label = customtkinter.CTkLabel(self.sidebar_frame,
                                                     text="UI Scaling:",
@@ -587,7 +593,7 @@ class App(customtkinter.CTk):
                                               image=tofu60,
                                               text='Tofu60')
         self.keyboardkit_frame_switches.append(self.tofu60)
-        self.appearance_mode_optionemenu.set("Dark")
+
 
 
         self.tofu65 = customtkinter.CTkButton(master=self.keyboardkit_frame,
@@ -597,8 +603,7 @@ class App(customtkinter.CTk):
 
 
         self.keyboardkit_frame_switches.append(self.tofu65)
-        self.appearance_mode_optionemenu.set("Dark")
-
+ 
 
 
         self.tester68 = customtkinter.CTkButton(master=self.keyboardkit_frame,
@@ -607,8 +612,6 @@ class App(customtkinter.CTk):
                                                 text='Tester68')
 
         self.keyboardkit_frame_switches.append(self.tester68)
-        self.appearance_mode_optionemenu.set("Dark")
-
 
 
         self.tester84 = customtkinter.CTkButton(master=self.keyboardkit_frame,
@@ -617,8 +620,6 @@ class App(customtkinter.CTk):
                                                 text='Tester84')
 
         self.keyboardkit_frame_switches.append(self.tester84)
-        self.appearance_mode_optionemenu.set("Dark")
-
 
 
         self.gmk67 = customtkinter.CTkButton(master=self.keyboardkit_frame,
@@ -627,8 +628,6 @@ class App(customtkinter.CTk):
                                              text='Gmk 67')
 
         self.keyboardkit_frame_switches.append(self.gmk67)
-        self.appearance_mode_optionemenu.set("Dark")
-
 
 
         self.gas67 = customtkinter.CTkButton(master=self.keyboardkit_frame,
@@ -637,8 +636,6 @@ class App(customtkinter.CTk):
                                              text='Gas 67')
 
         self.keyboardkit_frame_switches.append(self.gas67)
-        self.appearance_mode_optionemenu.set("Dark")
-
 
 
         self.everglide75 = customtkinter.CTkButton(master=self.keyboardkit_frame,
@@ -647,8 +644,7 @@ class App(customtkinter.CTk):
                                                    text='Everglide75')
 
         self.keyboardkit_frame_switches.append(self.everglide75)
-        self.appearance_mode_optionemenu.set("Dark")
-
+ 
 
 
         self.mk870 = customtkinter.CTkButton(master=self.keyboardkit_frame,
@@ -657,8 +653,7 @@ class App(customtkinter.CTk):
                                              text='MK 870')
 
         self.keyboardkit_frame_switches.append(self.mk870)
-        self.appearance_mode_optionemenu.set("Dark")
-
+ 
 
 
         self.monsgeekm1 = customtkinter.CTkButton(master=self.keyboardkit_frame,
@@ -667,8 +662,7 @@ class App(customtkinter.CTk):
                                                   text='MonsGeekM1')
 
         self.keyboardkit_frame_switches.append(self.monsgeekm1)
-        self.appearance_mode_optionemenu.set("Dark")
-
+ 
 
 
         self.nexttime75 = customtkinter.CTkButton(master=self.keyboardkit_frame,
@@ -677,8 +671,7 @@ class App(customtkinter.CTk):
                                                   text='Nexttime 75')
 
         self.keyboardkit_frame_switches.append(self.nexttime75)
-        self.appearance_mode_optionemenu.set("Dark")
-
+ 
 
 
         self.nj80 = customtkinter.CTkButton(master=self.keyboardkit_frame,
@@ -687,8 +680,7 @@ class App(customtkinter.CTk):
                                             text='NJ 80')
 
         self.keyboardkit_frame_switches.append(self.nj80)
-        self.appearance_mode_optionemenu.set("Dark")
-
+ 
 
 
         self.tm680 = customtkinter.CTkButton(master=self.keyboardkit_frame,
@@ -697,8 +689,7 @@ class App(customtkinter.CTk):
                                              text='TM680')
                                              
         self.keyboardkit_frame_switches.append(self.tm680)
-        self.appearance_mode_optionemenu.set("Dark")
-
+ 
 
 
 
@@ -713,8 +704,7 @@ class App(customtkinter.CTk):
                                                text='DCX 9009')
 
         self.keycaps_frame_switches.append(self.dcx9009)
-        self.appearance_mode_optionemenu.set("Dark")
-
+ 
 
 
         self.dcxblackonwhite = customtkinter.CTkButton(master=self.keycaps_frame,
@@ -723,8 +713,7 @@ class App(customtkinter.CTk):
                                                        text='DCX White')
 
         self.keycaps_frame_switches.append(self.dcxblackonwhite)
-        self.appearance_mode_optionemenu.set("Dark")
-
+ 
 
 
         self.dcxwhiteonblack = customtkinter.CTkButton(master=self.keycaps_frame,
@@ -733,8 +722,7 @@ class App(customtkinter.CTk):
                                                        text='DCX Black')
 
         self.keycaps_frame_switches.append(self.dcxwhiteonblack)
-        self.appearance_mode_optionemenu.set("Dark")
-
+ 
 
 
         self.dcxcyber = customtkinter.CTkButton(master=self.keycaps_frame,
@@ -743,8 +731,7 @@ class App(customtkinter.CTk):
                                                 text='DCX Cyber')
 
         self.keycaps_frame_switches.append(self.dcxcyber)
-        self.appearance_mode_optionemenu.set("Dark")
-
+ 
 
 
         self.dcxhyperfuse = customtkinter.CTkButton(master=self.keycaps_frame,
@@ -753,8 +740,7 @@ class App(customtkinter.CTk):
                                                     text='DCX Hyperfuse')
 
         self.keycaps_frame_switches.append(self.dcxhyperfuse)
-        self.appearance_mode_optionemenu.set("Dark")
-
+ 
 
 
         self.dcxkeyman = customtkinter.CTkButton(master=self.keycaps_frame,
@@ -763,8 +749,7 @@ class App(customtkinter.CTk):
                                                  text='DCX Keyman')
 
         self.keycaps_frame_switches.append(self.dcxkeyman)
-        self.appearance_mode_optionemenu.set("Dark")
-
+ 
 
 
         self.dcxviolac = customtkinter.CTkButton(master=self.keycaps_frame,
@@ -772,8 +757,7 @@ class App(customtkinter.CTk):
                                                  image=dcx_violac,
                                                  text='DCX Violac')
         self.keycaps_frame_switches.append(self.dcxviolac)
-        self.appearance_mode_optionemenu.set("Dark")
-
+ 
 
 
         self.gmkarmstrong = customtkinter.CTkButton(master=self.keycaps_frame,
@@ -782,8 +766,7 @@ class App(customtkinter.CTk):
                                                     text='GMK Armstrong')
 
         self.keycaps_frame_switches.append(self.gmkarmstrong)
-        self.appearance_mode_optionemenu.set("Dark")
-
+ 
 
 
         self.gmkbluesamurai = customtkinter.CTkButton(master=self.keycaps_frame,
@@ -792,8 +775,7 @@ class App(customtkinter.CTk):
                                                       text='GMK BlueSamurai')
 
         self.keycaps_frame_switches.append(self.gmkbluesamurai)
-        self.appearance_mode_optionemenu.set("Dark")
-
+ 
 
 
         self.gmkdots = customtkinter.CTkButton(master=self.keycaps_frame,
@@ -802,8 +784,7 @@ class App(customtkinter.CTk):
                                                text='GMK Dots')
 
         self.keycaps_frame_switches.append(self.gmkdots)
-        self.appearance_mode_optionemenu.set("Dark")
-
+ 
 
 
         self.gmkkaiju = customtkinter.CTkButton(master=self.keycaps_frame,
@@ -812,8 +793,7 @@ class App(customtkinter.CTk):
                                                 text='GMK Kaiju')
 
         self.keycaps_frame_switches.append(self.gmkkaiju)
-        self.appearance_mode_optionemenu.set("Dark")
-
+ 
 
 
         self.gmklaser = customtkinter.CTkButton(master=self.keycaps_frame,
@@ -822,8 +802,7 @@ class App(customtkinter.CTk):
                                                 text='GMK Laser')
 
         self.keycaps_frame_switches.append(self.gmklaser)
-        self.appearance_mode_optionemenu.set("Dark")
-
+ 
         
 
 
@@ -842,8 +821,7 @@ class App(customtkinter.CTk):
                                               height=45)
 
         self.switches_frame_switches.append(self.c3kiwi)
-        self.appearance_mode_optionemenu.set("Dark")
-
+ 
 
 
         self.c3tang = customtkinter.CTkButton(master=self.switches_frame,
@@ -856,8 +834,7 @@ class App(customtkinter.CTk):
                                               height=45)
 
         self.switches_frame_switches.append(self.c3tang)
-        self.appearance_mode_optionemenu.set("Dark")
-
+ 
 
 
         self.boxjade = customtkinter.CTkButton(master=self.switches_frame,
@@ -870,8 +847,7 @@ class App(customtkinter.CTk):
                                                height=45)
 
         self.switches_frame_switches.append(self.boxjade)
-        self.appearance_mode_optionemenu.set("Dark")
-
+ 
 
 
         self.boxnavy = customtkinter.CTkButton(master=self.switches_frame,
@@ -884,8 +860,7 @@ class App(customtkinter.CTk):
                                                height=45)
 
         self.switches_frame_switches.append(self.boxnavy)
-        self.appearance_mode_optionemenu.set("Dark")
-
+ 
 
 
         self.glopanda = customtkinter.CTkButton(master=self.switches_frame,
@@ -898,8 +873,7 @@ class App(customtkinter.CTk):
                                                 height=45)
 
         self.switches_frame_switches.append(self.glopanda)
-        self.appearance_mode_optionemenu.set("Dark")
-
+ 
 
 
         self.holpanda = customtkinter.CTkButton(master=self.switches_frame,
@@ -912,8 +886,7 @@ class App(customtkinter.CTk):
                                                 height=45)
 
         self.switches_frame_switches.append(self.holpanda)
-        self.appearance_mode_optionemenu.set("Dark")
-
+ 
 
 
         self.gateronblackinkv2 = customtkinter.CTkButton(master=self.switches_frame,
@@ -926,8 +899,7 @@ class App(customtkinter.CTk):
                                                          height=45)
 
         self.switches_frame_switches.append(self.gateronblackinkv2)
-        self.appearance_mode_optionemenu.set("Dark")
-
+ 
 
 
         self.gateronoilking = customtkinter.CTkButton(master=self.switches_frame,
@@ -940,8 +912,7 @@ class App(customtkinter.CTk):
                                                       height=45)
 
         self.switches_frame_switches.append(self.gateronoilking)
-        self.appearance_mode_optionemenu.set("Dark")
-
+ 
 
 
         self.nkcreams = customtkinter.CTkButton(master=self.switches_frame,
@@ -954,8 +925,7 @@ class App(customtkinter.CTk):
                                                 height=45)
 
         self.switches_frame_switches.append(self.nkcreams)
-        self.appearance_mode_optionemenu.set("Dark")
-
+ 
 
 
         self.kangwhitev3 = customtkinter.CTkButton(master=self.switches_frame,
@@ -966,8 +936,7 @@ class App(customtkinter.CTk):
                                                    compound='left', width=140, height=45)
 
         self.switches_frame_switches.append(self.kangwhitev3)
-        self.appearance_mode_optionemenu.set("Dark")
-
+ 
 
 
         self.kttgrapefruit = customtkinter.CTkButton(master=self.switches_frame,
@@ -979,8 +948,7 @@ class App(customtkinter.CTk):
                                                      width=140, height=45)
 
         self.switches_frame_switches.append(self.kttgrapefruit)
-        self.appearance_mode_optionemenu.set("Dark")
-
+ 
         self.kttpeach = customtkinter.CTkButton(master=self.switches_frame,
                                                 command=self.ktt_peach,
                                                 fg_color=("#420420"),
@@ -990,8 +958,7 @@ class App(customtkinter.CTk):
                                                 width=140, height=45)
 
         self.switches_frame_switches.append(self.kttpeach)
-        self.appearance_mode_optionemenu.set("Dark")
-
+ 
 
 
         self.kttstrawberry = customtkinter.CTkButton(master=self.switches_frame,
@@ -1004,8 +971,7 @@ class App(customtkinter.CTk):
                                                      height=45)
 
         self.switches_frame_switches.append(self.kttstrawberry)
-        self.appearance_mode_optionemenu.set("Dark")
-
+ 
 
 
         self.lavenderpurp = customtkinter.CTkButton(master=self.switches_frame,
@@ -1018,8 +984,7 @@ class App(customtkinter.CTk):
                                                     height=45)
                                                     
         self.switches_frame_switches.append(self.lavenderpurp)
-        self.appearance_mode_optionemenu.set("Dark")
-
+ 
 
 
         self.radiantred = customtkinter.CTkButton(master=self.switches_frame,
@@ -1032,8 +997,7 @@ class App(customtkinter.CTk):
                                                   height=45)
 
         self.switches_frame_switches.append(self.radiantred)
-        self.appearance_mode_optionemenu.set("Dark")
-
+ 
 
 
         self.rosered = customtkinter.CTkButton(master=self.switches_frame,
@@ -1046,8 +1010,7 @@ class App(customtkinter.CTk):
                                                height=45)
         
         self.switches_frame_switches.append(self.rosered)
-        self.appearance_mode_optionemenu.set("Dark")
-
+ 
 
 
         self.zealiosv2 = customtkinter.CTkButton(master=self.switches_frame,
@@ -1060,8 +1023,7 @@ class App(customtkinter.CTk):
                                                  height=45)
         
         self.switches_frame_switches.append(self.zealiosv2)
-        self.appearance_mode_optionemenu.set("Dark")
-
+ 
 
 
         self.kttwinered = customtkinter.CTkButton(master=self.switches_frame,
@@ -1074,8 +1036,7 @@ class App(customtkinter.CTk):
                                                   height=45)
         
         self.switches_frame_switches.append(self.kttstrawberry)
-        self.appearance_mode_optionemenu.set("Dark")
-
+ 
 
 
         self.cherrymxbrown = customtkinter.CTkButton(master=self.switches_frame,
@@ -1088,8 +1049,7 @@ class App(customtkinter.CTk):
                                                      height=45)
         
         self.switches_frame_switches.append(self.cherrymxbrown)
-        self.appearance_mode_optionemenu.set("Dark")
-
+ 
 
 
         self.cherrymxclear = customtkinter.CTkButton(master=self.switches_frame,
@@ -1102,7 +1062,8 @@ class App(customtkinter.CTk):
                                                      height=45)
         
         self.switches_frame_switches.append(self.cherrymxclear)
-        self.appearance_mode_optionemenu.set("Dark")
+ 
+            
 
 
 
@@ -1155,8 +1116,6 @@ class App(customtkinter.CTk):
 
 
 
-        self.appearance_mode_label.grid(row=5, column=0, padx=20, pady=(10, 0))
-        self.appearance_mode_optionemenu.grid(row=6, column=0, padx=20, pady=(10, 10))
         self.scaling_label.grid(row=7, column=0, padx=20, pady=(10, 0))
         self.scaling_optionemenu.grid(row=8, column=0, padx=20, pady=(10, 20))
         self.main_top.grid(row=0, column=1,padx=20, pady=(10, 20))
@@ -1257,6 +1216,7 @@ class App(customtkinter.CTk):
                                                 height=130,
                                                 width=350)
         self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
+
 
 
 
