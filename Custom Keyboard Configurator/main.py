@@ -398,7 +398,7 @@ class App(customtkinter.CTk):
         self.iconbitmap("icons/icon.ico")
         self.resizable(False, False)
 
-        # SIDEBAR FRAME WITH THE WIDGETS
+        # SIDEBAR FRAME WITH THE WIDGETS 
         
         self.sidebar_frame = customtkinter.CTkFrame(self,
                                                     width=120,
