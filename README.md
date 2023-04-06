@@ -16,5 +16,5 @@ ________________________________________________________________________________
 
 After you click on 'Start', choose a Keyboard Kit, a Keycap Set and a Switch Set and click on each to hear a recommended sound test. On the left side of each Keyboard part, there is an up to date price changes during sales and so on. (Right now only on the keyboard kit)
 ____________________________________________________________________________________________________________________________________________________________________
-![Screenshot 2023-04-06 065902](https://user-images.githubusercontent.com/120993360/230275939-ce0c8487-9ef1-48f0-9d6f-483fdce14706.jpg)
+![image](https://user-images.githubusercontent.com/120993360/230276203-1883cfc5-97e8-4855-862b-1f6d193d4d8c.png)
 ____________________________________________________________________________________________________________________________________________________________________ 
