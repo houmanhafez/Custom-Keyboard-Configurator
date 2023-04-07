@@ -13,51 +13,6 @@ import webbrowser
 customtkinter.set_appearance_mode("Dark")  # Modes: "System", "Dark", "Light"
 customtkinter.set_default_color_theme('blue')  # Themes: "blue", "green", "dark-blue"
 
-
-
-
-#Switch set Images for the Main_Frame
-kttpeach_1 = customtkinter.CTkImage(Image.open("Switches/kttpeach.jpg"),
-                                          size=(100, 90)) 
-gateronblack_1 = customtkinter.CTkImage(Image.open("Switches/Gateronblackinkv2.jpg"),
-                                          size=(100, 90))      
-gatoilking_1 = customtkinter.CTkImage(Image.open("Switches/gateronoilking.jpg"),
-                                          size=(100, 90))      
-grapefruit_1 = customtkinter.CTkImage(Image.open("Switches/kttgrapefruit.jpg"),
-                                          size=(100, 90))   
-kangwhitev3_1 = customtkinter.CTkImage(Image.open("Switches/Kangwhitev3.jpg"),
-                                          size=(100, 90))       
-nkcream_1 = customtkinter.CTkImage(Image.open("Switches/kailhcream.jpg"),
-                                          size=(100, 90))
-holpanda_1 = customtkinter.CTkImage(Image.open("Switches/holypanda.jpg"),
-                                          size=(100, 90))       
-glopanda_1 = customtkinter.CTkImage(Image.open("Switches/gloriouspanda.jpg"),
-                                          size=(100, 90))        
-c3tang_1 = customtkinter.CTkImage(Image.open("Switches/c3tangerine.jpg"),
-                                          size=(100, 90))     
-c3kiwi_1 = customtkinter.CTkImage(Image.open("Switches/c3kiwi.jpg"),
-                                          size=(100, 90))
-boxnavy_1= customtkinter.CTkImage(Image.open("Switches/boxnavy.jpg"),
-                                          size=(100, 90))
-boxjade_1 = customtkinter.CTkImage(Image.open("Switches/boxjade.jpg"),
-                                          size=(100, 90))       
-lavenderpurp_1 = customtkinter.CTkImage(Image.open("Switches/lavenderpurple.jpg"),
-                                          size=(100, 90))       
-radiantred_1 = customtkinter.CTkImage(Image.open("Switches/RadiantRed.jpg"),
-                                          size=(100, 90))       
-rosered_1 = customtkinter.CTkImage(Image.open("Switches/rosered.jpg"),
-                                          size=(100, 90))        
-zealiosv2_1 = customtkinter.CTkImage(Image.open("Switches/zealiosv2.jpg"),
-                                          size=(100, 90))        
-kttwinered_1 = customtkinter.CTkImage(Image.open("Switches/kttwinered.jpg"),
-                                          size=(100, 90))
-kttstrawberry_1 = customtkinter.CTkImage(Image.open("Switches/kttstrawberry.jpg"),
-                                          size=(100, 90))
-mxbrown_1 = customtkinter.CTkImage(Image.open("Switches/cherrymxbrown.jpg"),
-                                          size=(100, 90))    
-mxclear_1 = customtkinter.CTkImage(Image.open("Switches/cherrymxclear.jpg"),
-                                          size=(100, 90))
-
 def load_keyboard_kit_Review(key):  
             webbrowser.open_new_tab(keyboard_kits_reviews[key])
 def load_keycap_set_Review(key):
