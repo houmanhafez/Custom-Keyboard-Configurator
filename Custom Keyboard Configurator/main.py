@@ -2157,7 +2157,7 @@ class App(customtkinter.CTk):
                                                 width=120)
         self.main_switchset_price.place(x= 320, y= 140)
 
-
+ 
     def akko_rose_red(self):
         self.main_switch = customtkinter.CTkButton(self,
                                                     fg_color=("#242424"),

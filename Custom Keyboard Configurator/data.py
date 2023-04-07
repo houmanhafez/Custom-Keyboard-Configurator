@@ -23,7 +23,7 @@ keyboard_kits = {
     },
     "gmk67" : {
         "image_uri": "Keeb/gmk67.jpg" ,
-        "size" : (100, 30),
+        "size" : (100, 30), 
         "size_large" : (350, 120)
     },
     "gas67" : {
