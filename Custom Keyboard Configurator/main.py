@@ -15,375 +15,207 @@ customtkinter.set_default_color_theme('blue')  # Themes: "blue", "green", "dark-
 
 
 #Keyboard Kit Images
-tofu60 = customtkinter.CTkImage(light_image=Image.open("Keeb/Tofu60.jpg"),
-                                          dark_image=Image.open("Keeb/Tofu60.jpg"),
+tofu60 = customtkinter.CTkImage(Image.open("Keeb/Tofu60.jpg"),
                                           size=(120, 40))
-    
-tofu65 = customtkinter.CTkImage(light_image=Image.open("Keeb/Tofu65.jpg"),
-                                        dark_image=Image.open("Keeb/Tofu65.jpg"),
-                                        size=(120, 40))
-    
-tester68 = customtkinter.CTkImage(light_image=Image.open("Keeb/tester68.jpg"),
-                                          dark_image=Image.open("Keeb/tester68.jpg"),
+tofu65 = customtkinter.CTkImage(Image.open("Keeb/Tofu65.jpg"),
+                                          size=(120, 40))
+tester68 = customtkinter.CTkImage(Image.open("Keeb/tester68.jpg"),
                                           size=(110, 40))
-tester84 = customtkinter.CTkImage(light_image=Image.open("Keeb/Tester84.jpg"),
-                                          dark_image=Image.open("Keeb/Tester84.jpg"),
+tester84 = customtkinter.CTkImage(Image.open("Keeb/Tester84.jpg"),
                                           size=(110, 40))
-gmk67 = customtkinter.CTkImage(light_image=Image.open("Keeb/gmk67.jpg"),
-                                          dark_image=Image.open("Keeb/gmk67.jpg"),
+gmk67 = customtkinter.CTkImage(Image.open("Keeb/gmk67.jpg"),
                                           size=(120, 40))
-gas67 = customtkinter.CTkImage(light_image=Image.open("Keeb/gas67.jpg"),
-                                          dark_image=Image.open("Keeb/gas67.jpg"),
+gas67 = customtkinter.CTkImage(Image.open("Keeb/gas67.jpg"),
                                           size=(120, 40))
-everglide75 = customtkinter.CTkImage(light_image=Image.open("Keeb/Everglide Lite 75.jpg"),
-                                          dark_image=Image.open("Keeb/Everglide Lite 75.jpg"),
+everglide75 = customtkinter.CTkImage(Image.open("Keeb/Everglide Lite 75.jpg"),
                                           size=(120, 40))
-mk870 = customtkinter.CTkImage(light_image=Image.open("Keeb/MK870.jpg"),
-                                          dark_image=Image.open("Keeb/MK870.jpg"),
+mk870 = customtkinter.CTkImage(Image.open("Keeb/MK870.jpg"),
                                           size=(120, 40))
-monsgeekm1 = customtkinter.CTkImage(light_image=Image.open("Keeb/Monsgeek M1.jpg"),
-                                          dark_image=Image.open("Keeb/Monsgeek M1.jpg"),
+monsgeekm1 = customtkinter.CTkImage(Image.open("Keeb/Monsgeek M1.jpg"),
                                           size=(120, 40))
-nexttime75 = customtkinter.CTkImage(light_image=Image.open("Keeb/Nexttime 75.jpg"),
-                                          dark_image=Image.open("Keeb/Nexttime 75.jpg"),
+nexttime75 = customtkinter.CTkImage(Image.open("Keeb/Nexttime 75.jpg"),
                                           size=(120, 40))
-nj80 = customtkinter.CTkImage(light_image=Image.open("Keeb/NJ80.jpg"),
-                                          dark_image=Image.open("Keeb/NJ80.jpg"),
+nj80 = customtkinter.CTkImage(Image.open("Keeb/NJ80.jpg"),
                                           size=(120, 40))
-tm680 = customtkinter.CTkImage(light_image=Image.open("Keeb/TM680.jpg"),
-                                          dark_image=Image.open("Keeb/TM680.jpg"),
+tm680 = customtkinter.CTkImage(Image.open("Keeb/TM680.jpg"),
                                           size=(111, 38))
 
 
-
-
 #Keycap Set Images
-gmk_dots = customtkinter.CTkImage(light_image=Image.open("keycap sets/gmkdots.jpg"),
-                                          dark_image=Image.open("keycap sets/gmkdots.jpg"),
+gmk_dots = customtkinter.CTkImage(Image.open("keycap sets/gmkdots.jpg"),
                                           size=(125, 35))
-        
-gmk_armstrong = customtkinter.CTkImage(light_image=Image.open("keycap sets/gmkarmstrong.jpg"),
-                                          dark_image=Image.open("keycap sets/gmkarmstrong.jpg"),
+gmk_armstrong = customtkinter.CTkImage(Image.open("keycap sets/gmkarmstrong.jpg"),
                                           size=(125, 35))
-
-gmk_bluesamurai = customtkinter.CTkImage(light_image=Image.open("keycap sets/gmkbluesamurai.jpg"),
-                                          dark_image=Image.open("keycap sets/gmkbluesamurai.jpg"),
+gmk_bluesamurai = customtkinter.CTkImage(Image.open("keycap sets/gmkbluesamurai.jpg"),
                                           size=(125, 35))
-
-gmk_kaiju = customtkinter.CTkImage(light_image=Image.open("keycap sets/gmkkaiju.jpg"),
-                                          dark_image=Image.open("keycap sets/gmkkaiju.jpg"),
-                                          size=(125, 35))
-        
-gmk_laser = customtkinter.CTkImage(light_image=Image.open("keycap sets/gmklaser.jpg"),
-                                          dark_image=Image.open("keycap sets/gmklaser.jpg"),
-                                          size=(120, 35))
-        
-dcx_9009 = customtkinter.CTkImage(light_image=Image.open("keycap sets/dcx9009.jpg"),
-                                          dark_image=Image.open("keycap sets/dcx9009.jpg"),
+gmk_kaiju = customtkinter.CTkImage(Image.open("keycap sets/gmkkaiju.jpg"),
+                                          size=(125, 35))        
+gmk_laser = customtkinter.CTkImage(Image.open("keycap sets/gmklaser.jpg"),
+                                          size=(120, 35))       
+dcx_9009 = customtkinter.CTkImage(Image.open("keycap sets/dcx9009.jpg"),
                                           size=(130, 35))
-        
-dcx_blackonwhite = customtkinter.CTkImage(light_image=Image.open("keycap sets/dcxblackonwhite.jpg"),
-                                          dark_image=Image.open("keycap sets/dcxblackonwhite.jpg"),
+dcx_blackonwhite = customtkinter.CTkImage(Image.open("keycap sets/dcxblackonwhite.jpg"),
                                           size=(120, 35))
-        
-dcx_whiteonblack = customtkinter.CTkImage(light_image=Image.open("keycap sets/dcxwhiteonblack.jpg"),
-                                          dark_image=Image.open("keycap sets/dcxwhiteonblack.jpg"),
+dcx_whiteonblack = customtkinter.CTkImage(Image.open("keycap sets/dcxwhiteonblack.jpg"),
                                           size=(120, 38))
-    
-dcx_cyber = customtkinter.CTkImage(light_image=Image.open("keycap sets/dcxcyber.jpg"),
-                                          dark_image=Image.open("keycap sets/dcxcyber.jpg"),
+dcx_cyber = customtkinter.CTkImage(Image.open("keycap sets/dcxcyber.jpg"),
                                           size=(125, 37))
-        
-dcx_hyperfuse = customtkinter.CTkImage(light_image=Image.open("keycap sets/dcxhyperfuse.jpg"),
-                                          dark_image=Image.open("keycap sets/dcxhyperfuse.jpg"),
-                                          size=(120, 35))
-        
-dcx_keyman = customtkinter.CTkImage(light_image=Image.open("keycap sets/dcxkeyman.jpg"),
-                                          dark_image=Image.open("keycap sets/dcxkeyman.jpg"),
+dcx_hyperfuse = customtkinter.CTkImage(Image.open("keycap sets/dcxhyperfuse.jpg"),
+                                          size=(115, 35))
+dcx_keyman = customtkinter.CTkImage(Image.open("keycap sets/dcxkeyman.jpg"),
                                           size=(118, 35))
-        
-dcx_violac = customtkinter.CTkImage(light_image=Image.open("keycap sets/dcxviolac.jpg"),
-                                          dark_image=Image.open("keycap sets/dcxviolac.jpg"),
+dcx_violac = customtkinter.CTkImage(Image.open("keycap sets/dcxviolac.jpg"),
                                           size=(120, 35))
-
-
 
 
 #Switch Set Images
-kttpeach = customtkinter.CTkImage(light_image=Image.open("Switches/kttpeach.jpg"),
-                                          dark_image=Image.open("Switches/kttpeach.jpg"),
+kttpeach = customtkinter.CTkImage(Image.open("Switches/kttpeach.jpg"),
+                                          size=(40, 40))
+gateronblack = customtkinter.CTkImage(Image.open("Switches/Gateronblackinkv2.jpg"),
+                                          size=(40, 40))     
+gatoilking = customtkinter.CTkImage(Image.open("Switches/gateronoilking.jpg"),
+                                          size=(40, 40))      
+grapefruit = customtkinter.CTkImage(Image.open("Switches/kttgrapefruit.jpg"),
+                                          size=(40, 40))   
+kangwhitev3 = customtkinter.CTkImage(Image.open("Switches/Kangwhitev3.jpg"),
+                                          size=(40, 40))       
+nkcream = customtkinter.CTkImage(Image.open("Switches/kailhcream.jpg"),
+                                          size=(40, 40))
+holpanda = customtkinter.CTkImage(Image.open("Switches/holypanda.jpg"),
+                                          size=(40, 40))       
+glopanda = customtkinter.CTkImage(Image.open("Switches/gloriouspanda.jpg"),
+                                          size=(40, 40))       
+c3tang = customtkinter.CTkImage(Image.open("Switches/c3tangerine.jpg"),
+                                          size=(40, 40))
+c3kiwi = customtkinter.CTkImage(Image.open("Switches/c3kiwi.jpg"),
+                                          size=(40, 40))       
+boxnavy= customtkinter.CTkImage(Image.open("Switches/boxnavy.jpg"),
+                                          size=(40, 40))      
+boxjade = customtkinter.CTkImage(Image.open("Switches/boxjade.jpg"),
+                                          size=(40, 40))      
+lavenderpurp = customtkinter.CTkImage(Image.open("Switches/lavenderpurple.jpg"),
+                                          size=(40, 40))       
+radiantred = customtkinter.CTkImage(Image.open("Switches/RadiantRed.jpg"),
+                                          size=(40, 40))       
+rosered = customtkinter.CTkImage(Image.open("Switches/rosered.jpg"),
+                                          size=(40, 40))       
+zealiosv2 = customtkinter.CTkImage(Image.open("Switches/zealiosv2.jpg"),
+                                          size=(40, 40))       
+kttwinered = customtkinter.CTkImage(Image.open("Switches/kttwinered.jpg"),
+                                          size=(40, 40))       
+kttstrawberry = customtkinter.CTkImage(Image.open("Switches/kttstrawberry.jpg"),
+                                          size=(40, 40))       
+mxbrown = customtkinter.CTkImage(Image.open("Switches/cherrymxbrown.jpg"),
+                                          size=(40, 40))        
+mxclear = customtkinter.CTkImage(Image.open("Switches/cherrymxclear.jpg"),
                                           size=(40, 40))
         
-
-gateronblack = customtkinter.CTkImage(light_image=Image.open("Switches/Gateronblackinkv2.jpg"),
-                                          dark_image=Image.open("Switches/Gateronblackinkv2.jpg"),
-                                          size=(40, 40))
-        
-gatoilking = customtkinter.CTkImage(light_image=Image.open("Switches/gateronoilking.jpg"),
-                                          dark_image=Image.open("Switches/gateronoilking.jpg"),
-                                          size=(40, 40))
-        
-grapefruit = customtkinter.CTkImage(light_image=Image.open("Switches/kttgrapefruit.jpg"),
-                                          dark_image=Image.open("Switches/kttgrapefruit.jpg"),
-                                          size=(40, 40))
-    
-kangwhitev3 = customtkinter.CTkImage(light_image=Image.open("Switches/Kangwhitev3.jpg"),
-                                          dark_image=Image.open("Switches/Kangwhitev3.jpg"),
-                                          size=(40, 40))
-        
-nkcream = customtkinter.CTkImage(light_image=Image.open("Switches/kailhcream.jpg"),
-                                          dark_image=Image.open("Switches/kailhcream.jpg"),
-                                          size=(40, 40))
-
-holpanda = customtkinter.CTkImage(light_image=Image.open("Switches/holypanda.jpg"),
-                                          dark_image=Image.open("Switches/holypanda.jpg"),
-                                          size=(40, 40))
-        
-glopanda = customtkinter.CTkImage(light_image=Image.open("Switches/gloriouspanda.jpg"),
-                                          dark_image=Image.open("Switches/gloriouspanda.jpg"),
-                                          size=(40, 40))
-        
-c3tang = customtkinter.CTkImage(light_image=Image.open("Switches/c3tangerine.jpg"),
-                                          dark_image=Image.open("Switches/c3tangerine.jpg"),
-                                          size=(40, 40))
-        
-c3kiwi = customtkinter.CTkImage(light_image=Image.open("Switches/c3kiwi.jpg"),
-                                          dark_image=Image.open("Switches/c3kiwi.jpg"),
-                                          size=(40, 40))
-        
-boxnavy= customtkinter.CTkImage(light_image=Image.open("Switches/boxnavy.jpg"),
-                                          dark_image=Image.open("Switches/boxnavy.jpg"),
-                                          size=(40, 40))
-        
-boxjade = customtkinter.CTkImage(light_image=Image.open("Switches/boxjade.jpg"),
-                                          dark_image=Image.open("Switches/boxjade.jpg"),
-                                          size=(40, 40))
-        
-lavenderpurp = customtkinter.CTkImage(light_image=Image.open("Switches/lavenderpurple.jpg"),
-                                          dark_image=Image.open("Switches/lavenderpurple.jpg"),
-                                          size=(40, 40))
-        
-radiantred = customtkinter.CTkImage(light_image=Image.open("Switches/RadiantRed.jpg"),
-                                          dark_image=Image.open("Switches/RadiantRed.jpg"),
-                                          size=(40, 40))
-        
-rosered = customtkinter.CTkImage(light_image=Image.open("Switches/rosered.jpg"),
-                                          dark_image=Image.open("Switches/rosered.jpg"),
-                                          size=(40, 40))
-        
-zealiosv2 = customtkinter.CTkImage(light_image=Image.open("Switches/zealiosv2.jpg"),
-                                          dark_image=Image.open("Switches/zealiosv2.jpg"),
-                                          size=(40, 40))
-        
-kttwinered = customtkinter.CTkImage(light_image=Image.open("Switches/kttwinered.jpg"),
-                                          dark_image=Image.open("Switches/kttwinered.jpg"),
-                                          size=(40, 40))
-        
-kttstrawberry = customtkinter.CTkImage(light_image=Image.open("Switches/kttstrawberry.jpg"),
-                                          dark_image=Image.open("Switches/kttstrawberry.jpg"),
-                                          size=(40, 40))
-        
-mxbrown = customtkinter.CTkImage(light_image=Image.open("Switches/cherrymxbrown.jpg"),
-                                          dark_image=Image.open("Switches/cherrymxbrown.jpg"),
-                                          size=(40, 40))
-        
-mxclear = customtkinter.CTkImage(light_image=Image.open("Switches/cherrymxclear.jpg"),
-                                          dark_image=Image.open("Switches/cherrymxclear.jpg"),
-                                          size=(40, 40))
-        
-
-
-
 
 
 #Keyboard Kit Images for the Main_Frame
-tofu60_1 = customtkinter.CTkImage(light_image=Image.open("Keeb/Tofu60.jpg"),
-                                          dark_image=Image.open("Keeb/Tofu60.jpg"),
-                                          size=(350, 120))
-    
-tofu65_1 = customtkinter.CTkImage(light_image=Image.open("Keeb/Tofu65.jpg"),
-                                        dark_image=Image.open("Keeb/Tofu65.jpg"),
-                                        size=(350, 120))
-tester68_1 = customtkinter.CTkImage(light_image=Image.open("Keeb/tester68.jpg"),
-                                          dark_image=Image.open("Keeb/tester68.jpg"),
-                                        size=(350, 120))
-tester84_1 = customtkinter.CTkImage(light_image=Image.open("Keeb/Tester84.jpg"),
-                                          dark_image=Image.open("Keeb/Tester84.jpg"),
-                                        size=(350, 120))
-gmk67_1 = customtkinter.CTkImage(light_image=Image.open("Keeb/gmk67.jpg"),
-                                          dark_image=Image.open("Keeb/gmk67.jpg"),
-                                        size=(350, 120))
-gas67_1 = customtkinter.CTkImage(light_image=Image.open("Keeb/gas67.jpg"),
-                                          dark_image=Image.open("Keeb/gas67.jpg"),
-                                        size=(350, 120))
-everglide75_1 = customtkinter.CTkImage(light_image=Image.open("Keeb/Everglide Lite 75.jpg"),
-                                          dark_image=Image.open("Keeb/Everglide Lite 75.jpg"),
-                                        size=(350, 120))
-mk870_1 = customtkinter.CTkImage(light_image=Image.open("Keeb/MK870.jpg"),
-                                          dark_image=Image.open("Keeb/MK870.jpg"),
-                                        size=(350, 120))
-monsgeekm1_1 = customtkinter.CTkImage(light_image=Image.open("Keeb/Monsgeek M1.jpg"),
-                                          dark_image=Image.open("Keeb/Monsgeek M1.jpg"),
-                                        size=(350, 120))
-nexttime75_1 = customtkinter.CTkImage(light_image=Image.open("Keeb/Nexttime 75.jpg"),
-                                          dark_image=Image.open("Keeb/Nexttime 75.jpg"),
-                                        size=(350, 120))
-nj80_1 = customtkinter.CTkImage(light_image=Image.open("Keeb/NJ80.jpg"),
-                                          dark_image=Image.open("Keeb/NJ80.jpg"),
-                                        size=(350, 120))
-tm680_1 = customtkinter.CTkImage(light_image=Image.open("Keeb/TM680.jpg"),
-                                          dark_image=Image.open("Keeb/TM680.jpg"),
-                                        size=(350, 120))
-
+tofu60_1 = customtkinter.CTkImage(Image.open("Keeb/Tofu60.jpg"),
+                                        size=(360, 150))
+tofu65_1 = customtkinter.CTkImage(Image.open("Keeb/Tofu65.jpg"),
+                                        size=(360, 150))
+tester68_1 = customtkinter.CTkImage(Image.open("Keeb/tester68.jpg"),
+                                        size=(360, 140))
+tester84_1 = customtkinter.CTkImage(Image.open("Keeb/Tester84.jpg"),
+                                        size=(360, 140))
+gmk67_1 = customtkinter.CTkImage(Image.open("Keeb/gmk67.jpg"),
+                                        size=(360, 140))
+gas67_1 = customtkinter.CTkImage(Image.open("Keeb/gas67.jpg"),
+                                        size=(360, 150))
+everglide75_1 = customtkinter.CTkImage(Image.open("Keeb/Everglide Lite 75.jpg"),
+                                        size=(360, 150))
+mk870_1 = customtkinter.CTkImage(Image.open("Keeb/MK870.jpg"),
+                                        size=(360, 150))
+monsgeekm1_1 = customtkinter.CTkImage(Image.open("Keeb/Monsgeek M1.jpg"),
+                                        size=(360, 150))
+nexttime75_1 = customtkinter.CTkImage(Image.open("Keeb/Nexttime 75.jpg"),
+                                        size=(360, 140))
+nj80_1 = customtkinter.CTkImage(Image.open("Keeb/NJ80.jpg"),
+                                        size=(360, 150))
+tm680_1 = customtkinter.CTkImage(Image.open("Keeb/TM680.jpg"),
+                                        size=(360, 150))
 
 
 #Keycap Set Images for the Main_Frame
-gmk_dots_1 = customtkinter.CTkImage(light_image=Image.open("keycap sets/gmkdots.jpg"),
-                                          dark_image=Image.open("keycap sets/gmkdots.jpg"),
+gmk_dots_1 = customtkinter.CTkImage(Image.open("keycap sets/gmkdots.jpg"),
+                                         size=(350, 120))       
+gmk_armstrong_1 = customtkinter.CTkImage(Image.open("keycap sets/gmkarmstrong.jpg"),
                                          size=(350, 120))
-        
-gmk_armstrong_1 = customtkinter.CTkImage(light_image=Image.open("keycap sets/gmkarmstrong.jpg"),
-                                          dark_image=Image.open("keycap sets/gmkarmstrong.jpg"),
+gmk_bluesamurai_1 = customtkinter.CTkImage(Image.open("keycap sets/gmkbluesamurai.jpg"),
                                          size=(350, 120))
-
-gmk_bluesamurai_1 = customtkinter.CTkImage(light_image=Image.open("keycap sets/gmkbluesamurai.jpg"),
-                                          dark_image=Image.open("keycap sets/gmkbluesamurai.jpg"),
+gmk_kaiju_1 = customtkinter.CTkImage(Image.open("keycap sets/gmkkaiju.jpg"),
+                                         size=(350, 120))       
+gmk_laser_1 = customtkinter.CTkImage(Image.open("keycap sets/gmklaser.jpg"),
+                                         size=(350, 120))        
+dcx_9009_1 = customtkinter.CTkImage(Image.open("keycap sets/dcx9009.jpg"),
+                                         size=(350, 120))        
+dcx_blackonwhite_1 = customtkinter.CTkImage(Image.open("keycap sets/dcxblackonwhite.jpg"),
+                                         size=(350, 120))        
+dcx_whiteonblack_1 = customtkinter.CTkImage(Image.open("keycap sets/dcxwhiteonblack.jpg"),
+                                         size=(350, 120))        
+dcx_cyber_1 = customtkinter.CTkImage(Image.open("keycap sets/dcxcyber.jpg"),
+                                         size=(350, 120))        
+dcx_hyperfuse_1 = customtkinter.CTkImage(Image.open("keycap sets/dcxhyperfuse.jpg"),
+                                         size=(350, 120))        
+dcx_keyman_1 = customtkinter.CTkImage(Image.open("keycap sets/dcxkeyman.jpg"),
+                                         size=(350, 120))        
+dcx_violac_1 = customtkinter.CTkImage(Image.open("keycap sets/dcxviolac.jpg"),
                                          size=(350, 120))
-
-gmk_kaiju_1 = customtkinter.CTkImage(light_image=Image.open("keycap sets/gmkkaiju.jpg"),
-                                          dark_image=Image.open("keycap sets/gmkkaiju.jpg"),
-                                         size=(350, 120))
-        
-gmk_laser_1 = customtkinter.CTkImage(light_image=Image.open("keycap sets/gmklaser.jpg"),
-                                          dark_image=Image.open("keycap sets/gmklaser.jpg"),
-                                         size=(350, 120))
-        
-dcx_9009_1 = customtkinter.CTkImage(light_image=Image.open("keycap sets/dcx9009.jpg"),
-                                          dark_image=Image.open("keycap sets/dcx9009.jpg"),
-                                         size=(350, 120))
-        
-dcx_blackonwhite_1 = customtkinter.CTkImage(light_image=Image.open("keycap sets/dcxblackonwhite.jpg"),
-                                          dark_image=Image.open("keycap sets/dcxblackonwhite.jpg"),
-                                         size=(350, 120))
-        
-dcx_whiteonblack_1 = customtkinter.CTkImage(light_image=Image.open("keycap sets/dcxwhiteonblack.jpg"),
-                                          dark_image=Image.open("keycap sets/dcxwhiteonblack.jpg"),
-                                         size=(350, 120))
-        
-dcx_cyber_1 = customtkinter.CTkImage(light_image=Image.open("keycap sets/dcxcyber.jpg"),
-                                          dark_image=Image.open("keycap sets/dcxcyber.jpg"),
-                                         size=(350, 120))
-        
-dcx_hyperfuse_1 = customtkinter.CTkImage(light_image=Image.open("keycap sets/dcxhyperfuse.jpg"),
-                                          dark_image=Image.open("keycap sets/dcxhyperfuse.jpg"),
-                                         size=(350, 120))
-        
-dcx_keyman_1 = customtkinter.CTkImage(light_image=Image.open("keycap sets/dcxkeyman.jpg"),
-                                          dark_image=Image.open("keycap sets/dcxkeyman.jpg"),
-                                         size=(350, 120))
-        
-dcx_violac_1 = customtkinter.CTkImage(light_image=Image.open("keycap sets/dcxviolac.jpg"),
-                                          dark_image=Image.open("keycap sets/dcxviolac.jpg"),
-                                         size=(350, 120))
-
 
 
 #Switch set Images for the Main_Frame
-kttpeach_1 = customtkinter.CTkImage(light_image=Image.open("Switches/kttpeach.jpg"),
-                                          dark_image=Image.open("Switches/kttpeach.jpg"),
+kttpeach_1 = customtkinter.CTkImage(Image.open("Switches/kttpeach.jpg"),
+                                          size=(100, 90)) 
+gateronblack_1 = customtkinter.CTkImage(Image.open("Switches/Gateronblackinkv2.jpg"),
+                                          size=(100, 90))      
+gatoilking_1 = customtkinter.CTkImage(Image.open("Switches/gateronoilking.jpg"),
+                                          size=(100, 90))      
+grapefruit_1 = customtkinter.CTkImage(Image.open("Switches/kttgrapefruit.jpg"),
+                                          size=(100, 90))   
+kangwhitev3_1 = customtkinter.CTkImage(Image.open("Switches/Kangwhitev3.jpg"),
+                                          size=(100, 90))       
+nkcream_1 = customtkinter.CTkImage(Image.open("Switches/kailhcream.jpg"),
                                           size=(100, 90))
-        
-
-gateronblack_1 = customtkinter.CTkImage(light_image=Image.open("Switches/Gateronblackinkv2.jpg"),
-                                          dark_image=Image.open("Switches/Gateronblackinkv2.jpg"),
+holpanda_1 = customtkinter.CTkImage(Image.open("Switches/holypanda.jpg"),
+                                          size=(100, 90))       
+glopanda_1 = customtkinter.CTkImage(Image.open("Switches/gloriouspanda.jpg"),
+                                          size=(100, 90))        
+c3tang_1 = customtkinter.CTkImage(Image.open("Switches/c3tangerine.jpg"),
+                                          size=(100, 90))     
+c3kiwi_1 = customtkinter.CTkImage(Image.open("Switches/c3kiwi.jpg"),
                                           size=(100, 90))
-        
-gatoilking_1 = customtkinter.CTkImage(light_image=Image.open("Switches/gateronoilking.jpg"),
-                                          dark_image=Image.open("Switches/gateronoilking.jpg"),
+boxnavy_1= customtkinter.CTkImage(Image.open("Switches/boxnavy.jpg"),
                                           size=(100, 90))
-        
-grapefruit_1 = customtkinter.CTkImage(light_image=Image.open("Switches/kttgrapefruit.jpg"),
-                                          dark_image=Image.open("Switches/kttgrapefruit.jpg"),
+boxjade_1 = customtkinter.CTkImage(Image.open("Switches/boxjade.jpg"),
+                                          size=(100, 90))       
+lavenderpurp_1 = customtkinter.CTkImage(Image.open("Switches/lavenderpurple.jpg"),
+                                          size=(100, 90))       
+radiantred_1 = customtkinter.CTkImage(Image.open("Switches/RadiantRed.jpg"),
+                                          size=(100, 90))       
+rosered_1 = customtkinter.CTkImage(Image.open("Switches/rosered.jpg"),
+                                          size=(100, 90))        
+zealiosv2_1 = customtkinter.CTkImage(Image.open("Switches/zealiosv2.jpg"),
+                                          size=(100, 90))        
+kttwinered_1 = customtkinter.CTkImage(Image.open("Switches/kttwinered.jpg"),
                                           size=(100, 90))
-    
-kangwhitev3_1 = customtkinter.CTkImage(light_image=Image.open("Switches/Kangwhitev3.jpg"),
-                                          dark_image=Image.open("Switches/Kangwhitev3.jpg"),
+kttstrawberry_1 = customtkinter.CTkImage(Image.open("Switches/kttstrawberry.jpg"),
                                           size=(100, 90))
-        
-nkcream_1 = customtkinter.CTkImage(light_image=Image.open("Switches/kailhcream.jpg"),
-                                          dark_image=Image.open("Switches/kailhcream.jpg"),
+mxbrown_1 = customtkinter.CTkImage(Image.open("Switches/cherrymxbrown.jpg"),
+                                          size=(100, 90))    
+mxclear_1 = customtkinter.CTkImage(Image.open("Switches/cherrymxclear.jpg"),
                                           size=(100, 90))
-
-holpanda_1 = customtkinter.CTkImage(light_image=Image.open("Switches/holypanda.jpg"),
-                                          dark_image=Image.open("Switches/holypanda.jpg"),
-                                          size=(100, 90))
-        
-glopanda_1 = customtkinter.CTkImage(light_image=Image.open("Switches/gloriouspanda.jpg"),
-                                          dark_image=Image.open("Switches/gloriouspanda.jpg"),
-                                          size=(100, 90))
-        
-c3tang_1 = customtkinter.CTkImage(light_image=Image.open("Switches/c3tangerine.jpg"),
-                                          dark_image=Image.open("Switches/c3tangerine.jpg"),
-                                          size=(100, 90))
-        
-c3kiwi_1 = customtkinter.CTkImage(light_image=Image.open("Switches/c3kiwi.jpg"),
-                                          dark_image=Image.open("Switches/c3kiwi.jpg"),
-                                          size=(100, 90))
-        
-boxnavy_1= customtkinter.CTkImage(light_image=Image.open("Switches/boxnavy.jpg"),
-                                          dark_image=Image.open("Switches/boxnavy.jpg"),
-                                          size=(100, 90))
-        
-boxjade_1 = customtkinter.CTkImage(light_image=Image.open("Switches/boxjade.jpg"),
-                                          dark_image=Image.open("Switches/boxjade.jpg"),
-                                          size=(100, 90))
-        
-lavenderpurp_1 = customtkinter.CTkImage(light_image=Image.open("Switches/lavenderpurple.jpg"),
-                                          dark_image=Image.open("Switches/lavenderpurple.jpg"),
-                                          size=(100, 90))
-        
-radiantred_1 = customtkinter.CTkImage(light_image=Image.open("Switches/RadiantRed.jpg"),
-                                          dark_image=Image.open("Switches/RadiantRed.jpg"),
-                                          size=(100, 90))
-        
-rosered_1 = customtkinter.CTkImage(light_image=Image.open("Switches/rosered.jpg"),
-                                          dark_image=Image.open("Switches/rosered.jpg"),
-                                          size=(100, 90))
-        
-zealiosv2_1 = customtkinter.CTkImage(light_image=Image.open("Switches/zealiosv2.jpg"),
-                                          dark_image=Image.open("Switches/zealiosv2.jpg"),
-                                          size=(100, 90))
-        
-kttwinered_1 = customtkinter.CTkImage(light_image=Image.open("Switches/kttwinered.jpg"),
-                                          dark_image=Image.open("Switches/kttwinered.jpg"),
-                                          size=(100, 90))
-        
-kttstrawberry_1 = customtkinter.CTkImage(light_image=Image.open("Switches/kttstrawberry.jpg"),
-                                          dark_image=Image.open("Switches/kttstrawberry.jpg"),
-                                          size=(100, 90))
-        
-mxbrown_1 = customtkinter.CTkImage(light_image=Image.open("Switches/cherrymxbrown.jpg"),
-                                          dark_image=Image.open("Switches/cherrymxbrown.jpg"),
-                                          size=(100, 90))
-        
-mxclear_1 = customtkinter.CTkImage(light_image=Image.open("Switches/cherrymxclear.jpg"),
-                                          dark_image=Image.open("Switches/cherrymxclear.jpg"),
-                                          size=(100, 90))
-
 
 #icons and backgrounds
 start_bg = customtkinter.CTkImage(Image.open("icons/start_bg.jpg"),
                                           size=(1400, 900))
-
 github_logo = customtkinter.CTkImage(Image.open("icons/github.png"),
                                           size=(60, 60))
-
-new_tab = customtkinter.CTkImage(light_image=Image.open("icons/newtab.png"),
-                                          dark_image=Image.open("icons/newtab.png"),
+new_tab = customtkinter.CTkImage(Image.open("icons/newtab.png"),
                                           size=(20, 20))
-        
-widget0 = customtkinter.CTkImage(light_image=Image.open("icons/zoo65.png"),
-                                        dark_image=Image.open("icons/zoo65.png"),
+widget0 = customtkinter.CTkImage(Image.open("icons/zoo65.png"),
                                           size=(210, 170))
 
 def load_keyboard_kit_Review(key):  
@@ -394,8 +226,6 @@ def load_switch_set_Review(key):
             webbrowser.open_new_tab(switch_sets_reviews[key])
 def load_other_link_Review(key):
             webbrowser.open_new_tab(other_links[key])
-
-
 
         
 #MAIN CLASS 
@@ -426,7 +256,7 @@ class App(customtkinter.CTk):
 
 
         
-        '''    widget1 = customtkinter.CTkImage(light_image=Image.open("icons/order.png"),
+        '''    widget1 = customtkinter.CTkImage(Image.open("icons/order.png"),
                                         dark_image=Image.open("icons/order.png"),
                                           size=(200, 170))'''
 
@@ -598,12 +428,13 @@ class App(customtkinter.CTk):
         self.keycaps_frame_switches = []
 
         self.switches_frame = customtkinter.CTkScrollableFrame(self,
-                                                               label_text="Switches",
+                                                               label_text="Switches (Prices are for 70 Switches)",
                                                                label_font=customtkinter.CTkFont(weight="bold"),
                                                                orientation="horizontal",
                                                                height=55)
-
         self.switches_frame_switches = []
+
+
 
 
         # ALL THE KEYBOARD KITS BUTTONS 
@@ -625,8 +456,6 @@ class App(customtkinter.CTk):
                                               border_color= "#8a2be2",
                                               image=tofu65,
                                               text='Tofu65')
-
-
         self.keyboardkit_frame_switches.append(self.tofu65)
  
 
@@ -638,7 +467,6 @@ class App(customtkinter.CTk):
                                                 border_color= "#8a2be2",
                                                 image=tester68,
                                                 text='Tester68')
-
         self.keyboardkit_frame_switches.append(self.tester68)
 
 
@@ -749,9 +577,6 @@ class App(customtkinter.CTk):
 
 
 
-
-
-
         # ALL THE KEYCAP SET BUTTONS
         self.dcx9009 = customtkinter.CTkButton(master=self.keycaps_frame,
                                                command=self.dcx_9009,
@@ -771,7 +596,7 @@ class App(customtkinter.CTk):
                                                         border_width=2,
                                                         border_color= "#8a2be2",
                                                        image=dcx_blackonwhite,
-                                                       text='W.O.B')
+                                                       text='B.O.W')
 
         self.keycaps_frame_switches.append(self.dcxblackonwhite)
  
@@ -783,7 +608,7 @@ class App(customtkinter.CTk):
                                             border_width=2,
                                             border_color= "#8a2be2",
                                                        image=dcx_whiteonblack,
-                                                       text='B.O.W')
+                                                       text='W.O.B')
 
         self.keycaps_frame_switches.append(self.dcxwhiteonblack)
  
@@ -1677,7 +1502,7 @@ class App(customtkinter.CTk):
                                                 hover_color=("#242424"),
                                                 command =  lambda: load_keycap_set_Review("gmk_dots"),
                                                 image=gmk_dots_1,
-                                                text= 'GMK Dots',
+                                                text= 'GMK Dots 2.0',
                                                 font=customtkinter.CTkFont(weight="bold"),
                                                 height=130,
                                                 width=350)
@@ -1707,7 +1532,7 @@ class App(customtkinter.CTk):
                                                 hover_color=("#242424"),
                                                 command =  lambda: load_keycap_set_Review("gmk_armstrong"),                                                
                                                 image=gmk_armstrong_1,
-                                                text= 'GMK Armstrong',
+                                                text= 'GMK GodSpeed',
                                                 font=customtkinter.CTkFont(weight="bold"),
                                                 height=130,
                                                 width=350)
@@ -1812,16 +1637,6 @@ class App(customtkinter.CTk):
 
     def dcx_9009(self):
 
-
-        dcx9009_link = 'https://oblotzky.industries/products/gmk-dots-2'
-        dcx9009_response  = requests.get(dcx9009_link)
-
-        dcx9009_soup = BeautifulSoup(dcx9009_response.content, 'html.parser')
-        dcx9009_tag = dcx9009_soup.find('span', {'class': 'product-single__price'})
-
-        dcx9009_tag_price = dcx9009_tag.text.strip()
-
-
         self.main_keycapset = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),
                                                 compound="top",                            
@@ -1836,7 +1651,7 @@ class App(customtkinter.CTk):
 
         self.main_keycapset_price = customtkinter.CTkLabel(self,
                                                 fg_color=("#242424"),                      
-                                                text= dcx9009_tag_price,
+                                                text="$99",
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
                                                 width=100)
@@ -1845,16 +1660,6 @@ class App(customtkinter.CTk):
 
 
     def dcx_black_on_white(self):
-
-
-        dots_link = 'https://oblotzky.industries/products/gmk-dots-2'
-        dots_response  = requests.get(dots_link)
-
-        dots_soup = BeautifulSoup(dots_response.content, 'html.parser')
-        dots_tag = dots_soup.find('span', {'class': 'product-single__price'})
-
-        dots_price = dots_tag.text.strip()
-
 
         self.main_keycapset = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),
@@ -1870,7 +1675,7 @@ class App(customtkinter.CTk):
 
         self.main_keycapset_price = customtkinter.CTkLabel(self,
                                                 fg_color=("#242424"),                      
-                                                text= dots_price,
+                                                text= "$79",
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
                                                 width=100)
@@ -1880,15 +1685,6 @@ class App(customtkinter.CTk):
 
     def dcx_white_on_black(self):
         
-
-        dots_link = 'https://oblotzky.industries/products/gmk-dots-2'
-        dots_response  = requests.get(dots_link)
-
-        dots_soup = BeautifulSoup(dots_response.content, 'html.parser')
-        dots_tag = dots_soup.find('span', {'class': 'product-single__price'})
-
-        dots_price = dots_tag.text.strip()
-
 
         self.main_keycapset = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),
@@ -1905,7 +1701,7 @@ class App(customtkinter.CTk):
 
         self.main_keycapset_price = customtkinter.CTkLabel(self,
                                                 fg_color=("#242424"),                      
-                                                text= dots_price,
+                                                text= "$79",
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
                                                 width=100)
@@ -1913,16 +1709,6 @@ class App(customtkinter.CTk):
 
     
     def dcx_cyber(self):
-
-
-        dots_link = 'https://oblotzky.industries/products/gmk-dots-2'
-        dots_response  = requests.get(dots_link)
-
-        dots_soup = BeautifulSoup(dots_response.content, 'html.parser')
-        dots_tag = dots_soup.find('span', {'class': 'product-single__price'})
-
-        dots_price = dots_tag.text.strip()
-
 
         self.main_keycapset = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),
@@ -1938,7 +1724,7 @@ class App(customtkinter.CTk):
 
         self.main_keycapset_price = customtkinter.CTkLabel(self,
                                                 fg_color=("#242424"),                      
-                                                text= dots_price,
+                                                text= "$99",
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
                                                 width=100)
@@ -1947,16 +1733,6 @@ class App(customtkinter.CTk):
 
                                  
     def dcx_hyperfuse(self):
-
-
-        dots_link = 'https://oblotzky.industries/products/gmk-dots-2'
-        dots_response  = requests.get(dots_link)
-
-        dots_soup = BeautifulSoup(dots_response.content, 'html.parser')
-        dots_tag = dots_soup.find('span', {'class': 'product-single__price'})
-
-        dots_price = dots_tag.text.strip()
-
 
         self.main_keycapset = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),
@@ -1972,7 +1748,7 @@ class App(customtkinter.CTk):
 
         self.main_keycapset_price = customtkinter.CTkLabel(self,
                                                 fg_color=("#242424"),                      
-                                                text= dots_price,
+                                                text= "$99",
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
                                                 width=100)
@@ -1982,15 +1758,6 @@ class App(customtkinter.CTk):
 
     
     def dcx_keyman(self):
-
-        dots_link = 'https://oblotzky.industries/products/gmk-dots-2'
-        dots_response  = requests.get(dots_link)
-
-        dots_soup = BeautifulSoup(dots_response.content, 'html.parser')
-        dots_tag = dots_soup.find('span', {'class': 'product-single__price'})
-
-        dots_price = dots_tag.text.strip()
-
 
         self.main_keycapset = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),
@@ -2007,28 +1774,15 @@ class App(customtkinter.CTk):
 
         self.main_keycapset_price = customtkinter.CTkLabel(self,
                                                 fg_color=("#242424"),                      
-                                                text= dots_price,
+                                                text= "$99",
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
                                                 width=100)
         self.main_keycapset_price.place(x= 320, y= 525)
 
 
-
-
     def dcx_violac(self):
         
-
-        dots_link = 'https://oblotzky.industries/products/gmk-dots-2'
-        dots_response  = requests.get(dots_link)
-
-        dots_soup = BeautifulSoup(dots_response.content, 'html.parser')
-        dots_tag = dots_soup.find('span', {'class': 'product-single__price'})
-
-        dots_price = dots_tag.text.strip()
-
-
-
         self.main_keycapset = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),
                                                 compound="top",                            
@@ -2043,7 +1797,7 @@ class App(customtkinter.CTk):
 
         self.main_keycapset_price = customtkinter.CTkLabel(self,
                                                 fg_color=("#242424"),                      
-                                                text= dots_price,
+                                                text= "$99",
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
                                                 width=100)
@@ -2056,6 +1810,15 @@ class App(customtkinter.CTk):
 
         # all the functions to change the Main_Label's image to the clicked button's switch set 
     def c3_kiwi(self):
+
+        c3kiwi_link = 'https://thekey.company/products/c3-equalz-x-tkc-kiwi-switches?variant=39513713606745'
+        c3kiwi_response  = requests.get(c3kiwi_link)
+
+        c3kiwi_soup = BeautifulSoup(c3kiwi_response.content, 'html.parser')
+        c3kiwi_tag = c3kiwi_soup.find('span', {'class': 'product-single__price'})
+
+        c3kiwi_price = c3kiwi_tag.text.strip()
+
         self.main_switch = customtkinter.CTkButton(self,
                                                     fg_color=("#242424"),
                                                     compound="top",                            
@@ -2068,7 +1831,25 @@ class App(customtkinter.CTk):
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
 
+        self.main_switchset_price = customtkinter.CTkLabel(self,
+                                                fg_color=("#242424"),                      
+                                                text= c3kiwi_price,
+                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                height=80,
+                                                width=120)
+        self.main_switchset_price.place(x= 320, y= 140)
+
     def c3_tangerine(self):
+        
+        c3tang_link = 'https://thekey.company/products/tangerine-switches?variant=40056847827033'
+        c3tang_response  = requests.get(c3tang_link)
+
+        c3tang_soup = BeautifulSoup(c3tang_response.content, 'html.parser')
+        c3tang_tag = c3tang_soup.find('span', {'class': 'product-single__price'})
+
+        c3tang_price = c3tang_tag.text.strip()
+
+
         self.main_switch = customtkinter.CTkButton(self,
                                                     fg_color=("#242424"),
                                                     compound="top",                            
@@ -2081,7 +1862,17 @@ class App(customtkinter.CTk):
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
 
+        self.main_switchset_price = customtkinter.CTkLabel(self,
+                                                fg_color=("#242424"),                      
+                                                text= c3tang_price,
+                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                height=80,
+                                                width=120)
+        self.main_switchset_price.place(x= 320, y= 140)
+
+
     def box_jade(self):
+
         self.main_switch = customtkinter.CTkButton(self,
                                                     fg_color=("#242424"),
                                                     compound="top",                            
@@ -2094,7 +1885,16 @@ class App(customtkinter.CTk):
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
 
+        self.main_switchset_price = customtkinter.CTkLabel(self,
+                                                fg_color=("#242424"),                      
+                                                text= "$30",
+                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                height=80,
+                                                width=120)
+        self.main_switchset_price.place(x= 320, y= 140)
+
     def box_navy(self):
+
         self.main_switch = customtkinter.CTkButton(self,
                                                     fg_color=("#242424"),
                                                     compound="top",                            
@@ -2106,8 +1906,17 @@ class App(customtkinter.CTk):
                                                     height=180,
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
+        self.main_switchset_price = customtkinter.CTkLabel(self,
+                                                fg_color=("#242424"),                      
+                                                text= "Restocking \n Q2 2023",
+                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                height=80,
+                                                width=120)
+        self.main_switchset_price.place(x= 320, y= 140)
+
 
     def holy_panda(self):
+
         self.main_switch = customtkinter.CTkButton(self,
                                                     fg_color=("#242424"),
                                                     compound="top",                            
@@ -2119,8 +1928,27 @@ class App(customtkinter.CTk):
                                                     height=180,
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
+        self.main_switchset_price = customtkinter.CTkLabel(self,
+                                                fg_color=("#242424"),                      
+                                                text= "$60",
+                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                height=80,
+                                                width=120)
+        self.main_switchset_price.place(x= 320, y= 140)
+
 
     def glorious_panda(self):
+
+        
+        glopanda_link = 'https://epomaker.com/products/epomaker-mmd-holy-panda-switch-set?variant=39913910566985'
+        glopanda_response  = requests.get(glopanda_link)
+
+        glopanda_soup = BeautifulSoup(glopanda_response.content, 'html.parser')
+        glopanda_tag = glopanda_soup.find('span', {'class': 'money'})
+
+        glopanda_price = glopanda_tag.text.strip()
+
+
         self.main_switch = customtkinter.CTkButton(self,
                                                     fg_color=("#242424"),
                                                     compound="top",                            
@@ -2132,6 +1960,14 @@ class App(customtkinter.CTk):
                                                     height=180,
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
+        self.main_switchset_price = customtkinter.CTkLabel(self,
+                                                fg_color=("#242424"),                      
+                                                text= "$40-50",
+                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                height=80,
+                                                width=120)
+        self.main_switchset_price.place(x= 320, y= 140)
+
 
     def gateron_black_ink_v2(self):
         self.main_switch = customtkinter.CTkButton(self,
@@ -2145,6 +1981,14 @@ class App(customtkinter.CTk):
                                                     height=180,
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
+        self.main_switchset_price = customtkinter.CTkLabel(self,
+                                                fg_color=("#242424"),                      
+                                                text= "$52",
+                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                height=80,
+                                                width=120)
+        self.main_switchset_price.place(x= 320, y= 140)
+
 
     def gateron_oil_king(self):
         self.main_switch = customtkinter.CTkButton(self,
@@ -2158,6 +2002,14 @@ class App(customtkinter.CTk):
                                                     height=180,
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
+        self.main_switchset_price = customtkinter.CTkLabel(self,
+                                                fg_color=("#242424"),                      
+                                                text= "$47",
+                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                height=80,
+                                                width=120)
+        self.main_switchset_price.place(x= 320, y= 140)
+
     
     def nk_creams(self):
         self.main_switch = customtkinter.CTkButton(self,
@@ -2171,6 +2023,14 @@ class App(customtkinter.CTk):
                                                     height=180,
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
+        self.main_switchset_price = customtkinter.CTkLabel(self,
+                                                fg_color=("#242424"),                      
+                                                text= "Restocking \n Q2 2023",
+                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                height=80,
+                                                width=120)
+        self.main_switchset_price.place(x= 320, y= 140)
+
 
     def kang_white_v3(self):
         self.main_switch = customtkinter.CTkButton(self,
@@ -2184,6 +2044,14 @@ class App(customtkinter.CTk):
                                                     height=180,
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
+        self.main_switchset_price = customtkinter.CTkLabel(self,
+                                                fg_color=("#242424"),                      
+                                                text= "$15,60",
+                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                height=80,
+                                                width=120)
+        self.main_switchset_price.place(x= 320, y= 140)
+
 
     def ktt_grapefruit(self):
         self.main_switch = customtkinter.CTkButton(self,
@@ -2197,6 +2065,14 @@ class App(customtkinter.CTk):
                                                     height=180,
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
+        self.main_switchset_price = customtkinter.CTkLabel(self,
+                                                fg_color=("#242424"),                      
+                                                text= "$20.55",
+                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                height=80,
+                                                width=120)
+        self.main_switchset_price.place(x= 320, y= 140)
+
 
     def ktt_peach(self):
         self.main_switch = customtkinter.CTkButton(self,
@@ -2210,6 +2086,14 @@ class App(customtkinter.CTk):
                                                     height=180,
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
+        self.main_switchset_price = customtkinter.CTkLabel(self,
+                                                fg_color=("#242424"),                      
+                                                text= "$20.55",
+                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                height=80,
+                                                width=120)
+        self.main_switchset_price.place(x= 320, y= 140)
+
 
     def ktt_strawberry(self):
         self.main_switch = customtkinter.CTkButton(self,
@@ -2223,6 +2107,14 @@ class App(customtkinter.CTk):
                                                     height=180,
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
+        self.main_switchset_price = customtkinter.CTkLabel(self,
+                                                fg_color=("#242424"),                      
+                                                text= "$19.50",
+                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                height=80,
+                                                width=120)
+        self.main_switchset_price.place(x= 320, y= 140)
+
 
     def akko_lavender_purple(self):
         self.main_switch = customtkinter.CTkButton(self,
@@ -2236,6 +2128,14 @@ class App(customtkinter.CTk):
                                                     height=180,
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
+        self.main_switchset_price = customtkinter.CTkLabel(self,
+                                                fg_color=("#242424"),                      
+                                                text= "$22.05",
+                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                height=80,
+                                                width=120)
+        self.main_switchset_price.place(x= 320, y= 140)
+
 
     def akko_radiant_red(self):
         self.main_switch = customtkinter.CTkButton(self,
@@ -2249,6 +2149,14 @@ class App(customtkinter.CTk):
                                                     height=180,
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
+        self.main_switchset_price = customtkinter.CTkLabel(self,
+                                                fg_color=("#242424"),                      
+                                                text= "$22.05",
+                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                height=80,
+                                                width=120)
+        self.main_switchset_price.place(x= 320, y= 140)
+
 
     def akko_rose_red(self):
         self.main_switch = customtkinter.CTkButton(self,
@@ -2262,6 +2170,14 @@ class App(customtkinter.CTk):
                                                     height=180,
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
+        self.main_switchset_price = customtkinter.CTkLabel(self,
+                                                fg_color=("#242424"),                      
+                                                text= "$22.05",
+                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                height=80,
+                                                width=120)
+        self.main_switchset_price.place(x= 320, y= 140)
+
 
     def zealios_v2(self):
         self.main_switch = customtkinter.CTkButton(self,
@@ -2275,6 +2191,14 @@ class App(customtkinter.CTk):
                                                     height=180,
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
+        self.main_switchset_price = customtkinter.CTkLabel(self,
+                                                fg_color=("#242424"),                      
+                                                text= "$75",
+                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                height=80,
+                                                width=120)
+        self.main_switchset_price.place(x= 320, y= 140)
+
 
     def ktt_winered(self):
         self.main_switch = customtkinter.CTkButton(self,
@@ -2288,6 +2212,14 @@ class App(customtkinter.CTk):
                                                     height=180,
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
+        self.main_switchset_price = customtkinter.CTkLabel(self,
+                                                fg_color=("#242424"),                      
+                                                text= "$19.50",
+                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                height=80,
+                                                width=120)
+        self.main_switchset_price.place(x= 320, y= 140)
+
     def cherry_mx_brown(self):
         self.main_switch = customtkinter.CTkButton(self,
                                                     fg_color=("#242424"),
@@ -2300,6 +2232,14 @@ class App(customtkinter.CTk):
                                                     height=180,
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
+        self.main_switchset_price = customtkinter.CTkLabel(self,
+                                                fg_color=("#242424"),                      
+                                                text= "$42",
+                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                height=80,
+                                                width=120)
+        self.main_switchset_price.place(x= 320, y= 140)
+
 
     def cherry_mx_clear(self):
         self.main_switch = customtkinter.CTkButton(self,
@@ -2313,6 +2253,14 @@ class App(customtkinter.CTk):
                                                     height=180,
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
+        self.main_switchset_price = customtkinter.CTkLabel(self,
+                                                fg_color=("#242424"),                      
+                                                text= "$70",
+                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                height=80,
+                                                width=120)
+        self.main_switchset_price.place(x= 320, y= 140)
+
 
 
    # Creates an object and uses multiprocessing
