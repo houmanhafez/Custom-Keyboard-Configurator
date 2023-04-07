@@ -1,8 +1,8 @@
 
 ____________________________________________________________________________________________________________________________________________________________________
-                                                            NOTE!
+                                                      Custom Keyboard Configurator 1.0
      
-                              !This Application is in Alpha and still does not work as intended!
+                              
                                     
                                     
 Welcome to the Custom Keyboard Configurator 
