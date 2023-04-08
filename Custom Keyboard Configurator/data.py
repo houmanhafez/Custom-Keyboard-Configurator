@@ -644,7 +644,7 @@ other = {
     
             "small" : {
                 "path": "icons/zoo65.png",
-                "size" : (200, 170),
+                "size" : (220, 170),
             },
             "large": {
                 "path": "icons/zoo65.png" ,
@@ -658,7 +658,7 @@ other = {
     
             "small" : {
                 "path": "icons/order.png",
-                "size" : (200, 170),
+                "size" : (150, 100),
             },
             "large": {
                 "path": "icons/order.png" ,
