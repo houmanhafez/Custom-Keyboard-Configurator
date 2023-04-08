@@ -19,3 +19,4 @@ ________________________________________________________________________________
 ____________________________________________________________________________________________________________________________________________________________________
 ![image](https://user-images.githubusercontent.com/120993360/230744422-d7040860-c377-4e54-8a5e-d52e405d60da.png)
 ____________________________________________________________________________________________________________________________________________________________________ 
+On the left, there is a sidebar with a few buttons that guide you with all the components and how modding them work. the widget also shows you an offer from some known websites. Expect plenty more in the future though!
