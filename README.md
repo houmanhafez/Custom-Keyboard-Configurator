@@ -14,7 +14,8 @@ ________________________________________________________________________________
 
 ____________________________________________________________________________________________________________________________________________________________________
 
-After you click on 'Start', choose a Keyboard Kit, a Keycap Set and a Switch Set and click on each to hear a recommended sound test. On the left side of each Keyboard part, there is an up to date price changes during sales and so on. (Right now only on the keyboard kit)
+After you click on 'Start', choose a Keyboard Kit, a Keycap Set and a Switch Set and click on each to watch a recommended review. On the left side of each Keyboard part, there is an up to date price that changes during sales and so on. 
+____________________________________________________________________________________________________________________________________________________________________
 ____________________________________________________________________________________________________________________________________________________________________
 ![image](https://user-images.githubusercontent.com/120993360/230527155-e9085884-620a-4325-b98d-a11a6c0dd6b1.png)
 ____________________________________________________________________________________________________________________________________________________________________ 
