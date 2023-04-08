@@ -11,6 +11,8 @@ import webbrowser
 # In order to run this app, please install the libraries with pip: requests, pil or pillow, bs4 and customtkinter
 # To do this, you need to go into your terminal and type `pip install *libraryName*`
 
+#for some reason, my terminal won't work with the libraries requests and customtkinter
+
 customtkinter.set_appearance_mode("Dark")  # Modes: "System", "Dark", "Light"
 customtkinter.set_default_color_theme('blue')  # Themes: "blue", "green", "dark-blue"
 
