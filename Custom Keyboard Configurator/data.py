@@ -652,7 +652,36 @@ other = {
             },
         },
     },   
+    "widget1" : {
+    
+        "images" : {
+    
+            "small" : {
+                "path": "icons/order.png",
+                "size" : (200, 170),
+            },
+            "large": {
+                "path": "icons/order.png" ,
+                "size" : (200, 170)
+            },
+        },
+    }, 
+    "menu" : {
+    
+        "images" : {
+    
+            "small" : {
+                "path": "icons/menu.png",
+                "size" : (40, 40),
+            },
+            "large": {
+                "path": "icons/order.png" ,
+                "size" : (200, 170)
+            },
+        },
+    }, 
 }
+
 
 
 keyboard_kits_reviews = {

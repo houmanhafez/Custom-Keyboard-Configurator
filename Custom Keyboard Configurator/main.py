@@ -7,20 +7,13 @@ import PIL
 import tkinter.messagebox
 import customtkinter
 import webbrowser
-
-
+# !Note!
+# In order to run this app, please install the libraries with pip: requests, pil or pillow, bs4 and customtkinter
+# To do this, you need to go into your terminal and type `pip install *libraryName*`
 
 customtkinter.set_appearance_mode("Dark")  # Modes: "System", "Dark", "Light"
 customtkinter.set_default_color_theme('blue')  # Themes: "blue", "green", "dark-blue"
 
-def load_keyboard_kit_Review(key):  
-            webbrowser.open_new_tab(keyboard_kits_reviews[key])
-def load_keycap_set_Review(key):
-            webbrowser.open_new_tab(keycap_sets_reviews[key])
-def load_switch_set_Review(key):    
-            webbrowser.open_new_tab(switch_sets_reviews[key])
-def load_other_link_Review(key):
-            webbrowser.open_new_tab(other_links[key])
 
 def loadImages(list):
     images = {}
@@ -40,6 +33,14 @@ keycapImages = loadImages(keycap_sets)
 switchImages = loadImages(switch_sets)
 otherImages = loadImages(other)
 
+def load_keyboard_kit_Review(key):  
+            webbrowser.open_new_tab(keyboard_kits_reviews[key])
+def load_keycap_set_Review(key):
+            webbrowser.open_new_tab(keycap_sets_reviews[key])
+def load_switch_set_Review(key):    
+            webbrowser.open_new_tab(switch_sets_reviews[key])
+def load_other_link_Review(key):
+            webbrowser.open_new_tab(other_links[key])
 #MAIN CLASS 
 class App(customtkinter.CTk):
     def __init__(self):
@@ -55,20 +56,7 @@ class App(customtkinter.CTk):
 
         # SIDEBAR FRAME WITH THE WIDGETS 
         
-        self.sidebar_frame = customtkinter.CTkFrame(self,
-                                                    width=120,
-                                                    corner_radius=5)
-        
-        self.logo_label = customtkinter.CTkLabel(self.sidebar_frame,
-                                                 text="Keeb Configurator",
-                                                 compound= 'left', 
-                                                 font=customtkinter.CTkFont(size=20, weight="bold"))
 
-
-        
-        '''    widget1 = customtkinter.CTkImage(Image.open("icons/order.png"),
-                                        dark_image=Image.open("icons/order.png"),
-                                          size=(200, 170))'''
 
         # START PAGE WITH THE WIDGETS
 
@@ -120,7 +108,41 @@ class App(customtkinter.CTk):
 
 
 
+        self.sidebar_frame = customtkinter.CTkFrame(self,
+                                                    width=120,
+                                                    border_width=2,
+                                                    corner_radius=1,)
+        
+        self.logo_label = customtkinter.CTkLabel(self.sidebar_frame,
+                                                 text="Keeb Configurator",
+                                                 compound= 'right', 
+                                                 font=customtkinter.CTkFont(size=20, weight="bold"))
+        
+        self.hide_sidebar_button = customtkinter.CTkButton(self.sidebar_frame,
+                                                    text = "",
+                                                    command =self.hide_sidebar,
+                                                    image=otherImages['menu']['images']['small'],
+                                                    fg_color=("gray17"),
+                                                    hover_color=("gray17"),
+                                                    height= 35,
+                                                    width= 35)
+        self.hide_sidebar_button.place(x= -5, y= 30)
+        
 
+        self.show_sidebar_button = customtkinter.CTkButton(self,
+                                                    text = "",
+                                                    command =self.show_sidebar,
+                                                    image=otherImages['menu']['images']['small'],
+                                                    fg_color=("#242424"),
+                                                    hover_color=("#242424"),
+                                                    height= 35,
+                                                    width= 35)
+        self.show_sidebar_button.place(x= -5, y=30)
+        self.show_sidebar_button.place_forget()
+        
+        
+        
+        
         # SIDEBAR BUTTONS
         self.sidebar_button_1 = customtkinter.CTkButton(self.sidebar_frame,
                                                 fg_color=("#f19dbb"),
@@ -199,9 +221,24 @@ class App(customtkinter.CTk):
                                                 height=180,
                                                 width=400)
         
+        self.main_switch_price = customtkinter.CTkLabel(self,
+                                                fg_color=("#242424"),                      
+                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                height=80,
+                                                width=100)
 
-
-
+        self.main_keycapset_price = customtkinter.CTkLabel(self,
+                                                fg_color=("#242424"),                      
+                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                height=80,
+                                                width=100)
+        
+        self.main_keycapset_price = customtkinter.CTkLabel(self,
+                                                fg_color=("#242424"),                      
+                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                height=80,
+                                                width=100)
+        
         self.main_kit = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),
                                                 compound="top",
@@ -799,13 +836,13 @@ class App(customtkinter.CTk):
 
 
 
-        self.logo_label.grid(row=0, column=0, padx=20, pady=(20, 10))
+        self.logo_label.grid(row=0, column=0, padx=20, pady=40)
 
 
 
-        self.sidebar_button_1.grid(row=1, column=0, padx=20, pady=15)
-        self.sidebar_button_2.grid(row=2, column=0, padx=20, pady=15)
-        self.sidebar_button_3.grid(row=3, column=0, padx=20, pady=15)
+        self.sidebar_button_1.grid(row=1, column=0, padx=20, pady=20)
+        self.sidebar_button_2.grid(row=2, column=0, padx=20, pady=20)
+        self.sidebar_button_3.grid(row=3, column=0, padx=20, pady=20)
         self.sidebar_button_4.grid(row=4, column=0, padx=20, pady=15)
 
 
@@ -893,10 +930,45 @@ class App(customtkinter.CTk):
         self.kttwinered.grid(row=1, column=17, padx=10, pady=(0, 20))
         self.cherrymxbrown.grid(row=1, column=18, padx=10, pady=(0, 20))
         self.cherrymxclear.grid(row=1, column=19, padx=10, pady=(0, 20))
+        
+
+    def show_sidebar(self):
+        
+        self.sidebar_frame.grid(row=0, column=0, rowspan=4, sticky="nsew")
+        self.sidebar_frame.grid_rowconfigure(4, weight=1)
+        
+
+
+        self.logo_label.grid(row=0, column=0, padx=20, pady=40)
 
 
 
 
+        self.sidebar_button_1.grid(row=1, column=0, padx=20, pady=20)
+        self.sidebar_button_2.grid(row=2, column=0, padx=20, pady=20)
+        self.sidebar_button_3.grid(row=3, column=0, padx=20, pady=20)
+        self.sidebar_button_4.grid(row=4, column=0, padx=20, pady=15)
+        self.scaling_label.grid(row=7, column=0, padx=20, pady=(10, 0))
+        self.scaling_optionemenu.grid(row=8, column=0, padx=20, pady=(10, 20))
+
+        self.show_sidebar_button.place_forget()
+        self.hide_sidebar_button.place(x=-5, y=30)
+
+        
+    def hide_sidebar(self):
+        
+        self.sidebar_frame.grid_forget()
+        self.logo_label.grid_forget()
+        self.sidebar_button_1.grid_forget()
+        self.sidebar_button_2.grid_forget()
+        self.sidebar_button_3.grid_forget()
+        self.sidebar_button_4.grid_forget()
+        
+            
+        self.hide_sidebar_button.place_forget()
+        self.show_sidebar_button.place(x=-5, y=30)
+
+        
         # all the functions to change the Main_Label's image to the clicked button's keyboard kit
     def tofu_60(self):
         tofu60_link = 'https://kbdfans.com/products/tofu60-2-0'
@@ -918,13 +990,13 @@ class App(customtkinter.CTk):
                                                 height=130,
                                                 width=350)
         self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
-        self.main_switch_price = customtkinter.CTkLabel(self,
+        self.main_kit_price = customtkinter.CTkLabel(self,
                                                 fg_color=("#242424"),                      
                                                 text= tofu60_price,
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
                                                 width=100)
-        self.main_switch_price.place(x= 320, y= 330)
+        self.main_kit_price.place(x= 850, y= 330)
 
 
 
@@ -950,13 +1022,13 @@ class App(customtkinter.CTk):
                                                 width=350)
         self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
 
-        self.main_switch_price = customtkinter.CTkLabel(self,
+        self.main_kit_price = customtkinter.CTkLabel(self,
                                                 fg_color=("#242424"),                      
                                                 text= tofu65_price,
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
                                                 width=100)
-        self.main_switch_price.place(x= 320, y= 330)
+        self.main_kit_price.place(x= 850, y= 330)
 
     
     def tester_68(self):
@@ -981,13 +1053,13 @@ class App(customtkinter.CTk):
                                                 width=350)
         self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
 
-        self.main_switch_price = customtkinter.CTkLabel(self,
+        self.main_kit_price = customtkinter.CTkLabel(self,
                                                 fg_color=("#242424"),                      
                                                 text= tester68_price,
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
                                                 width=100)
-        self.main_switch_price.place(x= 320, y= 330)
+        self.main_kit_price.place(x= 850, y= 330)
 
     def tester_84(self):
 
@@ -1011,13 +1083,13 @@ class App(customtkinter.CTk):
                                                 width=350)
         self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
 
-        self.main_switch_price = customtkinter.CTkLabel(self,
+        self.main_kit_price = customtkinter.CTkLabel(self,
                                                 fg_color=("#242424"),                      
                                                 text= tester84_price,
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
                                                 width=100)
-        self.main_switch_price.place(x= 320, y= 330)
+        self.main_kit_price.place(x= 850, y= 330)
 
 
     def gmk_67(self):
@@ -1031,16 +1103,16 @@ class App(customtkinter.CTk):
                                                 text= 'GMK 67',
                                                 font=customtkinter.CTkFont(weight="bold"),
                                                 height=130,
-                                                width=350)
+                                                width=360)
         self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
 
-        self.main_switch_price = customtkinter.CTkLabel(self,
+        self.main_kit_price = customtkinter.CTkLabel(self,
                                                 fg_color=("#242424"),                      
                                                 text= "$30-$50",
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
                                                 width=100)
-        self.main_switch_price.place(x= 320, y= 330)
+        self.main_kit_price.place(x= 850, y= 330)
 
     def gas_67(self):
 
@@ -1065,13 +1137,13 @@ class App(customtkinter.CTk):
                                                 width=350)
         self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
 
-        self.main_switch_price = customtkinter.CTkLabel(self,
+        self.main_kit_price = customtkinter.CTkLabel(self,
                                                 fg_color=("#242424"),                      
                                                 text= gas67_price,
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
                                                 width=100)
-        self.main_switch_price.place(x= 320, y= 330)
+        self.main_kit_price.place(x= 850, y= 330)
 
     def everglide_75(self):
 
@@ -1097,13 +1169,13 @@ class App(customtkinter.CTk):
                                                 width=350)
         self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
 
-        self.main_switch_price = customtkinter.CTkLabel(self,
+        self.main_kit_price = customtkinter.CTkLabel(self,
                                                 fg_color=("#242424"),                      
                                                 text= eg75_price,
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
                                                 width=100)
-        self.main_switch_price.place(x= 320, y= 330)
+        self.main_kit_price.place(x= 850, y= 330)
 
 
     def mk_870(self):
@@ -1130,13 +1202,13 @@ class App(customtkinter.CTk):
                                                 width=350)
         self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
 
-        self.main_switch_price = customtkinter.CTkLabel(self,
+        self.main_kit_price = customtkinter.CTkLabel(self,
                                                 fg_color=("#242424"),                      
                                                 text= mk_870_price,
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
                                                 width=100)
-        self.main_switch_price.place(x= 320, y= 330)
+        self.main_kit_price.place(x= 850, y= 330)
 
 
     def monsgeek_m1(self):
@@ -1153,13 +1225,13 @@ class App(customtkinter.CTk):
                                                 width=350)
         self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
 
-        self.main_switch_price = customtkinter.CTkLabel(self,
+        self.main_kit_price = customtkinter.CTkLabel(self,
                                                 fg_color=("#242424"),                      
                                                 text= "$99.99",
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
                                                 width=100)
-        self.main_switch_price.place(x= 320, y= 330)
+        self.main_kit_price.place(x= 850, y= 330)
 
 
     def nexttime_75(self):
@@ -1185,13 +1257,13 @@ class App(customtkinter.CTk):
                                                 width=350)
         self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
 
-        self.main_switch_price = customtkinter.CTkLabel(self,
+        self.main_kit_price = customtkinter.CTkLabel(self,
                                                 fg_color=("#242424"),                      
                                                 text= nt_75_price,
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
                                                 width=100)
-        self.main_switch_price.place(x= 320, y= 330)
+        self.main_kit_price.place(x= 850, y= 330)
 
 
     def nj_80(self):
@@ -1219,13 +1291,13 @@ class App(customtkinter.CTk):
                                                 width=350)
         self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
 
-        self.main_switch_price = customtkinter.CTkLabel(self,
+        self.main_kit_price = customtkinter.CTkLabel(self,
                                                 fg_color=("#242424"),                      
                                                 text= nj_80_price,
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
                                                 width=100)
-        self.main_switch_price.place(x= 320, y= 330)
+        self.main_kit_price.place(x= 850, y= 330)
 
 
     def tm_680(self):
@@ -1239,17 +1311,17 @@ class App(customtkinter.CTk):
                                                 image=kitImages['tm680']['images']['large'],
                                                 text= 'TM 680',
                                                 font=customtkinter.CTkFont(weight="bold"),
-                                                height=130,
+                                                height=125,
                                                 width=350)
         self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
 
-        self.main_switch_price = customtkinter.CTkLabel(self,
+        self.main_kit_price = customtkinter.CTkLabel(self,
                                                 fg_color=("#242424"),                      
                                                 text= "$45 - $65",
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
                                                 width=100)
-        self.main_switch_price.place(x= 320, y= 330)
+        self.main_kit_price.place(x= 850, y= 330)
 
 
 
@@ -1292,8 +1364,7 @@ class App(customtkinter.CTk):
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
                                                 width=100)
-        self.main_keycapset_price.place(x= 320, y= 525)
-
+        self.main_keycapset_price.place(x= 850, y= 525)        
     def gmk_armstrong(self):
 
         dots_link = 'https://oblotzky.industries/products/gmk-dots-2'
@@ -1322,9 +1393,7 @@ class App(customtkinter.CTk):
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
                                                 width=100)
-        self.main_keycapset_price.place(x= 320, y= 525)
-
-
+        self.main_keycapset_price.place(x= 850, y= 525)
 
     def gmk_bluesamurai(self):
 
@@ -1354,9 +1423,7 @@ class App(customtkinter.CTk):
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
                                                 width=100)
-        self.main_keycapset_price.place(x= 320, y= 525)
-
-
+        self.main_keycapset_price.place(x= 850, y= 525)
 
     def gmk_kaiju(self):
 
@@ -1386,9 +1453,7 @@ class App(customtkinter.CTk):
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
                                                 width=100)
-        self.main_keycapset_price.place(x= 320, y= 525)
-
-
+        self.main_keycapset_price.place(x= 850, y= 525)
     def gmk_laser(self):
 
         self.main_keycapset = customtkinter.CTkButton(self,
@@ -1409,9 +1474,7 @@ class App(customtkinter.CTk):
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
                                                 width=100)
-        self.main_keycapset_price.place(x= 320, y= 525)
-
-
+        self.main_keycapset_price.place(x= 850, y= 525)
 
     def dcx_9009(self):
 
@@ -1433,9 +1496,7 @@ class App(customtkinter.CTk):
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
                                                 width=100)
-        self.main_keycapset_price.place(x= 320, y= 525)
-
-
+        self.main_keycapset_price.place(x= 850, y= 525)
 
     def dcx_black_on_white(self):
 
@@ -1457,9 +1518,7 @@ class App(customtkinter.CTk):
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
                                                 width=100)
-        self.main_keycapset_price.place(x= 320, y= 525)
-
-
+        self.main_keycapset_price.place(x= 850, y= 525)
 
     def dcx_white_on_black(self):
         
@@ -1483,9 +1542,7 @@ class App(customtkinter.CTk):
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
                                                 width=100)
-        self.main_keycapset_price.place(x= 320, y= 525)
-
-    
+        self.main_keycapset_price.place(x= 850, y= 525)    
     def dcx_cyber(self):
 
         self.main_keycapset = customtkinter.CTkButton(self,
@@ -1506,9 +1563,7 @@ class App(customtkinter.CTk):
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
                                                 width=100)
-        self.main_keycapset_price.place(x= 320, y= 525)
-
-
+        self.main_keycapset_price.place(x= 850, y= 525)
                                  
     def dcx_hyperfuse(self):
 
@@ -1530,9 +1585,7 @@ class App(customtkinter.CTk):
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
                                                 width=100)
-        self.main_keycapset_price.place(x= 320, y= 525)
-
-
+        self.main_keycapset_price.place(x= 850, y= 525)
 
     
     def dcx_keyman(self):
@@ -1556,9 +1609,7 @@ class App(customtkinter.CTk):
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
                                                 width=100)
-        self.main_keycapset_price.place(x= 320, y= 525)
-
-
+        self.main_keycapset_price.place(x= 850, y= 525)
     def dcx_violac(self):
         
         self.main_keycapset = customtkinter.CTkButton(self,
@@ -1579,9 +1630,7 @@ class App(customtkinter.CTk):
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
                                                 width=100)
-        self.main_keycapset_price.place(x= 320, y= 525)
-
-
+        self.main_keycapset_price.place(x= 850, y= 525)
 
 
 
@@ -1614,8 +1663,8 @@ class App(customtkinter.CTk):
                                                 text= c3kiwi_price,
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
-                                                width=120)
-        self.main_switchset_price.place(x= 320, y= 140)
+                                                width=122)
+        self.main_switchset_price.place(x= 840, y= 140)
 
     def c3_tangerine(self):
         
@@ -1645,8 +1694,8 @@ class App(customtkinter.CTk):
                                                 text= c3tang_price,
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
-                                                width=120)
-        self.main_switchset_price.place(x= 320, y= 140)
+                                                width=122)
+        self.main_switchset_price.place(x= 840, y= 140)
 
 
     def box_jade(self):
@@ -1668,8 +1717,8 @@ class App(customtkinter.CTk):
                                                 text= "$30.00",
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
-                                                width=120)
-        self.main_switchset_price.place(x= 320, y= 140)
+                                                width=122)
+        self.main_switchset_price.place(x= 840, y= 140)
 
     def box_navy(self):
 
@@ -1690,7 +1739,7 @@ class App(customtkinter.CTk):
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
                                                 width=120)
-        self.main_switchset_price.place(x= 320, y= 140)
+        self.main_switchset_price.place(x= 840, y= 140)
 
 
     def holy_panda(self):
@@ -1711,8 +1760,8 @@ class App(customtkinter.CTk):
                                                 text= "$60.00",
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
-                                                width=120)
-        self.main_switchset_price.place(x= 320, y= 140)
+                                                width=122)
+        self.main_switchset_price.place(x= 840, y= 140)
 
 
     def glorious_panda(self):
@@ -1743,8 +1792,8 @@ class App(customtkinter.CTk):
                                                 text= "$40-50",
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
-                                                width=120)
-        self.main_switchset_price.place(x= 320, y= 140)
+                                                width=122)
+        self.main_switchset_price.place(x= 840, y= 140)
 
 
     def gateron_black_ink_v2(self):
@@ -1764,8 +1813,8 @@ class App(customtkinter.CTk):
                                                 text= "$52.00",
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
-                                                width=120)
-        self.main_switchset_price.place(x= 320, y= 140)
+                                                width=122)
+        self.main_switchset_price.place(x= 840, y= 140)
 
 
     def gateron_oil_king(self):
@@ -1785,8 +1834,8 @@ class App(customtkinter.CTk):
                                                 text= "$47.00",
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
-                                                width=120)
-        self.main_switchset_price.place(x= 320, y= 140)
+                                                width=122)
+        self.main_switchset_price.place(x= 840, y= 140)
 
     
     def nk_creams(self):
@@ -1807,7 +1856,7 @@ class App(customtkinter.CTk):
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
                                                 width=120)
-        self.main_switchset_price.place(x= 320, y= 140)
+        self.main_switchset_price.place(x= 840, y= 140)
 
 
     def kang_white_v3(self):
@@ -1827,8 +1876,8 @@ class App(customtkinter.CTk):
                                                 text= "$15,60",
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
-                                                width=120)
-        self.main_switchset_price.place(x= 320, y= 140)
+                                                width=122)
+        self.main_switchset_price.place(x= 840, y= 140)
 
 
     def ktt_grapefruit(self):
@@ -1848,8 +1897,8 @@ class App(customtkinter.CTk):
                                                 text= "$20.55",
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
-                                                width=120)
-        self.main_switchset_price.place(x= 320, y= 140)
+                                                width=122)
+        self.main_switchset_price.place(x= 840, y= 140)
 
 
     def ktt_peach(self):
@@ -1869,8 +1918,8 @@ class App(customtkinter.CTk):
                                                 text= "$20.55",
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
-                                                width=120)
-        self.main_switchset_price.place(x= 320, y= 140)
+                                                width=122)
+        self.main_switchset_price.place(x= 840, y= 140)
 
 
     def ktt_strawberry(self):
@@ -1890,8 +1939,8 @@ class App(customtkinter.CTk):
                                                 text= "$19.50",
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
-                                                width=120)
-        self.main_switchset_price.place(x= 320, y= 140)
+                                                width=122)
+        self.main_switchset_price.place(x= 840, y= 140)
 
 
     def akko_lavender_purple(self):
@@ -1911,8 +1960,8 @@ class App(customtkinter.CTk):
                                                 text= "$22.05",
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
-                                                width=120)
-        self.main_switchset_price.place(x= 310, y= 140)
+                                                width=122)
+        self.main_switchset_price.place(x= 840, y= 140)
 
 
     def akko_radiant_red(self):
@@ -1932,8 +1981,8 @@ class App(customtkinter.CTk):
                                                 text= "$22.05",
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
-                                                width=120)
-        self.main_switchset_price.place(x= 320, y= 140)
+                                                width=122)
+        self.main_switchset_price.place(x= 840, y= 140)
 
  
     def akko_rose_red(self):
@@ -1953,8 +2002,8 @@ class App(customtkinter.CTk):
                                                 text= "$22.05",
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
-                                                width=120)
-        self.main_switchset_price.place(x= 320, y= 140)
+                                                width=122)
+        self.main_switchset_price.place(x= 840, y= 140)
 
 
     def zealios_v2(self):
@@ -1974,8 +2023,8 @@ class App(customtkinter.CTk):
                                                 text= "$75.00",
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
-                                                width=120)
-        self.main_switchset_price.place(x= 320, y= 140)
+                                                width=122)
+        self.main_switchset_price.place(x= 840, y= 140)
 
 
     def ktt_winered(self):
@@ -1995,8 +2044,8 @@ class App(customtkinter.CTk):
                                                 text= "$19.50",
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
-                                                width=120)
-        self.main_switchset_price.place(x= 320, y= 140)
+                                                width=122)
+        self.main_switchset_price.place(x= 840, y= 140)
 
     def cherry_mx_brown(self):
         self.main_switch = customtkinter.CTkButton(self,
@@ -2015,8 +2064,8 @@ class App(customtkinter.CTk):
                                                 text= "$42.00",
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
-                                                width=120)
-        self.main_switchset_price.place(x= 320, y= 140)
+                                                width=122)
+        self.main_switchset_price.place(x= 840, y= 140)
 
 
     def cherry_mx_clear(self):
@@ -2036,8 +2085,8 @@ class App(customtkinter.CTk):
                                                 text= "$70.00",
                                                 font=customtkinter.CTkFont(size=20, weight="bold"),
                                                 height=80,
-                                                width=120)
-        self.main_switchset_price.place(x= 320, y= 140)
+                                                width=122)
+        self.main_switchset_price.place(x= 840, y= 140)
 
 
 
