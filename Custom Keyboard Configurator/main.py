@@ -186,7 +186,7 @@ class App(customtkinter.CTk):
                                                 border_width=2,
                                                 corner_radius=20,
                                                 command =  lambda: load_other_link_Review("widget_link"),
-                                                image=otherImages['widget0']['images']['small'], 
+                                                image=otherImages['widget1']['images']['small'], 
                                                 text="", 
                                                 height=220,
                                                 width=180)
@@ -199,7 +199,7 @@ class App(customtkinter.CTk):
         
         self.scaling_optionemenu = customtkinter.CTkOptionMenu(self.sidebar_frame,
 
-                                                               values=["100%", "105%", "115%"],
+                                                               values=["100%", "105%"],
                                                                command=self.change_scaling_event)
 
 

@@ -9,7 +9,7 @@ keyboard_kits = {
     },
             "large" : {
                 "path" : "Keeb/Tofu60.jpg",
-                "size" : (360, 150)
+                "size" : (350, 150)
     }
         }
     },
@@ -22,7 +22,7 @@ keyboard_kits = {
     },
             "large" : {
                 "path" : "Keeb/Tofu65.jpg",
-                "size" : (360, 150)
+                "size" : (350, 150)
             }
         }
     },
@@ -35,7 +35,7 @@ keyboard_kits = {
     },
             "large" : {
                 "path" : "Keeb/tester68.jpg",
-                "size" : (360, 150)
+                "size" : (350, 150)
             }
         }
     },
@@ -48,7 +48,7 @@ keyboard_kits = {
     },
             "large" : {
                 "path" : "Keeb/Tester84.jpg",
-                "size" : (360, 150)
+                "size" : (350, 150)
             }
         }
     },
@@ -61,7 +61,7 @@ keyboard_kits = {
     },
             "large" : {
                 "path" : "Keeb/gmk67.jpg",
-                "size" : (360, 150)
+                "size" : (350, 150)
             }
         }
     },
@@ -74,7 +74,7 @@ keyboard_kits = {
     },
             "large" : {
                 "path" : "Keeb/gas67.jpg",
-                "size" : (360, 150)
+                "size" : (350, 150)
             }
         }
     },
@@ -87,7 +87,7 @@ keyboard_kits = {
     },
             "large" : {
                 "path" : "Keeb/Everglide Lite 75.jpg",
-                "size" : (360, 150)
+                "size" : (350, 150)
             }
         }
     },
@@ -100,7 +100,7 @@ keyboard_kits = {
     },
             "large" : {
                 "path" : "Keeb/MK870.jpg",
-                "size" : (360, 150)
+                "size" : (350, 150)
             }
         }
     },
@@ -113,7 +113,7 @@ keyboard_kits = {
     },
             "large" : {
                 "path" : "Keeb/Monsgeek M1.jpg",
-                "size" : (360, 150)
+                "size" : (350, 150)
             }
         }
     },
@@ -126,7 +126,7 @@ keyboard_kits = {
     },
             "large" : {
                 "path" : "Keeb/Nexttime 75.jpg",
-                "size" : (360, 150)
+                "size" : (350, 150)
             }
         }
     },
@@ -139,7 +139,7 @@ keyboard_kits = {
     },
             "large" : {
                 "path" : "Keeb/NJ80.jpg",
-                "size" : (360, 150)
+                "size" : (350, 150)
             }
         }
     },
@@ -152,7 +152,7 @@ keyboard_kits = {
     },
             "large" : {
                 "path" : "Keeb/TM680.jpg",
-                "size" : (360, 150)
+                "size" : (350, 150)
             }
         }
     }   
