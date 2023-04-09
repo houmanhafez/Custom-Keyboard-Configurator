@@ -76,7 +76,7 @@ class App(customtkinter.CTk):
 
         self.start_page_logos = customtkinter.CTkButton(self.start_frame,
                                                 image= otherImages['github_logo']['images']['small'],
-                                                command =  lambda: other_links("github_account"),
+                                                command =  lambda: load_other_link_Review("github_account"),
                                                 fg_color=("#121214"),
                                                 bg_color=("#121214"),
                                                 hover_color=("#121214"),
@@ -156,6 +156,7 @@ class App(customtkinter.CTk):
                                                 corner_radius=20,
                                                 text= 'ㅤㅤKitsㅤGuideㅤㅤ',
                                                 font=customtkinter.CTkFont(weight="bold"),
+                                                height= 30,
                                                 width=170)                   
                                    
         self.sidebar_button_2 = customtkinter.CTkButton(self.sidebar_frame,
@@ -168,6 +169,7 @@ class App(customtkinter.CTk):
                                                 corner_radius=20,
                                                 text= 'ㅤSwitches Guideㅤ',
                                                 font=customtkinter.CTkFont(weight="bold"),
+                                                height= 30,
                                                 width=170)
         
         self.sidebar_button_3 = customtkinter.CTkButton(self.sidebar_frame,
@@ -180,6 +182,7 @@ class App(customtkinter.CTk):
                                                 corner_radius=20,
                                                 text= 'ㅤㅤMods Guideㅤㅤ',
                                                 font=customtkinter.CTkFont(weight="bold"),
+                                                height= 30,
                                                 width=170)
 
         self.sidebar_button_4 = customtkinter.CTkButton(self.sidebar_frame,
@@ -2090,6 +2093,7 @@ class App(customtkinter.CTk):
                                                 width=122)
         self.main_switchset_price.place(x= 840, y= 140)
 
+    
 
 
    # Creates an object and uses multiprocessing

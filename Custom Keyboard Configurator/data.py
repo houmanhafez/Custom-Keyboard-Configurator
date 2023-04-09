@@ -791,4 +791,6 @@ other_links = {
      "mods_guide": 'https://www.youtube.com/watch?v=xY9z0RLitbA',    
 
      "widget_link": 'https://candykeys.com/product/momoka-zoo65-keyboard-kit',   
+     
+     "different_link" : 'https://www.monsgeek.com/product/monsgeek-m1/'
 }
