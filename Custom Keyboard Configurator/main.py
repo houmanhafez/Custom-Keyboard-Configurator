@@ -83,33 +83,35 @@ class App(customtkinter.CTk):
                                                  text="")
         self.start_page_logos.grid(row=0, column= 1)
         self.start_page_logos.place(x = 0, y = 820)
+        
 
 
         self.start_button = customtkinter.CTkButton(self.start_frame,
                                             fg_color=("#f19dbb"),
                                             bg_color=("Black"),
                                             hover_color=("#b0e0e6"),
+                                            border_color= ("#f19dbb"),
+                                            border_width=2,
+                                            corner_radius=20,
                                             text= 'Start',
                                             command=self.show_the_frame,
-                                            font=customtkinter.CTkFont(size=20, weight="bold"),
+                                            font=customtkinter.CTkFont(family= "Microsoft New Tai Lue" ,size=20,weight="bold"),
                                             height= 65,
                                             width=130)
         self.start_button.grid(row=2, column=1, columnspan= 4, rowspan= 4)
         self.start_button.place(x = 600, y = 700)
 
 
-        self.start_textbox = customtkinter.CTkTextbox(self.start_frame, 
+        self.start_text = customtkinter.CTkLabel(self.start_frame, 
                                                       width=750,
                                                       height= 230,
-                                                      font=customtkinter.CTkFont(family= "Courier" ,size=20,weight="bold"),
-                                                      fg_color='transparent')
-        self.start_textbox.grid(row=0, column=1, pady=100)
-        self.start_textbox.place(x = 300, y = 200)
-        self.start_textbox.insert("0.0", "ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤWelcome to Keeb Configurator\n\n" +
-                                   "ㅤㅤㅤㅤㅤㅤㅤㅤChoose a Keyboard kit in your budget\nㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤChoose the switches you like\nㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤChoose a keycap set \nㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤSee the prices \nㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤListen to a sound test \n\nㅤㅤㅤㅤㅤ watch recommended reviews and learn about mods. ")
-
-
-
+                                                      font=customtkinter.CTkFont(family= "Microsoft New Tai Lue" ,size=20,weight="bold"),
+                                                      text= "ㅤWelcome to Keeb Configurator\n\nㅤChoose a Keyboard kit in your budget\nㅤChoose the switches you like\nㅤChoose a keycap set \nㅤSee the prices \nㅤListen to a sound test \n\nㅤㅤ watch recommended reviews and learn about mods.\n ",
+                                                      fg_color='#0f0f0f')
+        self.start_text.grid(row=0, column=1, pady=100)
+        self.start_text.place(x = 300, y = 170)
+       
+       
         self.sidebar_frame = customtkinter.CTkFrame(self,
                                                     width=120,
                                                     border_width=2,
@@ -826,7 +828,7 @@ class App(customtkinter.CTk):
 
         
         self.start_button.grid_forget()
-        self.start_textbox.grid_forget()
+        self.start_text.grid_forget()
         self.start_page_bg.grid_forget()
         self.start_frame.grid_forget()
         self.start_page_logos.grid_forget()
