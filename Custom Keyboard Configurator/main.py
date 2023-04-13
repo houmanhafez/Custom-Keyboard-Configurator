@@ -72,9 +72,9 @@ class App(customtkinter.CTk):
         self.start_page_logos = customtkinter.CTkButton(self.start_frame,
                                                 image= otherImages['github_logo']['images']['small'],
                                                 command = lambda: webbrowser.open(otherImages['github_logo']['link']),   
-                                                fg_color=("#121214"),
-                                                bg_color=("#121214"),
-                                                hover_color=("#121214"),
+                                                fg_color=("#fbd3c7"),
+                                                bg_color=("#fbd3c7"),
+                                                hover_color=("#fbd3c7"),
                                                  text="")
         self.start_page_logos.grid(row=0, column= 1)
         self.start_page_logos.place(x = 0, y = 820)
@@ -82,10 +82,10 @@ class App(customtkinter.CTk):
 
 
         self.start_button = customtkinter.CTkButton(self.start_frame,
-                                            fg_color=("#f19dbb"),
-                                            bg_color=("Black"),
-                                            hover_color=("#b0e0e6"),
-                                            border_color= ("#f19dbb"),
+                                            fg_color=("#003366"),
+                                            bg_color=("#fbd3c7"),
+                                            hover_color=("#ffb6c1"),
+                                            border_color= ("#003366"),
                                             border_width=2,
                                             corner_radius=20,
                                             text= 'Start',
@@ -94,15 +94,16 @@ class App(customtkinter.CTk):
                                             height= 65,
                                             width=130)
         self.start_button.grid(row=2, column=1, columnspan= 4, rowspan= 4)
-        self.start_button.place(x = 600, y = 700)
+        self.start_button.place(x = 600, y = 620)
 
 
         self.start_text = customtkinter.CTkLabel(self.start_frame, 
-                                                      width=750,
+                                                      width=700,
                                                       height= 230,
-                                                      font=font1,
+                                                      font=customtkinter.CTkFont(family= "Microsoft New Tai Lue" ,size=24,weight="bold"),
                                                       text= "ㅤWelcome to Keeb Configurator\n\nㅤChoose a Keyboard kit in your budget\nㅤChoose the switches you like\nㅤChoose a keycap set \nㅤSee the prices \nㅤListen to a sound test \n\nㅤㅤ watch recommended reviews and learn about mods.\n ",
-                                                      fg_color='#0f0f0f')
+                                                      fg_color='#fbd3c7',
+                                                      text_color= "#003366")
         self.start_text.grid(row=0, column=1, pady=100)
         self.start_text.place(x = 300, y = 170)
        

@@ -691,11 +691,11 @@ other = {
         "images": {
     
             "small": {
-                "path": "icons/start_bg.jpg" ,
+                "path": "icons/start_bg.png" ,
                 "size" : (1400, 900)
             },
             "large": {
-                "path": "icons/start_bg.jpg" ,
+                "path": "icons/start_bg.png" ,
                 "size" : (1400, 900)
             },
         },
