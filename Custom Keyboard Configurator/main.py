@@ -91,8 +91,8 @@ class App(customtkinter.CTk):
                                             text= 'Start',
                                             command=self.show_the_frame,
                                             font=font1,
-                                            height= 65,
-                                            width=130)
+                                            height= 75,
+                                            width=140)
         self.start_button.grid(row=2, column=1, columnspan= 4, rowspan= 4)
         self.start_button.place(x = 600, y = 620)
 
