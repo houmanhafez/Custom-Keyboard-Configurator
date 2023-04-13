@@ -5,7 +5,7 @@ ________________________________________________________________________________
                               
                                     
                                     
-                                                        *Welcome to the Custom Keyboard Configurator*
+*Welcome to the Custom Keyboard Configurator*
                                   
 You are interested in building a Custom Keyboard but you don't know which parts to pick. You have heard somewhere about a config but you don't know how much it'll cost or how it'll sound like or you just wanna explore builds and hear what they sound like or look like. If you find yourself in one of these situations, then this app helps you with that. Simply choose a part and watch a recommended review about it. Then you can do the same for the other parts and at the end you can listen to  sound tests usually at the end of each video. You can see the up to date price of a keyboard part and if it's available, you can click on 'buy' and it'll redirect you to the website (Coming Soon!). In the future there is even more to come.
 ____________________________________________________________________________________________________________________________________________________________________
