@@ -10,11 +10,12 @@ In order to run this app, please install the libraries with pip: requests, pil o
 To do this, you need to go into your terminal and type `pip install *libraryName*`
 
 #for some reason, my terminal won't work with the libraries requests and customtkinter
-Created by Houman Hafez Alghoran (I started at 21st March 2023)'''
+Created by Houman Hafez Alghoran (I started at 21st March 2023 and the first beta release on Github was v.0.2.0-beta)'''
 
 
 customtkinter.set_appearance_mode("Dark")  # Modes: "System", "Dark", "Light"
 customtkinter.set_default_color_theme('blue')  # Themes: "blue", "green", "dark-blue"
+
 
 
 def loadImages(list):
@@ -49,6 +50,11 @@ class App(customtkinter.CTk):
         self.resizable(False, False)
         
 
+        # THE USED FONT AND SIZE
+        
+        font1 = customtkinter.CTkFont(family= "Microsoft New Tai Lue" ,size=20,weight="bold")
+        font2 = customtkinter.CTkFont(family= "Microsoft New Tai Lue" , size=16 ,weight="bold")
+        
         # START PAGE WITH THE WIDGETS
 
         self.start_frame = customtkinter.CTkFrame(self,
@@ -84,7 +90,7 @@ class App(customtkinter.CTk):
                                             corner_radius=20,
                                             text= 'Start',
                                             command=self.show_the_frame,
-                                            font=customtkinter.CTkFont(family= "Microsoft New Tai Lue" ,size=20,weight="bold"),
+                                            font=font1,
                                             height= 65,
                                             width=130)
         self.start_button.grid(row=2, column=1, columnspan= 4, rowspan= 4)
@@ -94,7 +100,7 @@ class App(customtkinter.CTk):
         self.start_text = customtkinter.CTkLabel(self.start_frame, 
                                                       width=750,
                                                       height= 230,
-                                                      font=customtkinter.CTkFont(family= "Microsoft New Tai Lue" ,size=20,weight="bold"),
+                                                      font=font1,
                                                       text= "ㅤWelcome to Keeb Configurator\n\nㅤChoose a Keyboard kit in your budget\nㅤChoose the switches you like\nㅤChoose a keycap set \nㅤSee the prices \nㅤListen to a sound test \n\nㅤㅤ watch recommended reviews and learn about mods.\n ",
                                                       fg_color='#0f0f0f')
         self.start_text.grid(row=0, column=1, pady=100)
@@ -109,7 +115,7 @@ class App(customtkinter.CTk):
         self.logo_label = customtkinter.CTkLabel(self.sidebar_frame,
                                                  text="Keeb Configurator",
                                                  compound= 'right', 
-                                                 font=customtkinter.CTkFont(size=20, weight="bold"))
+                                                 font=font1)
         
         self.hide_sidebar_button = customtkinter.CTkButton(self.sidebar_frame,
                                                     text = "",
@@ -146,7 +152,7 @@ class App(customtkinter.CTk):
                                                 border_width=2,
                                                 corner_radius=20,
                                                 text= 'ㅤㅤKitsㅤGuideㅤㅤ',
-                                                font=customtkinter.CTkFont(weight="bold"),
+                                                font=font2,
                                                 height= 30,
                                                 width=170)                   
                                    
@@ -159,7 +165,7 @@ class App(customtkinter.CTk):
                                                 border_width=2,
                                                 corner_radius=20,
                                                 text= 'ㅤSwitches Guideㅤ',
-                                                font=customtkinter.CTkFont(weight="bold"),
+                                                font=font2,
                                                 height= 30,
                                                 width=170)
         
@@ -172,7 +178,7 @@ class App(customtkinter.CTk):
                                                 border_width=2,
                                                 corner_radius=20,
                                                 text= 'ㅤㅤMods Guideㅤㅤ',
-                                                font=customtkinter.CTkFont(weight="bold"),
+                                                font=font2,
                                                 height= 30,
                                                 width=170)
 
@@ -191,8 +197,7 @@ class App(customtkinter.CTk):
         
         self.scaling_label = customtkinter.CTkLabel(self.sidebar_frame,
                                                     text="UI Scaling:",
-
-
+                                                    font= font2,
                                                     anchor="w")
         
         self.scaling_optionemenu = customtkinter.CTkOptionMenu(self.sidebar_frame,
@@ -206,7 +211,7 @@ class App(customtkinter.CTk):
         self.main_top = customtkinter.CTkLabel(self,
                                                text="Your Config:",
                                                anchor=customtkinter.N,
-                                               font=customtkinter.CTkFont(size=20, weight="bold"), 
+                                               font=font1, 
                                                height= 340, 
                                                width= 100,)
 
@@ -216,25 +221,25 @@ class App(customtkinter.CTk):
                                                 compound="top",                            
                                                 hover_color=("#242424"),
                                                 text= 'Choose a Switch',
-                                                font=customtkinter.CTkFont(weight="bold"),
+                                                font=font2,
                                                 height=180,
                                                 width=400)
         
         self.main_switch_price = customtkinter.CTkLabel(self,
                                                 fg_color=("#242424"),                      
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                font=font2,
                                                 height=80,
                                                 width=100)
 
         self.main_keycapset_price = customtkinter.CTkLabel(self,
                                                 fg_color=("#242424"),                      
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                font=font2,
                                                 height=80,
                                                 width=100)
         
         self.main_keycapset_price = customtkinter.CTkLabel(self,
                                                 fg_color=("#242424"),                      
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                font=font2,
                                                 height=80,
                                                 width=100)
         
@@ -243,7 +248,7 @@ class App(customtkinter.CTk):
                                                 compound="top",
                                                 hover_color=("#242424"),
                                                 text= 'Choose a Keyboard Kit',
-                                                font=customtkinter.CTkFont(weight="bold"),
+                                                font=font2,
                                                 height=180,
                                                 width=400)
 
@@ -253,7 +258,7 @@ class App(customtkinter.CTk):
                                                 compound="top",
                                                 hover_color=("#242424"),
                                                 text= 'Choose a Keycap Set',
-                                                font=customtkinter.CTkFont(weight="bold"),
+                                                font=font2,
                                                 height=180,
                                                 width=400)
         
@@ -261,7 +266,7 @@ class App(customtkinter.CTk):
         # ALL THE SCROLLABLE FRAMES (SWITCHES), (KEYCAPS) and (KEYBOARD KITS)
         self.keyboardkit_frame = customtkinter.CTkScrollableFrame(self,
                                                 label_text="Keyboard Kits",
-                                                label_font=customtkinter.CTkFont(weight="bold"),
+                                                label_font=font2,
                                                 width= 220,
                                                 height= 300)
         self.keyboardkit_frame_switches = []
@@ -269,13 +274,13 @@ class App(customtkinter.CTk):
 
         self.keycaps_frame = customtkinter.CTkScrollableFrame(self,
                                                         label_text="Keycaps",
-                                                        label_font=customtkinter.CTkFont(weight="bold"), 
+                                                        label_font=font2,
                                                         height= 300)
         self.keycaps_frame_switches = []
 
         self.switches_frame = customtkinter.CTkScrollableFrame(self,
                                                                label_text="Switches (Prices are for 70 Switches)",
-                                                               label_font=customtkinter.CTkFont(weight="bold"),
+                                                               label_font=font2,
                                                                orientation="horizontal",
                                                                height=55)
         self.switches_frame_switches = []
@@ -803,13 +808,13 @@ class App(customtkinter.CTk):
 
 
         self.cherrymxbrown = customtkinter.CTkButton(master=self.switches_frame,
-                                                     command=self.cherry_mx_brown,
-                                                     fg_color=("#420420"),
-                                                     image=switchImages['cherry_mx_brown']['images']['small'],
-                                                     text='Cherry Brown',
-                                                     compound='left',
-                                                     width=140,
-                                                     height=45)       
+                                                    command=self.cherry_mx_brown,
+                                                    fg_color=("#420420"),
+                                                    image=switchImages['cherry_mx_brown']['images']['small'],
+                                                    text='Cherry Brown',
+                                                    compound='left',
+                                                    width=140,
+                                                    height=45)       
         self.switches_frame_switches.append(self.cherrymxbrown)
  
 
@@ -848,6 +853,7 @@ class App(customtkinter.CTk):
         self.start_page_bg.grid_forget()
         self.start_frame.grid_forget()
         self.start_page_logos.grid_forget()
+        
         self.grid_columnconfigure(1, weight=1)
         self.grid_columnconfigure((2, 3), weight=0)
         self.grid_rowconfigure((0, 1, 2), weight=1)
@@ -1010,14 +1016,18 @@ class App(customtkinter.CTk):
                                                 command= lambda: webbrowser.open(keyboard_kits['tofu60']['review_link']),
                                                 image=kitImages['tofu60']['images']['large'],
                                                 text= 'Tofu 60 2.0',
-                                                font=customtkinter.CTkFont(weight="bold"),
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                 height=130,
                                                 width=350)
         self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
-        self.main_kit_price = customtkinter.CTkLabel(self,
-                                                fg_color=("#242424"),                      
+        
+        self.main_kit_price = customtkinter.CTkButton(self,
+                                                fg_color=("#242424"),                 
+                                                command= lambda: webbrowser.open(keyboard_kits['tofu60']['link']),    
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 text= tofu60_price,
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
                                                 height=80,
                                                 width=100)
         self.main_kit_price.place(x= 850, y= 330)
@@ -1041,15 +1051,18 @@ class App(customtkinter.CTk):
                                                 command= lambda: webbrowser.open(keyboard_kits['tofu65']['review_link']),
                                                 image=kitImages['tofu65']['images']['large'],
                                                 text= 'Tofu 65 2.0',
-                                                font=customtkinter.CTkFont(weight="bold"),
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                 height=130,
                                                 width=350)
         self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
 
-        self.main_kit_price = customtkinter.CTkLabel(self,
-                                                fg_color=("#242424"),                      
+        self.main_kit_price = customtkinter.CTkButton(self,
+                                                fg_color=("#242424"),                
+                                                command= lambda: webbrowser.open(keyboard_kits['tofu65']['link']),          
                                                 text= tofu65_price,
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=100)
         self.main_kit_price.place(x= 850, y= 330)
@@ -1072,15 +1085,18 @@ class App(customtkinter.CTk):
                                                 command = lambda: webbrowser.open(keyboard_kits['tester68']['review_link']),
                                                 image=kitImages['tester68']['images']['large'],
                                                 text= 'Tester 68',
-                                                font=customtkinter.CTkFont(weight="bold"),
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                 height=130,
                                                 width=350)
         self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
 
-        self.main_kit_price = customtkinter.CTkLabel(self,
+        self.main_kit_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= tester68_price,
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                command= lambda: webbrowser.open(keyboard_kits['tester68']['link']),    
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=100)
         self.main_kit_price.place(x= 850, y= 330)
@@ -1102,15 +1118,18 @@ class App(customtkinter.CTk):
                                                 command = lambda: webbrowser.open(keyboard_kits['tester84']['review_link']),
                                                 image=kitImages['tester84']['images']['large'],
                                                 text= 'Tester 84',
-                                                font=customtkinter.CTkFont(weight="bold"),
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                 height=130,
                                                 width=350)
         self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
 
-        self.main_kit_price = customtkinter.CTkLabel(self,
+        self.main_kit_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= tester84_price,
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                command= lambda: webbrowser.open(keyboard_kits['tester84']['link']),    
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=100)
         self.main_kit_price.place(x= 850, y= 330)
@@ -1125,15 +1144,18 @@ class App(customtkinter.CTk):
                                                 command = lambda: webbrowser.open(keyboard_kits['gmk67']['review_link']),
                                                 image=kitImages['gmk67']['images']['large'],
                                                 text= 'GMK 67',
-                                                font=customtkinter.CTkFont(weight="bold"),
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                 height=130,
                                                 width=360)
         self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
 
-        self.main_kit_price = customtkinter.CTkLabel(self,
+        self.main_kit_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= "$30-$50",
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                command= lambda: webbrowser.open(keyboard_kits['gmk67']['link']),    
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=100)
         self.main_kit_price.place(x= 850, y= 330)
@@ -1156,15 +1178,18 @@ class App(customtkinter.CTk):
                                                 command =  lambda: webbrowser.open(keyboard_kits['gas67']['review_link']),
                                                 image=kitImages['gas67']['images']['large'],
                                                 text= 'GAS 67',
-                                                font=customtkinter.CTkFont(weight="bold"),
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                 height=130,
                                                 width=350)
         self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
 
-        self.main_kit_price = customtkinter.CTkLabel(self,
+        self.main_kit_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= gas67_price,
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                command= lambda: webbrowser.open(keyboard_kits['gas67']['link']),    
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=100)
         self.main_kit_price.place(x= 850, y= 330)
@@ -1188,15 +1213,18 @@ class App(customtkinter.CTk):
                                                 command =  lambda: webbrowser.open(keyboard_kits['everglide75']['review_link']),
                                                 image=kitImages['everglide75']['images']['large'],
                                                 text= 'Everglide Lite 75',
-                                                font=customtkinter.CTkFont(weight="bold"),
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                 height=130,
                                                 width=350)
         self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
 
-        self.main_kit_price = customtkinter.CTkLabel(self,
+        self.main_kit_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= eg75_price,
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                command= lambda: webbrowser.open(keyboard_kits['everglide75']['link']),   
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=100)
         self.main_kit_price.place(x= 850, y= 330)
@@ -1221,15 +1249,18 @@ class App(customtkinter.CTk):
                                                 command = lambda: webbrowser.open(keyboard_kits['mk870']['review_link']),
                                                 image=kitImages['mk870']['images']['large'],
                                                 text= 'MK 870',
-                                                font=customtkinter.CTkFont(weight="bold"),
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                 height=130,
                                                 width=350)
         self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
 
-        self.main_kit_price = customtkinter.CTkLabel(self,
+        self.main_kit_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= mk_870_price,
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                command= lambda: webbrowser.open(keyboard_kits['mk870']['link']),   
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=100)
         self.main_kit_price.place(x= 850, y= 330)
@@ -1244,15 +1275,18 @@ class App(customtkinter.CTk):
                                                 command = lambda: webbrowser.open(keyboard_kits['monsgeekm1']['review_link']),
                                                 image=kitImages['monsgeekm1']['images']['large'],
                                                 text= 'Monsgeek M1',
-                                                font=customtkinter.CTkFont(weight="bold"),
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                 height=130,
                                                 width=350)
         self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
 
-        self.main_kit_price = customtkinter.CTkLabel(self,
+        self.main_kit_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= "$99.99",
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                command= lambda: webbrowser.open(keyboard_kits['monsgeekm1']['link']),   
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=100)
         self.main_kit_price.place(x= 850, y= 330)
@@ -1276,15 +1310,18 @@ class App(customtkinter.CTk):
                                                 command = lambda: webbrowser.open(keyboard_kits['nexttime75']['review_link']),
                                                 image=kitImages['nexttime75']['images']['large'],
                                                 text= 'Next Time 75',
-                                                font=customtkinter.CTkFont(weight="bold"),
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                 height=130,
                                                 width=350)
         self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
 
-        self.main_kit_price = customtkinter.CTkLabel(self,
+        self.main_kit_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= nt_75_price,
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                command= lambda: webbrowser.open(keyboard_kits['nexttime75']['link']),   
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=100)
         self.main_kit_price.place(x= 850, y= 330)
@@ -1310,15 +1347,18 @@ class App(customtkinter.CTk):
                                                 command = lambda: webbrowser.open(keyboard_kits['nj80']['review_link']),
                                                 image=kitImages['nj80']['images']['large'],
                                                 text= 'NJ 80',
-                                                font=customtkinter.CTkFont(weight="bold"),
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                 height=130,
                                                 width=350)
         self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
 
-        self.main_kit_price = customtkinter.CTkLabel(self,
+        self.main_kit_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= nj_80_price,
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                command= lambda: webbrowser.open(keyboard_kits['nj80']['link']),   
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=100)
         self.main_kit_price.place(x= 850, y= 330)
@@ -1334,15 +1374,18 @@ class App(customtkinter.CTk):
                                                 command = lambda: webbrowser.open(keyboard_kits['tm680']['review_link']),
                                                 image=kitImages['tm680']['images']['large'],
                                                 text= 'TM 680',
-                                                font=customtkinter.CTkFont(weight="bold"),
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                 height=125,
                                                 width=350)
         self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
 
-        self.main_kit_price = customtkinter.CTkLabel(self,
+        self.main_kit_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= "$45 - $65",
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                command= lambda: webbrowser.open(keyboard_kits['tm680']['link']),   
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=100)
         self.main_kit_price.place(x= 850, y= 330)
@@ -1356,7 +1399,7 @@ class App(customtkinter.CTk):
 
 
 
-        # all the functions to change the Main_Label's image to the clicked button's keycap set
+        # all the functions to change the Main_Button's image to the clicked button's keycap set
     def gmk_dots(self):
 
         dots_link = 'https://oblotzky.industries/products/gmk-dots-2'
@@ -1377,15 +1420,18 @@ class App(customtkinter.CTk):
                                                 command = lambda: webbrowser.open(keycap_sets['gmk_dots']['review_link']),
                                                 image=keycapImages['gmk_dots']['images']['large'],
                                                 text= 'GMK Dots 2.0',
-                                                font=customtkinter.CTkFont(weight="bold"),
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                 height=130,
                                                 width=350)
         self.main_keycapset.grid(row=1, column=1,padx=0, pady=(10, 20))    
 
-        self.main_keycapset_price = customtkinter.CTkLabel(self,
+        self.main_keycapset_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= dots_price,
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                command= lambda: webbrowser.open(keycap_sets['gmk_dots']['link']),   
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=100)
         self.main_keycapset_price.place(x= 850, y= 525)        
@@ -1406,15 +1452,18 @@ class App(customtkinter.CTk):
                                                 command =  lambda: webbrowser.open(keycap_sets['gmk_armgstrong']['review_link']),                                              
                                                 image=keycapImages['gmk_armstrong']['images']['large'],
                                                 text= 'GMK GodSpeed',
-                                                font=customtkinter.CTkFont(weight="bold"),
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                 height=130,
                                                 width=350)
         self.main_keycapset.grid(row=1, column=1,padx=0, pady=(10, 20))
 
-        self.main_keycapset_price = customtkinter.CTkLabel(self,
+        self.main_keycapset_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= dots_price,
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                command= lambda: webbrowser.open(keycap_sets['gmk_armstrong']['link']),  
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=100)
         self.main_keycapset_price.place(x= 850, y= 525)
@@ -1436,15 +1485,18 @@ class App(customtkinter.CTk):
                                                 command =  lambda: webbrowser.open(keycap_sets['gmk_bluesamurai']['review_link']),                                               
                                                 image=keycapImages['gmk_bluesamurai']['images']['large'],
                                                 text= 'GMK Blue Samurai',
-                                                font=customtkinter.CTkFont(weight="bold"),
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                 height=130,
                                                 width=350)
         self.main_keycapset.grid(row=1, column=1,padx=0, pady=(10, 20)) 
 
-        self.main_keycapset_price = customtkinter.CTkLabel(self,
+        self.main_keycapset_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= dots_price,
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                command= lambda: webbrowser.open(keycap_sets['gmk_bluesamurai']['link']),  
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=100)
         self.main_keycapset_price.place(x= 850, y= 525)
@@ -1466,15 +1518,18 @@ class App(customtkinter.CTk):
                                                 command =  lambda: webbrowser.open(keycap_sets['gmk_kaiju']['review_link']),                                             
                                                 image=keycapImages['gmk_kaiju']['images']['large'],
                                                 text= 'GMK Kaiju',
-                                                font=customtkinter.CTkFont(weight="bold"),
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                 height=130,
                                                 width=350)
         self.main_keycapset.grid(row=1, column=1,padx=0, pady=(10, 20))  
 
-        self.main_keycapset_price = customtkinter.CTkLabel(self,
+        self.main_keycapset_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= kaiju_price,
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                command= lambda: webbrowser.open(keycap_sets['gmk_kaiju']['link']),  
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=100)
         self.main_keycapset_price.place(x= 850, y= 525)
@@ -1487,15 +1542,18 @@ class App(customtkinter.CTk):
                                                 command = lambda: webbrowser.open(keycap_sets['gmk_laser']['review_link']),                                              
                                                 image=keycapImages['gmk_laser']['images']['large'],
                                                 text= 'GMK Laser',
-                                                font=customtkinter.CTkFont(weight="bold"),
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                 height=130,
                                                 width=350)
         self.main_keycapset.grid(row=1, column=1,padx=0, pady=(10, 20))   
 
-        self.main_keycapset_price = customtkinter.CTkLabel(self,
+        self.main_keycapset_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= "$150.00",
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                command= lambda: webbrowser.open(keycap_sets['gmk_laser']['link']),  
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=100)
         self.main_keycapset_price.place(x= 850, y= 525)
@@ -1509,15 +1567,18 @@ class App(customtkinter.CTk):
                                                 command = lambda: webbrowser.open(keycap_sets['dcx_9009']['review_link']),                                            
                                                 image=keycapImages['dcx_9009']['images']['large'],
                                                 text= 'DCX 9009',
-                                                font=customtkinter.CTkFont(weight="bold"),
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                 height=130,
                                                 width=350)
         self.main_keycapset.grid(row=1, column=1,padx=0, pady=(10, 20))    
 
-        self.main_keycapset_price = customtkinter.CTkLabel(self,
+        self.main_keycapset_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text="$99.00",
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                command= lambda: webbrowser.open(keycap_sets['dcx_9009']['link']),  
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=100)
         self.main_keycapset_price.place(x= 850, y= 525)
@@ -1531,15 +1592,18 @@ class App(customtkinter.CTk):
                                                 command = lambda: webbrowser.open(keycap_sets['dcx_bow']['review_link']),                                        
                                                 image=keycapImages['dcx_bow']['images']['large'],
                                                 text= 'DCX Black On White',
-                                                font=customtkinter.CTkFont(weight="bold"),
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                 height=130,
                                                 width=350)
         self.main_keycapset.grid(row=1, column=1,padx=0, pady=(10, 20))    
 
-        self.main_keycapset_price = customtkinter.CTkLabel(self,
+        self.main_keycapset_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= "$79.00",
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                command= lambda: webbrowser.open(keycap_sets['dcx_bow']['link']),  
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=100)
         self.main_keycapset_price.place(x= 850, y= 525)
@@ -1554,16 +1618,19 @@ class App(customtkinter.CTk):
                                                 command = lambda: webbrowser.open(keycap_sets['dcx_wob']['review_link']),                                          
                                                 image=keycapImages['dcx_wob']['images']['large'],
                                                 text= 'DCX White On Black',
-                                                font=customtkinter.CTkFont(weight="bold"),
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                 height=130,
                                                 width=350)
         self.main_keycapset.grid(row=1, column=1,padx=0, pady=(10, 20))    
 
 
-        self.main_keycapset_price = customtkinter.CTkLabel(self,
+        self.main_keycapset_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= "$79.00",
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                command= lambda: webbrowser.open(keycap_sets['dcx_wob']['link']),  
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=100)
         self.main_keycapset_price.place(x= 850, y= 525)    
@@ -1576,15 +1643,18 @@ class App(customtkinter.CTk):
                                                 command = lambda: webbrowser.open(keycap_sets['dcx_cyber']['review_link']),                                             
                                                 image=keycapImages['dcx_cyber']['images']['large'],
                                                 text= 'DCX Cyber',
-                                                font=customtkinter.CTkFont(weight="bold"),
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                 height=130,
                                                 width=350)
         self.main_keycapset.grid(row=1, column=1,padx=0, pady=(10, 20))    
 
-        self.main_keycapset_price = customtkinter.CTkLabel(self,
+        self.main_keycapset_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= "$99.00",
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                command= lambda: webbrowser.open(keycap_sets['dcx_cyber']['link']),  
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=100)
         self.main_keycapset_price.place(x= 850, y= 525)
@@ -1595,18 +1665,21 @@ class App(customtkinter.CTk):
                                                 fg_color=("#242424"),
                                                 compound="top",                            
                                                 hover_color=("#242424"),
-                                                command = lambda: webbrowser.open(keycap_sets['dcx_hyoerfuse']['review_link']),
+                                                command = lambda: webbrowser.open(keycap_sets['dcx_hyperfuse']['review_link']),
                                                 image=keycapImages['dcx_hyperfuse']['images']['large'],
                                                 text= 'DCX Hyperfuse',
-                                                font=customtkinter.CTkFont(weight="bold"),
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                 height=130,
                                                 width=350)
         self.main_keycapset.grid(row=1, column=1,padx=0, pady=(10, 20))    
 
-        self.main_keycapset_price = customtkinter.CTkLabel(self,
+        self.main_keycapset_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= "$99.00",
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                command= lambda: webbrowser.open(keycap_sets['dcx_hyperfuse']['link']),  
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=100)
         self.main_keycapset_price.place(x= 850, y= 525)
@@ -1621,16 +1694,19 @@ class App(customtkinter.CTk):
                                                 command = lambda: webbrowser.open(keycap_sets['dcx_keyman']['review_link']),
                                                 image=keycapImages['dcx_keyman']['images']['large'],
                                                 text= 'DCX Keyman',
-                                                font=customtkinter.CTkFont(weight="bold"),
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                 height=130,
                                                 width=350)
         self.main_keycapset.grid(row=1, column=1,padx=0, pady=(10, 20))    
 
 
-        self.main_keycapset_price = customtkinter.CTkLabel(self,
+        self.main_keycapset_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= "$99.00",
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                command= lambda: webbrowser.open(keycap_sets['dcx_keyman']['link']),  
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=100)
         self.main_keycapset_price.place(x= 850, y= 525)
@@ -1643,15 +1719,18 @@ class App(customtkinter.CTk):
                                                 command = lambda: webbrowser.open(keycap_sets['dcx_violac']['review_link']),                                            
                                                 image=keycapImages['dcx_violac']['images']['large'],
                                                 text= 'DCX Violac',
-                                                font=customtkinter.CTkFont(weight="bold"),
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                 height=130,
                                                 width=350)
         self.main_keycapset.grid(row=1, column=1,padx=0, pady=(10, 20))    
 
-        self.main_keycapset_price = customtkinter.CTkLabel(self,
+        self.main_keycapset_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= "$99.00",
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                command= lambda: webbrowser.open(keycap_sets['dcx_violac']['link']), 
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=100)
         self.main_keycapset_price.place(x= 850, y= 525)
@@ -1659,7 +1738,7 @@ class App(customtkinter.CTk):
 
 
 
-        # all the functions to change the Main_Label's image to the clicked button's switch set 
+        # all the functions to change the Main_Button's image to the clicked button's switch set 
     def c3_kiwi(self):
 
         c3kiwi_link = 'https://thekey.company/products/c3-equalz-x-tkc-kiwi-switches?variant=39513713606745'
@@ -1677,15 +1756,18 @@ class App(customtkinter.CTk):
                                                     command = lambda: webbrowser.open(switch_sets['c3_kiwi']['review_link']),                                           
                                                     image=switchImages['c3_kiwi']['images']['large'],
                                                     text= 'C3 Kiwi',
-                                                    font=customtkinter.CTkFont(weight="bold"),
+                                                    font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                     height=180,
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
 
-        self.main_switchset_price = customtkinter.CTkLabel(self,
+        self.main_switchset_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= c3kiwi_price,
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                command= lambda: webbrowser.open(switch_sets['c3_kiwi']['link']), 
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=122)
         self.main_switchset_price.place(x= 840, y= 140)
@@ -1708,15 +1790,18 @@ class App(customtkinter.CTk):
                                                     command =  lambda: webbrowser.open(switch_sets['c3_tangerine']['review_link']),   
                                                     image=switchImages['c3_tangerine']['images']['large'],                                          
                                                     text= 'C3 Tangerine V2',
-                                                    font=customtkinter.CTkFont(weight="bold"),
+                                                    font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                     height=180,
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
 
-        self.main_switchset_price = customtkinter.CTkLabel(self,
+        self.main_switchset_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= c3tang_price,
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                command= lambda: webbrowser.open(switch_sets['c3_tangerine']['link']), 
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=122)
         self.main_switchset_price.place(x= 840, y= 140)
@@ -1731,15 +1816,18 @@ class App(customtkinter.CTk):
                                                     command = lambda: webbrowser.open(switch_sets['box_jade']['review_link']),                                                
                                                     image=switchImages['box_jade']['images']['large'],
                                                     text= 'Box Jade',
-                                                    font=customtkinter.CTkFont(weight="bold"),
+                                                    font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                     height=180,
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
 
-        self.main_switchset_price = customtkinter.CTkLabel(self,
+        self.main_switchset_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= "$30.00",
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                command= lambda: webbrowser.open(switch_sets['box_jade']['link']), 
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=122)
         self.main_switchset_price.place(x= 840, y= 140)
@@ -1753,14 +1841,15 @@ class App(customtkinter.CTk):
                                                     command = lambda: webbrowser.open(switch_sets['box_navy']['review_link']),                                                
                                                     image=switchImages['box_navy']['images']['large'],
                                                     text= 'Box Navy',
-                                                    font=customtkinter.CTkFont(weight="bold"),
+                                                    font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                     height=180,
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
-        self.main_switchset_price = customtkinter.CTkLabel(self,
+        self.main_switchset_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= "Restocking \n Q2 2023",
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                              # command= lambda: webbrowser.open(switch_sets['box_navy']['link']), 
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
                                                 height=80,
                                                 width=120)
         self.main_switchset_price.place(x= 840, y= 140)
@@ -1775,31 +1864,23 @@ class App(customtkinter.CTk):
                                                     command = lambda: webbrowser.open(switch_sets['holy_panda']['review_link']),                                               
                                                     image=switchImages['holy_panda']['images']['large'],
                                                     text= 'Holy Panda',
-                                                    font=customtkinter.CTkFont(weight="bold"),
+                                                    font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                     height=180,
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
-        self.main_switchset_price = customtkinter.CTkLabel(self,
+        self.main_switchset_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= "$60.00",
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                command= lambda: webbrowser.open(switch_sets['holy_panda']['link']), 
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=122)
         self.main_switchset_price.place(x= 840, y= 140)
 
 
     def glorious_panda(self):
-
-        
-        glopanda_link = 'https://epomaker.com/products/epomaker-mmd-holy-panda-switch-set?variant=39913910566985'
-        glopanda_response  = requests.get(glopanda_link)
-
-        glopanda_soup = BeautifulSoup(glopanda_response.content, 'html.parser')
-        glopanda_tag = glopanda_soup.find('span', {'class': 'money'})
-
-        glopanda_price = glopanda_tag.text.strip()
-
-
         self.main_switch = customtkinter.CTkButton(self,
                                                     fg_color=("#242424"),
                                                     compound="top",                            
@@ -1807,14 +1888,17 @@ class App(customtkinter.CTk):
                                                     command = lambda: webbrowser.open(switch_sets['glorious_panda']['review_link']),                                          
                                                     image=switchImages['glorious_panda']['images']['large'],
                                                     text= 'Glorious Panda',
-                                                    font=customtkinter.CTkFont(weight="bold"),
+                                                    font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                     height=180,
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
-        self.main_switchset_price = customtkinter.CTkLabel(self,
+        self.main_switchset_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= "$40-50",
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                command= lambda: webbrowser.open(switch_sets['glorious_panda']['link']), 
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=122)
         self.main_switchset_price.place(x= 840, y= 140)
@@ -1828,14 +1912,17 @@ class App(customtkinter.CTk):
                                                     command = lambda: webbrowser.open(switch_sets['gateron_ink_black_v2']['review_link']),                                             
                                                     image=switchImages['gateron_ink_black_v2']['images']['large'],
                                                     text= 'Gateron Black Ink V2',
-                                                    font=customtkinter.CTkFont(weight="bold"),
+                                                    font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                     height=180,
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
-        self.main_switchset_price = customtkinter.CTkLabel(self,
+        self.main_switchset_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= "$52.00",
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                command= lambda: webbrowser.open(switch_sets['gateron_ink_black_v2']['link']), 
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=122)
         self.main_switchset_price.place(x= 840, y= 140)
@@ -1849,14 +1936,17 @@ class App(customtkinter.CTk):
                                                     command = lambda: webbrowser.open(switch_sets['gateron_oilking']['review_link']),                                           
                                                     image=switchImages['gateron_oilking']['images']['large'],
                                                     text= 'Gateron Oil King',
-                                                    font=customtkinter.CTkFont(weight="bold"),
+                                                    font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                     height=180,
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
-        self.main_switchset_price = customtkinter.CTkLabel(self,
+        self.main_switchset_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= "$47.00",
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                command= lambda: webbrowser.open(switch_sets['gateron_oilking']['link']), 
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=122)
         self.main_switchset_price.place(x= 840, y= 140)
@@ -1870,14 +1960,15 @@ class App(customtkinter.CTk):
                                                     command = lambda: webbrowser.open(switch_sets['novelkey_cream']['review_link']),                                     
                                                     image=switchImages['novelkey_cream']['images']['large'],
                                                     text= 'Nk Cream',
-                                                    font=customtkinter.CTkFont(weight="bold"),
+                                                    font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                     height=180,
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
-        self.main_switchset_price = customtkinter.CTkLabel(self,
+        self.main_switchset_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= "Restocking \n Q2 2023",
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                             #  command= lambda: webbrowser.open(switch_sets['novelkey_cream']['link']), 
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
                                                 height=80,
                                                 width=120)
         self.main_switchset_price.place(x= 840, y= 140)
@@ -1891,14 +1982,17 @@ class App(customtkinter.CTk):
                                                     command = lambda: webbrowser.open(switch_sets['ktt_kang_white_v3']['review_link']),                                        
                                                     image=switchImages['ktt_kang_white_v3']['images']['large'],
                                                     text= 'KTT Kang White V3',
-                                                    font=customtkinter.CTkFont(weight="bold"),
+                                                    font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                     height=180,
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
-        self.main_switchset_price = customtkinter.CTkLabel(self,
+        self.main_switchset_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= "$15,60",
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                command= lambda: webbrowser.open(switch_sets['ktt_kang_white_v3']['link']), 
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=122)
         self.main_switchset_price.place(x= 840, y= 140)
@@ -1912,14 +2006,17 @@ class App(customtkinter.CTk):
                                                     command = lambda: webbrowser.open(switch_sets['ktt_grapefruit']['review_link']),                                              
                                                     image=switchImages['ktt_grapefruit']['images']['large'],
                                                     text= 'KTT Grapefruit',
-                                                    font=customtkinter.CTkFont(weight="bold"),
+                                                    font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                     height=180,
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
-        self.main_switchset_price = customtkinter.CTkLabel(self,
+        self.main_switchset_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= "$20.55",
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                command= lambda: webbrowser.open(switch_sets['ktt_grapefruit']['link']), 
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=122)
         self.main_switchset_price.place(x= 840, y= 140)
@@ -1933,14 +2030,17 @@ class App(customtkinter.CTk):
                                                     command = lambda: webbrowser.open(switch_sets['ktt_peach']['review_link']),                                                 
                                                     image=switchImages['ktt_peach']['images']['large'],
                                                     text= 'KTT Peach',
-                                                    font=customtkinter.CTkFont(weight="bold"),
+                                                    font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                     height=180,
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
-        self.main_switchset_price = customtkinter.CTkLabel(self,
+        self.main_switchset_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= "$20.55",
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                command= lambda: webbrowser.open(switch_sets['ktt_peach']['link']), 
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=122)
         self.main_switchset_price.place(x= 840, y= 140)
@@ -1954,14 +2054,17 @@ class App(customtkinter.CTk):
                                                     command = lambda: webbrowser.open(switch_sets['ktt_strawberry']['review_link']),                                             
                                                     image=switchImages['ktt_strawberry']['images']['large'],
                                                     text= 'KTT Strawberry',
-                                                    font=customtkinter.CTkFont(weight="bold"),
+                                                    font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                     height=180,
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
-        self.main_switchset_price = customtkinter.CTkLabel(self,
+        self.main_switchset_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= "$19.50",
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                command= lambda: webbrowser.open(switch_sets['ktt_strawberry']['link']), 
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=122)
         self.main_switchset_price.place(x= 840, y= 140)
@@ -1975,14 +2078,17 @@ class App(customtkinter.CTk):
                                                     command = lambda: webbrowser.open(switch_sets['akko_lavender_purple']['review_link']),                                             
                                                     image=switchImages['akko_lavender_purple']['images']['large'],
                                                     text= 'Akko CS Lavender Purple',
-                                                    font=customtkinter.CTkFont(weight="bold"),
+                                                    font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                     height=180,
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
-        self.main_switchset_price = customtkinter.CTkLabel(self,
+        self.main_switchset_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= "$22.05",
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                command= lambda: webbrowser.open(switch_sets['akko_lavender_purple']['link']), 
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=122)
         self.main_switchset_price.place(x= 840, y= 140)
@@ -1996,14 +2102,17 @@ class App(customtkinter.CTk):
                                                     command = lambda: webbrowser.open(switch_sets['akko_radiant_red']['review_link']),                                     
                                                     image=switchImages['akko_radiant_red']['images']['large'],
                                                     text= 'Akko CS Radiant Red',
-                                                    font=customtkinter.CTkFont(weight="bold"),
+                                                    font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                     height=180,
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
-        self.main_switchset_price = customtkinter.CTkLabel(self,
+        self.main_switchset_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= "$22.05",
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                command= lambda: webbrowser.open(switch_sets['akko_radiant_red']['link']), 
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=122)
         self.main_switchset_price.place(x= 840, y= 140)
@@ -2017,14 +2126,17 @@ class App(customtkinter.CTk):
                                                     command = lambda: webbrowser.open(switch_sets['akko_rose_red']['review_link']),                                            
                                                     image=switchImages['akko_rose_red']['images']['large'],
                                                     text= 'Akko CS Rose Red',
-                                                    font=customtkinter.CTkFont(weight="bold"),
+                                                    font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                     height=180,
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
-        self.main_switchset_price = customtkinter.CTkLabel(self,
+        self.main_switchset_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= "$22.05",
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                command= lambda: webbrowser.open(switch_sets['akko_rose_red']['link']), 
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=122)
         self.main_switchset_price.place(x= 840, y= 140)
@@ -2038,14 +2150,17 @@ class App(customtkinter.CTk):
                                                     command = lambda: webbrowser.open(switch_sets['zealios_v2']['review_link']),                                         
                                                     image=switchImages['zealios_v2']['images']['large'],
                                                     text= 'Zealios V2',
-                                                    font=customtkinter.CTkFont(weight="bold"),
+                                                    font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                     height=180,
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
-        self.main_switchset_price = customtkinter.CTkLabel(self,
+        self.main_switchset_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= "$75.00",
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                command= lambda: webbrowser.open(switch_sets['zealios_v2']['link']), 
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=122)
         self.main_switchset_price.place(x= 840, y= 140)
@@ -2059,14 +2174,17 @@ class App(customtkinter.CTk):
                                                     command = lambda: webbrowser.open(switch_sets['ktt_wine_red']['review_link']),                                              
                                                     image=switchImages['ktt_wine_red']['images']['large'],
                                                     text= 'KTT Wine Red',
-                                                    font=customtkinter.CTkFont(weight="bold"),
+                                                    font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                     height=180,
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
-        self.main_switchset_price = customtkinter.CTkLabel(self,
+        self.main_switchset_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= "$19.50",
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                command= lambda: webbrowser.open(switch_sets['ktt_wine_red']['link']), 
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=122)
         self.main_switchset_price.place(x= 840, y= 140)
@@ -2079,14 +2197,17 @@ class App(customtkinter.CTk):
                                                     command = lambda: webbrowser.open(switch_sets['cherry_mx_brown']['review_link']),                                                  
                                                     image=switchImages['cherry_mx_brown']['images']['large'],
                                                     text= 'Cherry MX Brown',
-                                                    font=customtkinter.CTkFont(weight="bold"),
+                                                    font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                     height=180,
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
-        self.main_switchset_price = customtkinter.CTkLabel(self,
+        self.main_switchset_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
                                                 text= "$42.00",
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                command= lambda: webbrowser.open(switch_sets['cherry_mx_brown']['link']), 
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=122)
         self.main_switchset_price.place(x= 840, y= 140)
@@ -2100,14 +2221,17 @@ class App(customtkinter.CTk):
                                                     command = lambda: webbrowser.open(switch_sets['cherry_mx_clear']['review_link']),                                             
                                                     image=switchImages['cherry_mx_clear']['images']['large'],
                                                     text= 'Cherry MX Clear',
-                                                    font=customtkinter.CTkFont(weight="bold"),
+                                                    font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
                                                     height=180,
                                                     width=400)
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))
-        self.main_switchset_price = customtkinter.CTkLabel(self,
+        self.main_switchset_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                      
-                                                text= "$70.00",
-                                                font=customtkinter.CTkFont(size=20, weight="bold"),
+                                                text= "$52.00",
+                                                command= lambda: webbrowser.open(switch_sets['cherry_mx_clear']['link']), 
+                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
+                                                image= otherImages['buy']['images']['small'],
+                                                compound= 'bottom',
                                                 height=80,
                                                 width=122)
         self.main_switchset_price.place(x= 840, y= 140)
