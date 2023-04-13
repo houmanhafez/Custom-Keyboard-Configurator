@@ -1,17 +1,17 @@
 from data import keycap_sets, keyboard_kits, switch_sets, other
-import time
 import requests
 from bs4 import BeautifulSoup
-from PIL import Image, ImageTk
-import PIL
-import tkinter.messagebox
+from PIL import Image
 import customtkinter
 import webbrowser
-# !Note!
-# In order to run this app, please install the libraries with pip: requests, pil or pillow, bs4 and customtkinter
-# To do this, you need to go into your terminal and type `pip install *libraryName*`
+
+''' !Note!
+In order to run this app, please install the libraries with pip: requests, pil or pillow, bs4 and customtkinter
+To do this, you need to go into your terminal and type `pip install *libraryName*`
 
 #for some reason, my terminal won't work with the libraries requests and customtkinter
+Created by Houman Hafez Alghoran (I started at 21st March 2023)'''
+
 
 customtkinter.set_appearance_mode("Dark")  # Modes: "System", "Dark", "Light"
 customtkinter.set_default_color_theme('blue')  # Themes: "blue", "green", "dark-blue"
@@ -35,8 +35,6 @@ keycapImages = loadImages(keycap_sets)
 switchImages = loadImages(switch_sets)
 otherImages = loadImages(other)
 
-
-
 #MAIN CLASS 
 class App(customtkinter.CTk):
     def __init__(self):
@@ -49,10 +47,7 @@ class App(customtkinter.CTk):
         self.geometry(f"{1300}x{900}")
         self.iconbitmap("icons/icon.ico")
         self.resizable(False, False)
-
-        # SIDEBAR FRAME WITH THE WIDGETS 
         
-
 
         # START PAGE WITH THE WIDGETS
 
@@ -105,7 +100,7 @@ class App(customtkinter.CTk):
         self.start_text.grid(row=0, column=1, pady=100)
         self.start_text.place(x = 300, y = 170)
        
-       
+       #SIDE_BAR
         self.sidebar_frame = customtkinter.CTkFrame(self,
                                                     width=120,
                                                     border_width=2,
