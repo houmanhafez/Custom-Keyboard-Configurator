@@ -16,6 +16,6 @@ ________________________________________________________________________________
 After you click on 'Start', choose a Keyboard Kit, a Keycap Set and a Switch Set and click on each to watch a recommended review. On the right side of each Keyboard part, there is an up to date price that changes during sales and so on. 
 ____________________________________________________________________________________________________________________________________________________________________
 ____________________________________________________________________________________________________________________________________________________________________
-![image](https://user-images.githubusercontent.com/120993360/230744422-d7040860-c377-4e54-8a5e-d52e405d60da.png)
+![image](https://user-images.githubusercontent.com/120993360/231869998-e68e085b-e531-4187-89d7-74596b8136c0.png)
 ____________________________________________________________________________________________________________________________________________________________________ 
 On the left, there is a sidebar with a few buttons that guide you with all the components and how you could mod your keyboard. the widget also shows you an offer from some known websites. Expect plenty more in the future though!
