@@ -1,4 +1,5 @@
 
+#KEYBOARD KITS
 keyboard_kits = {
     "tofu60" : {
         "review_link" : "https://www.youtube.com/watch?v=QlFToB8WEPU",
@@ -160,7 +161,7 @@ keyboard_kits = {
 
 
 
-
+#KEYCAP SETS
 keycap_sets = {
     
     "gmk_armstrong" : {
@@ -323,6 +324,7 @@ keycap_sets = {
 
 
 
+#SWITCHES
 switch_sets = {
 
     "akko_lavender_purple" : {
@@ -594,6 +596,7 @@ switch_sets = {
     }   
 }
 
+# OTHER LINKS AND IMAGES
 other = {
 
     "start_bg" : {
@@ -680,117 +683,89 @@ other = {
             },
         },
     }, 
-}
-
-
-
-keyboard_kits_reviews = {
-
-    "tofu60": "https://www.youtube.com/watch?v=QlFToB8WEPU",
-     
-    "tofu65": "https://www.youtube.com/watch?v=Dgmexo2VGgY",
-     
-    "tester68": "https://www.youtube.com/watch?v=3t-iJWSJP5Y&t",
-     
-    "tester84": "https://www.youtube.com/watch?v=laEqQW-rqBc",
-    
-    "gmk67": "https://www.youtube.com/watch?v=ZiteK5F10CE",
-     
-    "gas67": "https://www.youtube.com/watch?v=KCojSX6DtPo&t",
-     
-    "everglide75": "https://www.youtube.com/watch?v=vAGXM12Ad7g&t",
-     
-    "mk870": "https://www.youtube.com/watch?v=gfVgtNyP2sU",
-     
-    "monsgeekm1": "https://www.youtube.com/watch?v=W-624633HA4&t",
-    
-    "nexttime75": "https://www.youtube.com/watch?v=pqXGeQ-mcPg&t",
-    
-    "nj80": "https://www.youtube.com/watch?v=UDczD_Wx_PU",
-    
-    "tm680": "https://www.youtube.com/watch?v=B_WFf07TrCo&t",
-    
-}
-
-keycap_sets_reviews = {
-    "dcx_9009": "https://www.youtube.com/watch?v=WjNa6f2oyc0",
-     
-    "dcx_wob": "https://www.youtube.com/watch?v=cGqz9q4B54E",
-     
-    "dcx_bow": "https://www.youtube.com/watch?v=S5ThKk9Ivig",
-    
-    "dcx_cyber": "https://www.youtube.com/shorts/50YKJXj6UiY",
-    
-    "dcx_hyperfuse": "https://www.youtube.com/shorts/IJO9ylPLuDY",
-     
-    "dcx_keyman": "https://drop.com/talk/121498/dcx-key-man-on-iron-165-pc",
-     
-    "gmk_armstrong": "https://www.youtube.com/watch?v=8nwzD82pPOk",
-    
-    "gmk_bluesamurai": "https://www.youtube.com/watch?v=GsePBZXmE50",
-    
-    "gmk_dots": "https://www.youtube.com/watch?v=hCsikbZIqTA",
-
-    "gmk_kaiju": "https://www.youtube.com/watch?v=h_PCJb4Wz0E",
-    
-    "gmk_laser": "https://www.youtube.com/watch?v=NpuGoeZQJW4",
-    
-    "dcx_violac": "https://www.youtube.com/shorts/JmbAqMNOy68",
-    
-}
-
-switch_sets_reviews = {
-    "c3kiwi": "https://www.youtube.com/watch?v=zLXYKEs1tps",
-    
-    "c3tang": "https://www.youtube.com/watch?v=uRdvL5cSbHA&t",
-    
-    "box_jade": "https://www.youtube.com/watch?v=JaU3GkBKyNQ",
-     
-    "box_navy": "https://www.youtube.com/watch?v=ipdoqGEAG9E",
-    
-    "holy_panda": "https://www.youtube.com/watch?v=gtujhG2JNrI",
-     
-    "glo_panda": "https://www.youtube.com/watch?v=gtujhG2JNrI",
-    
-    "gateron_ink_v2": "https://www.youtube.com/watch?v=2fe37TLjI5E",
-    
-    "gateron_oilking": "https://www.youtube.com/watch?v=3joKjDwDkA8&t",
-    
-    "nk_cream": "https://www.youtube.com/watch?v=iICikICuWa4&t",
-    
-    "ktt_kw_v3": "https://www.youtube.com/watch?v=SxxBjl53VBo",
-    
-    "ktt_grapefruit": "https://www.youtube.com/watch?v=oJWBMuPM12o&t",
-    
-    "ktt_peach": "https://www.youtube.com/watch?v=GqvJDCxaCLU",
-     
-    "ktt_strawberry": "https://www.youtube.com/watch?v=edF7kfYDERA&t",
-    
-    "akko_rose_red": "https://www.youtube.com/watch?v=YK63dwLdmAo&t",
-    
-    "akko_radiant_red": "https://www.youtube.com/watch?v=ENNZS-GZ7t4",
-    
-    "akko_lavender_purple": "https://www.youtube.com/watch?v=rDovZJKmUm4",
-    
-    "zealios_v2": "https://www.youtube.com/watch?v=RL3DZD_cNng&t",
-     
-    "ktt_wine_red": "https://www.youtube.com/watch?v=Kn67KIsf458",
-    
-    "cherry_mx_brown": "https://www.youtube.com/watch?v=Bc32Fv4P0tw",
-    
-    "cherry_mx_clear": "https://www.youtube.com/watch?v=dbRkFWabPew&t",
-}
-
-other_links = {
-     "github_account": "https://github.com/SpecialSpicy",
-
-     "kits_guide": 'https://www.youtube.com/watch?v=Sm1DVbyeDiI',
-
-     "switches_guide": 'https://www.youtube.com/watch?v=-Ln9rA_usoY',
-
-     "mods_guide": 'https://www.youtube.com/watch?v=xY9z0RLitbA',    
-
-     "widget_link": 'https://candykeys.com/product/momoka-zoo65-keyboard-kit',   
-     
-     "different_link" : 'https://www.monsgeek.com/product/monsgeek-m1/'
+    "kits_guide" : {
+        
+        "link" : 'https://www.youtube.com/watch?v=Sm1DVbyeDiI',
+        
+        "images" : {
+               
+            "small" : {
+                "path": "icons/menu.png",
+                "size" : (40, 40),
+            },
+            "large": {
+                "path": "icons/order.png" ,
+                "size" : (200, 170)
+            },
+        }
+            
+    },
+    "switches_guide" : {
+        
+        "link" : 'https://www.youtube.com/watch?v=-Ln9rA_usoY',
+        
+        "images" : {
+               
+            "small" : {
+                "path": "icons/menu.png",
+                "size" : (40, 40),
+            },
+            "large": {
+                "path": "icons/order.png" ,
+                "size" : (200, 170)
+            },
+        }
+            
+    },
+    "mods_guide" : {
+        
+        "link" : 'https://www.youtube.com/watch?v=xY9z0RLitbA',
+        
+        "images" : {
+               
+            "small" : {
+                "path": "icons/menu.png",
+                "size" : (40, 40),
+            },
+            "large": {
+                "path": "icons/order.png" ,
+                "size" : (200, 170)
+            },
+        }
+            
+    },
+    "widget_link0" : {
+        
+        "link" : 'https://candykeys.com/product/momoka-zoo65-keyboard-kit',
+        
+        "images" : {
+               
+            "small" : {
+                "path": "icons/menu.png",
+                "size" : (40, 40),
+            },
+            "large": {
+                "path": "icons/order.png" ,
+                "size" : (200, 170)
+            },
+        }
+            
+    },
+    "widget_link1" : {
+        
+        "link" : 'https://www.monsgeek.com/product/monsgeek-m1/',
+        
+        "images" : {
+               
+            "small" : {
+                "path": "icons/menu.png",
+                "size" : (40, 40),
+            },
+            "large": {
+                "path": "icons/order.png" ,
+                "size" : (200, 170)
+            },
+        }
+            
+    },
 }
