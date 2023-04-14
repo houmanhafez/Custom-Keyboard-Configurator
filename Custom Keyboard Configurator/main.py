@@ -8,8 +8,6 @@ import webbrowser
 ''' !Note!
 In order to run this app, please install the libraries with pip: requests, pil or pillow, bs4 and customtkinter
 To do this, you need to go into your terminal and type `pip install *libraryName*`
-
-#for some reason, my terminal won't work with the libraries requests and customtkinter
 Created by Houman Hafez Alghoran (I started at 21st March 2023 and the first beta release on Github was v.0.2.0-beta)'''
 
 
