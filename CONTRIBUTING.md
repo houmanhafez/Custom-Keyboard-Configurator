@@ -1,53 +1,54 @@
-**Contributing Guidelines**
-
-Thank you for your interest in contributing to our project! We welcome contributions from anyone, regardless of skill level or experience.
+## **Contributing Guidelines**
 
 
-**Types of Contributions**
-
-We are currently seeking contributions in the following areas:
+#### Thank you for your interest in contributing to our project! We welcome contributions from anyone, regardless of skill level or experience.
 
 
-- Bug reports and feature requests**
-- Code contributions
-- Documentation improvements
+## **Types of Contributions**
+
+#### We are currently seeking contributions in the following areas:
 
 
-**How to Contribute**
+#### - Bug reports and feature requests
+#### - Code contributions
+#### - Documentation improvements
 
-Here are some general guidelines for contributing:
 
-**Reporting Bugs**
+## **How to Contribute**
 
-If you encounter a bug, please report it by opening a new issue in our issue tracker. Please include as much detail as possible, including steps to reproduce the bug, the expected behavior, and the actual behavior.
+#### Here are some general guidelines for contributing:
 
-**Feature Requests**
+## **Reporting Bugs**
 
-If you have an idea for a new feature, please open a new issue in our issue tracker. Please describe the feature in as much detail as possible, including the problem it solves and any technical considerations.
+#### If you encounter a bug, please report it by opening a new issue in our issue tracker. Please include as much detail as possible, including steps to reproduce the bug, the expected behavior, and the actual behavior.
 
-**Code Contributions**
+## **Feature Requests**
 
-If you would like to contribute code, please follow these steps:
+#### If you have an idea for a new feature, please open a new issue in our issue tracker. Please describe the feature in as much detail as possible, including the problem it solves and any technical considerations.
 
-1.Fork the repository and create a new branch for your changes.
-2.Make your changes and commit them.
-3.Submit a pull request to the main repository.
-4.Documentation Improvements
+## **Code Contributions**
 
-If you would like to improve the documentation, please follow these steps:
+#### If you would like to contribute code, please follow these steps:
 
-1.Fork the repository and create a new branch for your changes.
-2.Make your changes and commit them.
-3.Submit a pull request to the main repository.
+#### 1.Fork the repository and create a new branch for your changes.
+#### 2.Make your changes and commit them.
+#### 3.Submit a pull request to the main repository.
+#### 4.Documentation Improvements
 
-**Code Style**
+#### If you would like to improve the documentation, please follow these steps:
 
-Please ensure that your code follows the established code style in the repository. If you are unsure about the code style, please ask for guidance before submitting your contribution.
+#### 1.Fork the repository and create a new branch for your changes.
+#### 2.Make your changes and commit them.
+#### 3.Submit a pull request to the main repository.
 
-**Contact Information**
+## **Code Style**
 
-If you have any questions or need guidance, please contact the project maintainer at Houman.HafezAlghoran@gmail.com
+#### Please ensure that your code follows the established code style in the repository. If you are unsure about the code style, please ask for guidance before submitting your contribution.
 
-**Acknowledgments**
+## **Contact Information**
 
-Thank you for your interest in contributing to our project! We appreciate your contributions and look forward to collaborating with you.
+#### If you have any questions or need guidance, please contact the project maintainer at Houman.HafezAlghoran@gmail.com
+
+## **Acknowledgments**
+
+#### Thank you for your interest in contributing to our project! We appreciate your contributions and look forward to collaborating with you.
