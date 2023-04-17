@@ -1,7 +1,7 @@
 ## **Contributing Guidelines**
 
 
-#### Thank you for your interest in contributing to our project! We welcome contributions from anyone, regardless of skill level or experience.
+#### Thank you for your interest in contributing to my project! I welcome contributions from anyone, regardless of skill level or experience.
 
 
 ## **Types of Contributions**
