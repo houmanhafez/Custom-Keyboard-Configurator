@@ -2,7 +2,7 @@
 
 
                                     
-# Welcome to the Custom Keyboard Configurator
+## Welcome to the Custom Keyboard Configurator
                                   
 #### You are interested in building a Custom Keyboard but you don't know which parts to pick. You have heard somewhere about a config but you don't know how much it'll cost or how it'll sound like or you just wanna explore builds and hear what they sound like or look like.
 
