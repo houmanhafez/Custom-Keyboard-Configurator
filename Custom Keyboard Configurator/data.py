@@ -386,7 +386,7 @@ switch_sets = {
     },
             "large" : {
                 "path" : "Switches/lavenderpurple.jpg",
-                "size" : (120, 120)
+                "size" : (125, 130)
             }
         }
     },
@@ -418,7 +418,7 @@ switch_sets = {
     },
             "large" : {
                 "path" : "Switches/rosered.jpg",
-                "size" : (120, 120)
+                "size" : (125, 126)
             }
         }
     },
@@ -727,32 +727,6 @@ other = {
             },
         },
     },
-    "widget0" : {
-        "images" : {
-    
-            "small" : {
-                "path": "icons/zoo65.png",
-                "size" : (220, 170),
-            },
-            "large": {
-                "path": "icons/zoo65.png" ,
-                "size" : (200, 170)
-            },
-        },
-    },   
-    "widget1" : {
-        "images" : {
-    
-            "small" : {
-                "path": "icons/order.png",
-                "size" : (150, 100),
-            },
-            "large": {
-                "path": "icons/order.png" ,
-                "size" : (200, 170)
-            },
-        },
-    }, 
     "menu" : {
         
         "images" : {
@@ -829,9 +803,9 @@ other = {
         }
             
     },
-    "widget_link0" : {
+    "stabilizers" : {
         
-        "link" : 'https://candykeys.com/product/momoka-zoo65-keyboard-kit',
+        "link" : 'https://www.youtube.com/watch?v=vxHb6CJc9V8&t',   
         "images" : {
                
             "small" : {
@@ -845,7 +819,23 @@ other = {
         }
             
     },
-    "widget_link1" : {
+    "widget0" : {
+        
+        "link" : 'https://candykeys.com/search/think',
+        "images" : {
+               
+            "small" : {
+                "path": "icons/widget.png",
+                "size" : (40, 40),
+            },
+            "large": {
+                "path": "icons/widget.png" ,
+                "size" : (240, 190)
+            },
+        }
+            
+    },
+    "widget1" : {
         
         "link" : 'https://www.monsgeek.com/product/monsgeek-m1/',
         "images" : {

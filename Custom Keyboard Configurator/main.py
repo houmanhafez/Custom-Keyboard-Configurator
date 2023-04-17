@@ -143,55 +143,65 @@ class App(customtkinter.CTk):
         
         # SIDEBAR BUTTONS
         self.sidebar_button_1 = customtkinter.CTkButton(self.sidebar_frame,
-                                                fg_color=("#f19dbb"),
-                                                hover_color=("#b0e0e6"),
-                                                border_color= ("#f19dbb"),
+                                                fg_color=("#333333"),
+                                                border_color= ("#420420"),
                                                 command = lambda: webbrowser.open(other['kits_guide']['link']),                           
                                                 image=otherImages['new_tab']['images']['small'],
                                                 border_width=2,
                                                 corner_radius=20,
                                                 text= 'ㅤㅤKitsㅤGuideㅤㅤ',
                                                 font= customtkinter.CTkFont(size=16 ,weight="bold"),
-                                                height= 30,
-                                                width=170)                   
+                                                height= 35,
+                                                width=235)                   
                                    
         self.sidebar_button_2 = customtkinter.CTkButton(self.sidebar_frame,
-                                                fg_color=("#f19dbb"),
-                                                hover_color=("#b0e0e6"),
-                                                border_color= ("#f19dbb"),
+                                                fg_color=("#333333"),
+                                                border_color= ("#420420"),
                                                 command = lambda: webbrowser.open(other['switches_guide']['link']), 
                                                 image=otherImages['new_tab']['images']['small'],
                                                 border_width=2,
                                                 corner_radius=20,
                                                 text= 'ㅤSwitches Guideㅤ',
                                                 font= customtkinter.CTkFont(size=16 ,weight="bold"),
-                                                height= 30,
-                                                width=170)
+                                                height= 35,
+                                                width=235)
         
         self.sidebar_button_3 = customtkinter.CTkButton(self.sidebar_frame,
-                                                fg_color=("#f19dbb"),
-                                                hover_color=("#b0e0e6"),
-                                                border_color= ("#f19dbb"),
+                                                fg_color=("#333333"),
+                                                border_color= ("#420420"),
                                                 command = lambda: webbrowser.open(other['mods_guide']['link']), 
                                                 image=otherImages['new_tab']['images']['small'],
                                                 border_width=2,
                                                 corner_radius=20,
                                                 text= 'ㅤㅤMods Guideㅤㅤ',
                                                 font= customtkinter.CTkFont(size=16 ,weight="bold"),
-                                                height= 30,
-                                                width=170)
-
+                                                height= 35,
+                                                width=235)
+        
         self.sidebar_button_4 = customtkinter.CTkButton(self.sidebar_frame,
-                                                fg_color=("gray17"),
-                                                hover_color=("gray17"),
-                                                border_color= "#ffb6c1",
+                                                fg_color=("#333333"),
+                                                border_color= ("#420420"),
+                                                command = lambda: webbrowser.open(other['stabilizers']['link']), 
+                                                image=otherImages['new_tab']['images']['small'],
                                                 border_width=2,
                                                 corner_radius=20,
-                                                command = lambda: webbrowser.open(other['widget_link0']['link']), 
-                                                image=otherImages['widget0']['images']['small'], 
+                                                text= 'ㅤㅤStabs Guideㅤㅤ',
+                                                font= customtkinter.CTkFont(size=16 ,weight="bold"),
+                                                height= 35,
+                                                width=235)
+
+        self.sidebar_widget = customtkinter.CTkButton(self.sidebar_frame,
+                                                fg_color=("gray17"),
+                                                hover_color=("gray17"),
+                                                border_color= "#420420",
+                                                border_width=2,
+                                                corner_radius=20,
+                                                command = lambda: webbrowser.open(other['widget0']['link']), 
+                                                image=otherImages['widget0']['images']['large'], 
                                                 text="", 
                                                 height=220,
                                                 width=180)
+        
         
         
         self.scaling_label = customtkinter.CTkLabel(self.sidebar_frame,
@@ -202,7 +212,7 @@ class App(customtkinter.CTk):
         self.scaling_optionemenu = customtkinter.CTkOptionMenu(self.sidebar_frame,
 
                                                                values=["100%", "105%"],
-                                                               fg_color="#f19dbb",
+                                                               fg_color="#420420",
                                                                command=self.change_scaling_event)
 
 
@@ -871,7 +881,8 @@ class App(customtkinter.CTk):
         self.sidebar_button_1.grid(row=1, column=0, padx=20, pady=20)
         self.sidebar_button_2.grid(row=2, column=0, padx=20, pady=20)
         self.sidebar_button_3.grid(row=3, column=0, padx=20, pady=20)
-        self.sidebar_button_4.grid(row=4, column=0, padx=20, pady=15)
+        self.sidebar_button_4.place(x = 45, y = 355)
+        self.sidebar_widget.grid(row=4, column=0, padx=20, pady=15)
 
 
 
@@ -976,7 +987,8 @@ class App(customtkinter.CTk):
         self.sidebar_button_1.grid(row=1, column=0, padx=20, pady=20)
         self.sidebar_button_2.grid(row=2, column=0, padx=20, pady=20)
         self.sidebar_button_3.grid(row=3, column=0, padx=20, pady=20)
-        self.sidebar_button_4.grid(row=4, column=0, padx=20, pady=15)
+        self.sidebar_button_4.place(x = 45, y = 355)
+        self.sidebar_widget.grid(row=4, column=0, padx=20, pady=15)
         self.scaling_label.grid(row=7, column=0, padx=20, pady=(10, 0))
         self.scaling_optionemenu.grid(row=8, column=0, padx=20, pady=(10, 20))
 
@@ -992,6 +1004,7 @@ class App(customtkinter.CTk):
         self.sidebar_button_2.grid_forget()
         self.sidebar_button_3.grid_forget()
         self.sidebar_button_4.grid_forget()
+        self.sidebar_widget.grid_forget()
         
             
         self.hide_sidebar_button.place_forget()
