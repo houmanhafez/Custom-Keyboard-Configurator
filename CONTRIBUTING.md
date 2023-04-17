@@ -47,8 +47,8 @@
 
 ## **Contact Information**
 
-#### If you have any questions or need guidance, please contact the project maintainer at Houman.HafezAlghoran@gmail.com
+#### If you have any questions or need guidance, please contact me at Houman.HafezAlghoran@gmail.com
 
 ## **Acknowledgments**
 
-#### Thank you for your interest in contributing to our project! We appreciate your contributions and look forward to collaborating with you.
+#### Thank you for your interest in contributing to my project! I appreciate your contributions and look forward to collaborating with you.
