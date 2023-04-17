@@ -151,7 +151,7 @@ class App(customtkinter.CTk):
                                                 border_width=2,
                                                 corner_radius=20,
                                                 text= 'ㅤㅤKitsㅤGuideㅤㅤ',
-                                                font=font2,
+                                                font= customtkinter.CTkFont(size=16 ,weight="bold"),
                                                 height= 30,
                                                 width=170)                   
                                    
@@ -164,7 +164,7 @@ class App(customtkinter.CTk):
                                                 border_width=2,
                                                 corner_radius=20,
                                                 text= 'ㅤSwitches Guideㅤ',
-                                                font=font2,
+                                                font= customtkinter.CTkFont(size=16 ,weight="bold"),
                                                 height= 30,
                                                 width=170)
         
@@ -177,7 +177,7 @@ class App(customtkinter.CTk):
                                                 border_width=2,
                                                 corner_radius=20,
                                                 text= 'ㅤㅤMods Guideㅤㅤ',
-                                                font=font2,
+                                                font= customtkinter.CTkFont(size=16 ,weight="bold"),
                                                 height= 30,
                                                 width=170)
 

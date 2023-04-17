@@ -434,7 +434,7 @@ switch_sets = {
     },
             "large" : {
                 "path" : "Switches/boxjade.jpg",
-                "size" : (120, 110)
+                "size" : (140, 130)
             }
         }
     },
@@ -449,7 +449,7 @@ switch_sets = {
     },
             "large" : {
                 "path" : "Switches/boxnavy.jpg",
-                "size" : (120, 110)
+                "size" : (140, 130)
             }
         }
     },
@@ -497,7 +497,7 @@ switch_sets = {
     },
             "large" : {
                 "path" : "Switches/c3kiwi.jpg",
-                "size" : (120, 110)
+                "size" : (140, 130)
             }
         }
     },
@@ -513,7 +513,7 @@ switch_sets = {
     },
             "large" : {
                 "path" : "Switches/c3tangerine.jpg",
-                "size" : (120, 110)
+                "size" : (140, 130)
             }
         }
     },
@@ -528,7 +528,7 @@ switch_sets = {
     },
             "large" : {
                 "path" : "Switches/gloriouspanda.jpg",
-                "size" : (120, 110)
+                "size" : (140, 130)
             }
         }
     },
@@ -543,7 +543,7 @@ switch_sets = {
     },
             "large" : {
                 "path" : "Switches/Gateronblackinkv2.jpg",
-                "size" : (120, 110)
+                "size" : (140, 130)
             }
         }
     },
@@ -558,7 +558,7 @@ switch_sets = {
     },
             "large" : {
                 "path" : "Switches/gateronoilking.jpg",
-                "size" : (120, 110)
+                "size" : (140, 130)
             }
         }
     },
@@ -573,7 +573,7 @@ switch_sets = {
     },
             "large" : {
                 "path" : "Switches/holypanda.jpg",
-                "size" : (120, 110)
+                "size" : (140, 130)
             }
         }
     },
@@ -603,7 +603,7 @@ switch_sets = {
     },
             "large" : {
                 "path" : "Switches/Kangwhitev3.jpg",
-                "size" : (120, 110)
+                "size" : (140, 130)
             }
         }
     },
@@ -633,7 +633,7 @@ switch_sets = {
     },
             "large" : {
                 "path" : "Switches/kttwinered.jpg",
-                "size" : (120, 110)
+                "size" : (140, 130)
             }
         }
     },
@@ -648,7 +648,7 @@ switch_sets = {
     },
             "large" : {
                 "path" : "Switches/kttstrawberry.jpg",
-                "size" : (120, 110)
+                "size" : (140, 130)
             }
         }
     },
@@ -663,7 +663,7 @@ switch_sets = {
     },
             "large" : {
                 "path" : "Switches/kailhcream.jpg",
-                "size" : (120, 110)
+                "size" : (140, 130)
             }
         }
     },
@@ -678,7 +678,7 @@ switch_sets = {
     },
             "large" : {
                 "path" : "Switches/zealiosv2.jpg",
-                "size" : (120, 110)
+                "size" : (140, 130)
             }
         }
     }   
