@@ -29,10 +29,10 @@ def loadImages(list):
         }
     return images
 
-kitImages = loadImages(keyboard_kits)
-keycapImages = loadImages(keycap_sets)
-switchImages = loadImages(switch_sets)
-otherImages = loadImages(other)
+kitImages =     loadImages(keyboard_kits)
+keycapImages =  loadImages(keycap_sets)
+switchImages =  loadImages(switch_sets)
+otherImages =   loadImages(other)
 
 #MAIN CLASS 
 class App(customtkinter.CTk):

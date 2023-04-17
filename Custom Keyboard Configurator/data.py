@@ -386,7 +386,7 @@ switch_sets = {
     },
             "large" : {
                 "path" : "Switches/lavenderpurple.jpg",
-                "size" : (120, 110)
+                "size" : (120, 120)
             }
         }
     },
@@ -402,7 +402,7 @@ switch_sets = {
     },
             "large" : {
                 "path" : "Switches/RadiantRed.jpg",
-                "size" : (120, 110)
+                "size" : (120, 120)
             }
         }
     },
@@ -418,7 +418,7 @@ switch_sets = {
     },
             "large" : {
                 "path" : "Switches/rosered.jpg",
-                "size" : (120, 110)
+                "size" : (120, 120)
             }
         }
     },
