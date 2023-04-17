@@ -733,7 +733,7 @@ other = {
     
             "small" : {
                 "path": "icons/menu.png",
-                "size" : (40, 40),
+                "size" : (30, 30),
             },
             "large": {
                 "path": "icons/order.png" ,
@@ -747,7 +747,7 @@ other = {
     
             "small" : {
                 "path": "icons/buy.png",
-                "size" : (30, 30),
+                "size" : (20, 20),
             },
             "large": {
                 "path": "icons/buy.png" ,
