@@ -29,4 +29,4 @@ ________________________________________________________________________________
 ![image](https://user-images.githubusercontent.com/120993360/232373863-bbe50176-b1a1-49c5-a1e6-c820e11c4c24.png)
 ____________________________________________________________________________________________________________________________________________________________________ 
 #### On the left, there is a sidebar with a few buttons that guide you with all the components and how you could mod your keyboard. the widget also shows you an offer from some known websites. Expect plenty more in the future though!
-#### Custom Keyboard Configurator v.1.2.2
+#### Custom Keyboard Configurator v.1.2.3
