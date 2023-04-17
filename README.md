@@ -4,7 +4,7 @@
                                     
 ## Welcome to the Custom Keyboard Configurator
                             
-#### Building Keyboards is a very popular hobby that started in the late 2000s. Since then, the hobby has gained numerous amount of fans and these days, it's definitely worth a try, since you don't want them rattly stabilizers of your $5 Office keyboard
+#### Building Keyboards is a very popular hobby that started in the late 2000s. Since then, the hobby has gained numerous amount of fans and these days, it's definitely worth a try, since you don't want them rattly stabilizers of your $5 Office keyboard.
 
 #### if you are interested in building a Custom Keyboard but you don't know which parts to pick or if you already know about the hobby and have heard somewhere about a config but you don't know how much it'll cost or how it'll sound like or you just wanna explore builds and hear what they sound like or look like, then this app helps you with that.
 
