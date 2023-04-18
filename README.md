@@ -4,7 +4,7 @@
                                     
 ## Welcome to the Custom Keyboard Configurator
                             
-#### Building Keyboards is a very popular hobby that started in the late 2000s. Since then, the hobby has gained numerous amount of fans and these days, it's definitely worth a try, since you don't want them rattly stabilizers of your $5 Office keyboard.
+#### Building Keyboards is a very popular hobby that started in the late 2000s. Since then, the hobby has gained numerous amount of fans and these days, it's definitely worth a try, if you don't want the expensive keyboards that feel scratchy and rattly.
 
 #### if you are interested in building a Custom Keyboard but you don't know which parts to pick or if you already know about the hobby and have heard somewhere about a config but you don't know how much it'll cost or how it'll sound like or you just wanna explore builds and hear what they sound like or look like, then this app helps you with that.
 
@@ -26,7 +26,7 @@ ________________________________________________________________________________
 
 #### After you click on 'Start', choose a Keyboard Kit, a Keycap Set and a Switch Set and click on each to watch a recommended review. On the right side of each Keyboard part, there is an up to date price that changes during sales and so on. 
 ____________________________________________________________________________________________________________________________________________________________________
-![image](https://user-images.githubusercontent.com/120993360/232600630-01a1adc2-bb51-41a1-9a5c-279252e0150a.png)
+![image](https://user-images.githubusercontent.com/120993360/232662688-df3e1c18-a9b7-4e71-a604-095b3ea2c990.png)
 ____________________________________________________________________________________________________________________________________________________________________ 
 #### On the left, there is a sidebar with a few buttons that guide you with all the components and how you could mod your keyboard. the widget also shows you an offer from some known websites. 
 
