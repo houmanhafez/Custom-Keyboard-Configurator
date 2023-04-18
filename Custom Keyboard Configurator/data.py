@@ -14,7 +14,7 @@ keyboard_kits = {
                 "path" : "Keeb/Tofu60.jpg",
                 "size" : (350, 140)
     }
-        }
+        } 
     },
     "tofu65" : {
         "review_link" : "https://www.youtube.com/watch?v=Dgmexo2VGgY",
