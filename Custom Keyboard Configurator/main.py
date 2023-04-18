@@ -1021,17 +1021,12 @@ class App(customtkinter.CTk):
 
         tofu60_price = tofu60_tag.text.strip()
 
-        self.main_kit = customtkinter.CTkButton(self,
-                                                fg_color=("#242424"),
-                                                compound="top",                            
-                                                hover_color=("#242424"),
-                                                command= lambda: webbrowser.open(keyboard_kits['tofu60']['review_link']),
-                                                image=kitImages['tofu60']['images']['large'],
-                                                text= 'Tofu 60 2.0',
-                                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
-                                                height=130,
-                                                width=350)
-        self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
+        self.main_kit.configure(text= 'Tofu 60 2.0',
+                                command= lambda: webbrowser.open(keyboard_kits['tofu60']['review_link']),
+                                image=kitImages['tofu60']['images']['large'],
+                                font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", weight="bold"),
+                                height=130,
+                                width=350,)
         
         self.main_kit_price = customtkinter.CTkButton(self,
                                                 fg_color=("#242424"),                 
@@ -1042,8 +1037,8 @@ class App(customtkinter.CTk):
                                                 font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
                                                 height=80,
                                                 width=100)
-        self.main_kit_price.place(x= 850, y= 330)
-
+      #  self.main_kit_price.place(x= 850, y= 330)
+        self.main_kit_price.grid(row=0, column=2, rowspan=2,padx=0, pady=0) 
 
 
     def tofu_65(self):
