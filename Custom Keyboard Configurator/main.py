@@ -240,7 +240,7 @@ class App(customtkinter.CTk):
                                                 height=80,
                                                 width=100)
 
-        self.main_keycapset_price = customtkinter.CTkLabel(self,
+        self.main_keyboard_price = customtkinter.CTkLabel(self,
                                                 fg_color=("#242424"),                      
                                                 font=font2,
                                                 height=80,
@@ -1037,8 +1037,8 @@ class App(customtkinter.CTk):
                                                 font=customtkinter.CTkFont(family= "Microsoft New Tai Lue", size=20, weight="bold"),
                                                 height=80,
                                                 width=100)
-      #  self.main_kit_price.place(x= 850, y= 330)
-        self.main_kit_price.grid(row=0, column=2, rowspan=2,padx=0, pady=0) 
+        self.main_kit_price.place(x= 850, y= 330)
+        #self.main_kit_price.grid(row=0, column=2, rowspan=2,padx=0, pady=0)  (TEST)
 
 
     def tofu_65(self):
