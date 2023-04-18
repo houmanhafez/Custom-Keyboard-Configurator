@@ -22,7 +22,7 @@ ________________________________________________________________________________
 - ##### ``pip install pillow`` or ``pip install pil``
 - ##### ``pip install bs4``
 - ##### ``pip install webbrowser``
-0 ##### ``pip install requests``
+- ##### ``pip install requests``
 
 #### After you click on 'Start', choose a Keyboard Kit, a Keycap Set and a Switch Set and click on each to watch a recommended review. On the right side of each Keyboard part, there is an up to date price that changes during sales and so on. 
 ____________________________________________________________________________________________________________________________________________________________________
