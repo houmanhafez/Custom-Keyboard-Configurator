@@ -16,17 +16,17 @@
 
 ## **How to Contribute**
 
-#### Here are some general guidelines for contributing:
+### Here are some general guidelines for contributing:
 
-## **Reporting Bugs**
+### **Reporting Bugs**
 
 #### If you encounter a bug, please report it by opening a new issue in our issue tracker. Please include as much detail as possible, including steps to reproduce the bug, the expected behavior, and the actual behavior.
 
-## **Feature Requests**
+### **Feature Requests**
 
 #### If you have an idea for a new feature, please open a new issue in our issue tracker. Please describe the feature in as much detail as possible, including the problem it solves and any technical considerations.
 
-## **Code Contributions**
+### **Code Contributions**
 
 #### If you would like to contribute code, please follow these steps:
 
@@ -41,7 +41,7 @@
 2. ####  Make your changes and commit them.
 3. ####  Submit a pull request to the main repository.
 
-## **Code Style**
+### **Code Style**
 
 #### Please ensure that your code follows the established code style in the repository. If you are unsure about the code style, please ask for guidance before submitting your contribution.
 
