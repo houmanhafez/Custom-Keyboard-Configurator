@@ -34,4 +34,4 @@ ________________________________________________________________________________
 
 ### Expect plenty more in the future though!
 
-##### Custom Keyboard Configurator v.1.3
+##### Custom Keyboard Configurator v.1.3.1
