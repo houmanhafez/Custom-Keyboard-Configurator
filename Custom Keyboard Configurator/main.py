@@ -6,8 +6,8 @@ import customtkinter
 import webbrowser
 
 ''' !Note!
-In order to run this app, please install the libraries with pip: requests, pil or pillow, bs4, webbrowser and customtkinter
-To do this, you need to go into your terminal and type `pip install *libraryName*`
+In order to run this app, make sure you have python 3 and also please install the libraries with pip: requests, pil or pillow, bs4, webbrowser and customtkinter
+To do this, you need to go into your terminal and type 'pip install *libraryName*'
 Created by Houman Hafez Alghoran (I started at 21st March 2023 and the first beta release on Github was v.0.2.0-beta)'''
 
 
