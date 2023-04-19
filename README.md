@@ -32,6 +32,6 @@ ________________________________________________________________________________
 
 
 
-### Expect plenty more in the future though!
+### Expect plenty more in the future!
 
 ##### Custom Keyboard Configurator v.1.3.1
