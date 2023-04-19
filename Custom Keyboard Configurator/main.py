@@ -1582,15 +1582,12 @@ class App(customtkinter.CTk):
 
     def holy_panda(self):
 
-        self.main_switch = customtkinter.CTkButton(self,
-                                                    fg_color=("#242424"),
-                                                    compound="top",                            
-                                                    hover_color=("#242424"),
-                                                    command = lambda: webbrowser.open(switch_sets['holy_panda']['review_link']),                                               
-                                                    image=switchImages['holy_panda']['images']['large'],
-                                                    text= 'Holy Panda',
-                                                    height=180,
-                                                    width=200)
+        self.main_switch.configure( compound="top",                            
+                                    command = lambda: webbrowser.open(switch_sets['holy_panda']['review_link']),                                               
+                                    image=switchImages['holy_panda']['images']['large'],
+                                    text= 'Holy Panda',
+                                    height=180,
+                                    width=200)
         
         self.main_switchset_price.configure(text= "$60.00",
                                             command= lambda: webbrowser.open(switch_sets['holy_panda']['link']), 
