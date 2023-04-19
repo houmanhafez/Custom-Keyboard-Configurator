@@ -18,11 +18,11 @@ ________________________________________________________________________________
 
 #### To run this application, make sure you have the following libraries installed:
 
-##### - CustomTkinter ``pip install customtkinter``
-##### - PIL ``pip install pillow`` or ``pip install pil``
-##### - BS4 ``pip install bs4``
-##### - Webbrowser ``pip install webbrowser``
-##### - Requests ``pip install requests``
+- ##### ``pip install customtkinter``
+- ##### ``pip install pillow`` or ``pip install pil``
+- ##### ``pip install bs4``
+- ##### ``pip install webbrowser``
+- ##### ``pip install requests``
 
 #### After you click on 'Start', choose a Keyboard Kit, a Keycap Set and a Switch Set and click on each to watch a recommended review. On the right side of each Keyboard part, there is an up to date price that changes during sales and so on. 
 ____________________________________________________________________________________________________________________________________________________________________
