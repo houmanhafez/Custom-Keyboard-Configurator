@@ -33,7 +33,8 @@
 1. ####   Fork the repository and create a new branch for your changes.
 2. ####  Make your changes and commit them.
 3. ####  Submit a pull request to the main repository.
-4. ####  Documentation Improvements
+
+### Documentation Improvements
 
 #### If you would like to improve the documentation, please follow these steps:
 
