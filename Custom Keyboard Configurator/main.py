@@ -1,3 +1,4 @@
+import time
 from data import keycap_sets, keyboard_kits, switch_sets, other
 import requests
 from bs4 import BeautifulSoup
@@ -69,15 +70,27 @@ class App(customtkinter.CTk):
 
         self.start_page_logos = customtkinter.CTkButton(self.start_frame,
                                                 image= otherImages['github_logo']['images']['small'],
-                                                command = lambda: webbrowser.open(otherImages['github_logo']['link']),   
+                                                command = lambda: webbrowser.open(other['github_logo']['link']),   
                                                 fg_color=("#fbd3c7"),
                                                 bg_color=("#fbd3c7"),
                                                 hover_color=("#fbd3c7"),
-                                                 text="")
+                                                 text="",
+                                                height=50,
+                                                 width= 20)
         self.start_page_logos.grid(row=0, column= 1)
-        self.start_page_logos.place(x = 0, y = 820)
+        self.start_page_logos.place(x = 0, y = 840)
         
-
+        self.start_page_logos2 = customtkinter.CTkButton(self.start_frame,
+                                                image= otherImages['discord']['images']['small'],
+                                                command = lambda: webbrowser.open(other['discord']['link']),   
+                                                fg_color=("#fbd3c7"),
+                                                bg_color=("#fbd3c7"),
+                                                hover_color=("#fbd3c7"),
+                                                 text="",
+                                                 height=50,
+                                                 width= 20)
+        
+        self.start_page_logos2.place(x = 60, y = 840)
 
         self.start_button = customtkinter.CTkButton(self.start_frame,
                                             fg_color=("#003366"),
@@ -92,18 +105,27 @@ class App(customtkinter.CTk):
                                             height= 75,
                                             width=140)
         self.start_button.grid(row=2, column=1, columnspan= 4, rowspan= 4)
-        self.start_button.place(x = 600, y = 620)
+        self.start_button.place(x = 580, y = 620)
 
-
+        self.start_title = customtkinter.CTkLabel(self.start_frame, 
+                                                      width=700,
+                                                      height= 230,
+                                                      font=customtkinter.CTkFont(family= "Microsoft New Tai Lue" ,size=28,weight="bold"),
+                                                      text= "Build your Custom Keyboard",
+                                                      fg_color='#fbd3c7',
+                                                      text_color= "#003366")
+        self.start_title.grid(row=0, column=1, pady=100)
+        self.start_title.place(x = 315, y = 90)
+        
         self.start_text = customtkinter.CTkLabel(self.start_frame, 
                                                       width=700,
                                                       height= 230,
-                                                      font=customtkinter.CTkFont(family= "Microsoft New Tai Lue" ,size=24,weight="bold"),
-                                                      text= "ㅤWelcome to Keeb Configurator\n\nㅤChoose a Keyboard kit in your budget\nㅤChoose the switches you like\nㅤChoose a keycap set \nㅤSee the prices \nㅤListen to a sound test \n\nㅤㅤ watch recommended reviews and learn about mods.\n ",
+                                                      font=customtkinter.CTkFont(family= "Calibri" ,size=22,weight="bold"),
+                                                      text= "ㅤChoose a Keyboard kit in your budget\nㅤChoose the switches you like\nㅤChoose a keycap set \nㅤSee the prices \nㅤListen to a sound test \n\nㅤㅤ watch recommended reviews and learn about mods.\n ",
                                                       fg_color='#fbd3c7',
                                                       text_color= "#003366")
         self.start_text.grid(row=0, column=1, pady=100)
-        self.start_text.place(x = 300, y = 170)
+        self.start_text.place(x = 300, y = 300)
        
        #SIDE_BAR
         self.sidebar_frame = customtkinter.CTkFrame(self,
@@ -189,6 +211,7 @@ class App(customtkinter.CTk):
                                                 font= customtkinter.CTkFont(size=16 ,weight="bold"),
                                                 height= 35,
                                                 width=235)
+
 
         self.sidebar_widget = customtkinter.CTkButton(self.sidebar_frame,
                                                 fg_color=("gray17"),
@@ -867,6 +890,10 @@ class App(customtkinter.CTk):
         self.start_page_bg.grid_forget()
         self.start_frame.grid_forget()
         self.start_page_logos.grid_forget()
+        self.start_title.grid_forget()
+        self.start_page_logos2.grid_forget()
+
+        
         
         self.grid_columnconfigure(1, weight=1)
         self.grid_columnconfigure((2, 3), weight=0)

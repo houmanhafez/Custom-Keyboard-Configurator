@@ -706,11 +706,25 @@ other = {
             
             "small": {
                 "path": "icons/github.png",
-                "size" : (60, 60)
+                "size" : (50, 50)
             },
             "large": {
                 "path": "icons/github.png" ,
-                "size" : (60, 60)
+                "size" : (50, 50)
+            },
+        },
+    },
+    "discord" : {
+        "link" : "http://discordapp.com/users/633433376589873174",
+        "images" : {
+            
+            "small": {
+                "path": "icons/discord.jpg",
+                "size" : (50, 50)
+            },
+            "large": {
+                "path": "icons/discord.jpg" ,
+                "size" : (50, 50)
             },
         },
     },
@@ -845,7 +859,7 @@ other = {
                 "size" : (40, 40),
             },
             "large": {
-                "path": "icons/order.png" ,
+                "path": "icons/zoo65.png" ,
                 "size" : (200, 170)
             },
         }
