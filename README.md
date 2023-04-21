@@ -13,7 +13,7 @@
 #### You can see the up to date price of a keyboard part and if it's available, you can click on the buy icon and it'll redirect you to the website.
 ____________________________________________________________________________________________________________________________________________________________________
 
-![image](https://user-images.githubusercontent.com/120993360/231885594-65f30d53-b001-428a-96db-8fad69805af2.png)
+![image](https://user-images.githubusercontent.com/120993360/233515548-1ea11693-e1ce-4c56-b501-4401dd66f3cb.png)
 ____________________________________________________________________________________________________________________________________________________________________
 
 #### To run this application, make sure you have the following libraries installed:
