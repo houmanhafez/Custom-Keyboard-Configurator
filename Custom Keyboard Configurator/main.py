@@ -157,8 +157,7 @@ class App(customtkinter.CTk):
                                                     hover_color=("gray17"),
                                                     height= 35,
                                                     width= 35)
-        self.show_sidebar_button.place(x= 0, y=30)
-        self.show_sidebar_button.place_forget()
+        
         
         
         
@@ -893,7 +892,7 @@ class App(customtkinter.CTk):
         self.start_title.grid_forget()
         self.start_page_logos2.grid_forget()
 
-        
+        self.show_sidebar_button.place(x= 0, y=30)
         
         self.grid_columnconfigure(1, weight=1)
         self.grid_columnconfigure((2, 3), weight=0)
@@ -901,8 +900,8 @@ class App(customtkinter.CTk):
 
 
 
-        self.sidebar_frame.grid(row=0, column=0, rowspan=4, sticky="nsew")
-        self.sidebar_frame.grid_rowconfigure(4, weight=1)
+        #self.sidebar_frame.grid(row=0, column=0, rowspan=4, sticky="nsew")
+        #self.sidebar_frame.grid_rowconfigure(4, weight=1)
 
 
 
@@ -1035,11 +1034,14 @@ class App(customtkinter.CTk):
     def hide_sidebar(self):
         
         self.sidebar_frame.grid_forget()
+        
         self.logo_label.grid_forget()
+        
         self.sidebar_button_1.grid_forget()
         self.sidebar_button_2.grid_forget()
         self.sidebar_button_3.grid_forget()
         self.sidebar_button_4.grid_forget()
+        
         self.sidebar_widget.grid_forget()
         
             
