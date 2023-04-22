@@ -924,15 +924,15 @@ class App(customtkinter.CTk):
 
 
         self.main_switch.grid(row=0, column=1,padx=0, pady=(10, 20))  
-        self.main_switchset_price.place(x= 860, y= 140)
+        self.main_switchset_price.place(x= 750, y= 140)
 
 
         self.main_kit.grid(row=0, column=1, rowspan=2,padx=0, pady=(10, 20)) 
-        self.main_kit_price.place(x= 860, y= 330)
+        self.main_kit_price.place(x= 750, y= 330)
 
 
         self.main_keycapset.grid(row=1, column=1,padx=0, pady=(10, 20))               
-        self.main_keycapset_price.place(x= 860, y= 525)
+        self.main_keycapset_price.place(x= 750, y= 525)
 
 
 
