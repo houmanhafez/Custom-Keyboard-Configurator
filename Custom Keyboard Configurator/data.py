@@ -27,7 +27,7 @@ keyboard_kits = {
     },
             "large" : {
                 "path" : "Keeb/Tofu65.jpg",
-                "size" : (350, 140)
+                "size" : (360, 140)
             }
         }
     },
@@ -42,7 +42,7 @@ keyboard_kits = {
     },
             "large" : {
                 "path" : "Keeb/tester68.jpg",
-                "size" : (350, 140)
+                "size" : (360, 130)
             }
         }
     },
@@ -72,7 +72,7 @@ keyboard_kits = {
     },
             "large" : {
                 "path" : "Keeb/gmk67.jpg",
-                "size" : (350, 140)
+                "size" : (370, 140)
             }
         }
     },
@@ -87,7 +87,7 @@ keyboard_kits = {
     },
             "large" : {
                 "path" : "Keeb/gas67.jpg",
-                "size" : (350, 140)
+                "size" : (360, 140)
             }
         }
     },
