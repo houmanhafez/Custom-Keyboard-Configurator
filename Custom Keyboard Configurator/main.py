@@ -49,7 +49,7 @@ class App(customtkinter.CTk):
         self.resizable(False, False)
         
 
-        # THE USED FONT AND SIZE
+        # THE USED FONT AND SIZE 
         
         font1 = customtkinter.CTkFont(family= "Microsoft New Tai Lue" ,size=20,weight="bold")
         font2 = customtkinter.CTkFont(family= "Microsoft New Tai Lue" , size=16 ,weight="bold")
