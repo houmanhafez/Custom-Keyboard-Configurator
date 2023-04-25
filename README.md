@@ -16,7 +16,7 @@ ________________________________________________________________________________
 ![image](https://user-images.githubusercontent.com/120993360/233515548-1ea11693-e1ce-4c56-b501-4401dd66f3cb.png)
 ____________________________________________________________________________________________________________________________________________________________________
 
-#### First of all, download ''Python'' from the Microsoft Store.
+#### First of all, download ``Python`` from the Microsoft Store.
 #### To run this application, make sure you have the following libraries installed like so:
 
 - ##### ``pip install customtkinter``
