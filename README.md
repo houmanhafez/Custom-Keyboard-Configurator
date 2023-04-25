@@ -16,10 +16,11 @@ ________________________________________________________________________________
 ![image](https://user-images.githubusercontent.com/120993360/233515548-1ea11693-e1ce-4c56-b501-4401dd66f3cb.png)
 ____________________________________________________________________________________________________________________________________________________________________
 
-#### To run this application, make sure you have the following libraries installed:
+#### First of all, download ''Python'' from the Microsoft Store.
+#### To run this application, make sure you have the following libraries installed like so:
 
 - ##### ``pip install customtkinter``
-- ##### ``pip install pillow`` or ``pip install pil``
+- ##### ``pip install pillow``
 - ##### ``pip install bs4``
 - ##### ``pip install webbrowser``
 - ##### ``pip install requests``
