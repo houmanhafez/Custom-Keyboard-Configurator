@@ -21,7 +21,7 @@ ________________________________________________________________________________
 - ##### ``pip install webbrowser``
 - ##### ``pip install requests``
 ____________________________________________________________________________________________________________________________________________________________________
-#### After you click on 'Start', choose a Keyboard Kit, a Keycap Set and a Switch Set. On the right side of each Keyboard part, there is an up to date price that changes during sales and so on. 
+#### After you click on ``Start``, choose a Keyboard Kit, a Keycap Set and a Switch Set. On the right side of each Keyboard part, there is an up to date price that changes during sales and so on. 
 ____________________________________________________________________________________________________________________________________________________________________
 ![image](https://user-images.githubusercontent.com/120993360/233515548-1ea11693-e1ce-4c56-b501-4401dd66f3cb.png)
 ____________________________________________________________________________________________________________________________________________________________________
