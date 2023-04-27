@@ -1,5 +1,5 @@
 import time
-from data import keycap_sets, keyboard_kits, switch_sets, other
+from data import keycap_sets, keyboard_kits, switch_sets, other, keyboards
 import requests
 from bs4 import BeautifulSoup
 from PIL import Image
@@ -34,7 +34,7 @@ kitImages =     loadImages(keyboard_kits)
 keycapImages =  loadImages(keycap_sets)
 switchImages =  loadImages(switch_sets)
 otherImages =   loadImages(other)
-
+keyboardImages= loadImages(keyboards)
 #MAIN CLASS 
 class App(customtkinter.CTk):
     def __init__(self):
@@ -101,11 +101,28 @@ class App(customtkinter.CTk):
                                             corner_radius=20,
                                             text= 'Start',
                                             command=self.show_the_frame,
-                                            font=font1,
+                                            font= customtkinter.CTkFont(family= "Microsoft New Tai Lue" ,size=22,weight="bold"),
                                             height= 75,
-                                            width=140)
+                                            width=210)
         self.start_button.grid(row=2, column=1, columnspan= 4, rowspan= 4)
-        self.start_button.place(x = 580, y = 620)
+        self.start_button.place(x = 550, y = 610)
+        
+        self.keeb_button = customtkinter.CTkButton(self.start_frame,
+                                            fg_color=("#003366"),
+                                            bg_color=("#fbd3c7"),
+                                            hover_color=("#ffb6c1"),
+                                            border_color= ("#003366"),
+                                            border_width=2,
+                                            corner_radius=20,
+                                            text= 'Keyboards',
+                                            command=self.show_keeb,
+                                            font=customtkinter.CTkFont(family= "Microsoft New Tai Lue" ,size=22,weight="bold"),
+                                            height= 75,
+                                            width=210,
+                                            state="disabled")
+        self.keeb_button.grid(row=2, column=1, columnspan= 4, rowspan= 4)
+        self.keeb_button.place(x = 550, y = 720)
+        
 
         self.start_title = customtkinter.CTkLabel(self.start_frame, 
                                                       width=700,
@@ -856,13 +873,13 @@ class App(customtkinter.CTk):
 
 
         self.cherrymxclear = customtkinter.CTkButton(master=self.switches_frame,
-                                                     command=self.cherry_mx_clear,
-                                                     fg_color=("#420420"),
-                                                     image=switchImages['cherry_mx_clear']['images']['small'],
-                                                     text='Cherry Clear',
-                                                     compound='left',
-                                                     width=140,
-                                                     height=45)
+                            command=self.cherry_mx_clear,
+                            fg_color=("#420420"),
+                            image=switchImages['cherry_mx_clear']['images']['small'],
+                            text='Cherry Clear',
+                            compound='left',
+                            width=140,
+                            height=45)
         self.switches_frame_switches.append(self.cherrymxclear)
  
             
@@ -885,6 +902,7 @@ class App(customtkinter.CTk):
 
         
         self.start_button.grid_forget()
+        self.keeb_button.grid_forget()
         self.start_text.grid_forget()
         self.start_page_bg.grid_forget()
         self.start_frame.grid_forget()
@@ -897,12 +915,6 @@ class App(customtkinter.CTk):
         self.grid_columnconfigure(1, weight=1)
         self.grid_columnconfigure((2, 3), weight=0)
         self.grid_rowconfigure((0, 1, 2), weight=1)
-
-
-
-        #self.sidebar_frame.grid(row=0, column=0, rowspan=4, sticky="nsew")
-        #self.sidebar_frame.grid_rowconfigure(4, weight=1)
-
 
 
         self.logo_label.grid(row=0, column=0, padx=20, pady=40)
@@ -1052,6 +1064,30 @@ class App(customtkinter.CTk):
         self.hide_sidebar_button.place_forget()
         self.show_sidebar_button.place(x=0, y=30)
 
+        
+        
+    def show_keeb(self):
+        
+        self.start_button.grid_forget()
+        self.keeb_button.grid_forget()
+        self.start_text.grid_forget()
+        self.start_page_bg.grid_forget()
+        self.start_frame.grid_forget()
+        self.start_page_logos.grid_forget()
+        self.start_title.grid_forget()
+        self.start_page_logos2.grid_forget()
+        
+        self.image = customtkinter.CTkLabel(self,
+                                            image= keyboardImages["image0"]["images"]["large"],
+                                            text=  "text",
+                                            compound= 'top')
+        self.image.place(x = 130, y = 100)
+        
+        
+        
+        
+        
+        
         
         # all the functions to change the Main_Label's image to the clicked button's keyboard kit
     def tofu_60(self):

@@ -866,3 +866,22 @@ other = {
             
     },
 }
+
+keyboards={
+
+    "image0" : {
+        
+        "description" : "NK65 v2 - Aluminum Edition, e-white €243,84\n Tribosys 3204 €17.65 \n GMK Olivia ++ Spacebars €40.01 \n GMK Olivia ++ Core kit Light €190.00 \n Gateron white €20total including shipping and import tax: €511,5",              
+        "images": {
+    
+            "small": {
+                "path": "images/image0.jpg" ,
+                "size" : (1400, 900)
+            },
+            "large": {
+                "path": "images/image0.jpg" ,
+                "size" : (1000, 500)
+            },
+        },
+    },
+}
