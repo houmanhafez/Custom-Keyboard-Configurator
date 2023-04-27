@@ -23,16 +23,17 @@ ________________________________________________________________________________
 ____________________________________________________________________________________________________________________________________________________________________
 #### After you click on ``Start``, choose a Keyboard Kit, a Keycap Set and a Switch Set. On the right side of each Keyboard part, there is an up to date price that changes during sales and so on. 
 ____________________________________________________________________________________________________________________________________________________________________
-![image](https://user-images.githubusercontent.com/120993360/233515548-1ea11693-e1ce-4c56-b501-4401dd66f3cb.png)
+![image](https://user-images.githubusercontent.com/120993360/234732944-16b05455-e762-4c0a-9b14-22eea33efc83.png)
 ____________________________________________________________________________________________________________________________________________________________________
 #### To watch a review about each part, select it from the scrollable Frames and click on them in the Main Frame. If you are interested in an item and it is in your budget, then you can click on the shopping cart icon and it will take you to the corresponding Website. 
 ____________________________________________________________________________________________________________________________________________________________________
-![image](https://user-images.githubusercontent.com/120993360/233758267-e209fcad-683e-4dd6-803f-0aa6181d987c.png)
+![image](https://user-images.githubusercontent.com/120993360/234732854-c443aafc-d76f-4bbc-a11c-e90b0a9a04a5.png)
 ____________________________________________________________________________________________________________________________________________________________________
 #### There is a button on the top left that will open up the Sidebar. Here you can watch the 4 Guides: ``Keyboard Kits``, ``Switches``, ``Mods`` and ``Stabilizers`` that can help greatly with budgeting and for someone that already has a keyboard, they can help increase smoothness of their typing experience, improve their keyboard's sound and decrease scratch and ping.
 ____________________________________________________________________________________________________________________________________________________________________
-![image](https://user-images.githubusercontent.com/120993360/232662688-df3e1c18-a9b7-4e71-a604-095b3ea2c990.png)
+![image](https://user-images.githubusercontent.com/120993360/234732802-ce2957e7-34b2-4ea6-baba-64cf737e3cef.png)
 ____________________________________________________________________________________________________________________________________________________________________ 
+
 
 
 
