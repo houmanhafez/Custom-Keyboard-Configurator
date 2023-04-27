@@ -100,7 +100,7 @@ class App(customtkinter.CTk):
                                             text= 'Start',
                                             command=self.show_the_frame,
                                             font= customtkinter.CTkFont(family= "Microsoft New Tai Lue" ,size=22,weight="bold"),
-                                            height= 75,
+                                            height= 65,
                                             width=210)
         self.start_button.grid(row=2, column=1, columnspan= 4, rowspan= 4)
         self.start_button.place(x = 550, y = 610)
@@ -113,7 +113,7 @@ class App(customtkinter.CTk):
                                             text= 'Keyboards',
                                             command=self.show_keeb,
                                             font=customtkinter.CTkFont(family= "Microsoft New Tai Lue" ,size=22,weight="bold"),
-                                            height= 75,
+                                            height= 65,
                                             width=210,
                                             state="disabled")
         self.keeb_button.grid(row=2, column=1, columnspan= 4, rowspan= 4)
@@ -627,7 +627,7 @@ class App(customtkinter.CTk):
         self.keycaps_frame_switches.append(self.gmkkaiju)
  
 
-
+ 
         self.gmklaser = customtkinter.CTkButton(master=self.keycaps_frame,
                                                 command=self.gmk_laser,
                                                 corner_radius=20,
@@ -1075,12 +1075,17 @@ class App(customtkinter.CTk):
         
         self.image = customtkinter.CTkLabel(self,
                                             image= keyboardImages["image0"]["images"]["large"],
-                                            text=  "text",
-                                            compound= 'top')
-        self.image.place(x = 130, y = 100)
+                                            text=  keyboards["image0"]["description"],
+                                            font= customtkinter.CTkFont(family= "Microsoft New Tai Lue" ,size=20,weight="bold"),
+                                            compound= 'top',
+                                            pady= 20)
+        self.image.place(x = 175, y = 100)
         
-        
-        
+        self.next = customtkinter.CTkButton(self,
+                                            text=  "Next",
+                                            width= 100,
+                                            height = 50)
+        self.next.place(x = 1150, y = 350)
         
         
         
