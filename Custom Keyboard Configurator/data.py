@@ -835,7 +835,7 @@ other = {
     },
     "widget0" : {
         
-        "link" : 'https://candykeys.com/search/think',
+        "link" : 'https://candykeys.com/search/gmk%20nord',
         "images" : {
                
             "small" : {
@@ -844,7 +844,7 @@ other = {
             },
             "large": {
                 "path": "icons/widget.png" ,
-                "size" : (240, 190)
+                "size" : (240, 150)
             },
         }
             

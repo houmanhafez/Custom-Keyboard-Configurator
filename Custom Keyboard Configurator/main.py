@@ -178,7 +178,7 @@ class App(customtkinter.CTk):
         # SIDEBAR BUTTONS
         self.sidebar_button_1 = customtkinter.CTkButton(self.sidebar_frame,
                                                 fg_color=("#333333"),
-                                                border_color= ("#420420"),
+                                                border_color= ("#3E5A70"),
                                                 command = lambda: webbrowser.open(other['kits_guide']['link']),                           
                                                 image=otherImages['new_tab']['images']['small'],
                                                 border_width=2,
@@ -190,7 +190,7 @@ class App(customtkinter.CTk):
                                    
         self.sidebar_button_2 = customtkinter.CTkButton(self.sidebar_frame,
                                                 fg_color=("#333333"),
-                                                border_color= ("#420420"),
+                                                border_color= ("#3E5A70"),
                                                 command = lambda: webbrowser.open(other['switches_guide']['link']), 
                                                 image=otherImages['new_tab']['images']['small'],
                                                 border_width=2,
@@ -202,7 +202,7 @@ class App(customtkinter.CTk):
         
         self.sidebar_button_3 = customtkinter.CTkButton(self.sidebar_frame,
                                                 fg_color=("#333333"),
-                                                border_color= ("#420420"),
+                                                border_color= ("#3E5A70"),
                                                 command = lambda: webbrowser.open(other['mods_guide']['link']), 
                                                 image=otherImages['new_tab']['images']['small'],
                                                 border_width=2,
@@ -214,7 +214,7 @@ class App(customtkinter.CTk):
         
         self.sidebar_button_4 = customtkinter.CTkButton(self.sidebar_frame,
                                                 fg_color=("#333333"),
-                                                border_color= ("#420420"),
+                                                border_color= ("#3E5A70"),
                                                 command = lambda: webbrowser.open(other['stabilizers']['link']), 
                                                 image=otherImages['new_tab']['images']['small'],
                                                 border_width=2,
@@ -228,7 +228,7 @@ class App(customtkinter.CTk):
         self.sidebar_widget = customtkinter.CTkButton(self.sidebar_frame,
                                                 fg_color=("gray17"),
                                                 hover_color=("gray17"),
-                                                border_color= "#420420",
+                                                border_color= "#3E5A70",
                                                 border_width=2,
                                                 corner_radius=20,
                                                 command = lambda: webbrowser.open(other['widget0']['link']), 
@@ -247,7 +247,7 @@ class App(customtkinter.CTk):
         self.scaling_optionemenu = customtkinter.CTkOptionMenu(self.sidebar_frame,
 
                                                                values=["100%", "105%"],
-                                                               fg_color="#420420",
+                                                               fg_color="#3E5A70",
                                                                command=self.change_scaling_event)
 
 
@@ -342,9 +342,9 @@ class App(customtkinter.CTk):
                                               command=self.tofu_60,
                                               image=kitImages['tofu60']['images']['small'],
                                               corner_radius=20,
-                                              fg_color=("#42043f"),
+                                              fg_color=("#3e706d"),
                                               border_width=0,
-                                              border_color= "#42043f",
+                                              border_color= "#3e706d",
                                               text='Tofu60')
         self.keyboardkit_frame_switches.append(self.tofu60)
 
@@ -353,9 +353,9 @@ class App(customtkinter.CTk):
         self.tofu65 = customtkinter.CTkButton(master=self.keyboardkit_frame,
                                               command=self.tofu_65,
                                               corner_radius=20,
-                                              fg_color=("#42043f"),
+                                              fg_color=("#3e706d"),
                                               border_width=0,
-                                              border_color= "#42043f",
+                                              border_color= "#3e706d",
                                               image=kitImages['tofu65']['images']['small'],
                                               text='Tofu65')
         self.keyboardkit_frame_switches.append(self.tofu65)
@@ -365,9 +365,9 @@ class App(customtkinter.CTk):
         self.tester68 = customtkinter.CTkButton(master=self.keyboardkit_frame,
                                                 command=self.tester_68,
                                                 corner_radius=20,
-                                                fg_color=("#42043f"),
+                                                fg_color=("#3e706d"),
                                                 border_width=0,
-                                                border_color= "#42043f",
+                                                border_color= "#3e706d",
                                                 image=kitImages['tester68']['images']['small'],
                                                 text='Tester68')
         self.keyboardkit_frame_switches.append(self.tester68)
@@ -376,9 +376,9 @@ class App(customtkinter.CTk):
         self.tester84 = customtkinter.CTkButton(master=self.keyboardkit_frame,
                                                 command=self.tester_84,
                                                 corner_radius=20,
-                                                fg_color=("#42043f"),
+                                                fg_color=("#3e706d"),
                                                 border_width=0,
-                                                border_color= "#42043f",
+                                                border_color= "#3e706d",
                                                 image=kitImages['tester84']['images']['small'],
                                                 text='Tester84')
 
@@ -388,9 +388,9 @@ class App(customtkinter.CTk):
         self.gmk67 = customtkinter.CTkButton(master=self.keyboardkit_frame,
                                             command=self.gmk_67,
                                             corner_radius=20,
-                                            fg_color=("#42043f"),
+                                            fg_color=("#3e706d"),
                                             border_width=0,
-                                            border_color= "#42043f",
+                                            border_color= "#3e706d",
                                             image=kitImages['gmk67']['images']['small'],
                                             text='Gmk 67')
 
@@ -400,9 +400,9 @@ class App(customtkinter.CTk):
         self.gas67 = customtkinter.CTkButton(master=self.keyboardkit_frame,
                                             command=self.gas_67,
                                             corner_radius=20,
-                                            fg_color=("#42043f"),
+                                            fg_color=("#3e706d"),
                                             border_width=0,
-                                            border_color= "#42043f",   
+                                            border_color= "#3e706d",   
                                             image=kitImages['gas67']['images']['small'],
                                             text='GAS 67')
 
@@ -412,9 +412,9 @@ class App(customtkinter.CTk):
         self.everglide75 = customtkinter.CTkButton(master=self.keyboardkit_frame,
                                                    command=self.everglide_75,
                                                    corner_radius=20,
-                                                   fg_color=("#42043f"),
+                                                   fg_color=("#3e706d"),
                                                     border_width=0,
-                                                    border_color= "#42043f",
+                                                    border_color= "#3e706d",
                                                    image=kitImages['everglide75']['images']['small'],
                                                    text='EG 75')
 
@@ -425,9 +425,9 @@ class App(customtkinter.CTk):
         self.mk870 = customtkinter.CTkButton(master=self.keyboardkit_frame,
                                              command=self.mk_870,
                                              corner_radius=20,
-                                             fg_color=("#42043f"),
+                                             fg_color=("#3e706d"),
                                             border_width=0,
-                                            border_color= "#42043f",
+                                            border_color= "#3e706d",
                                              image=kitImages['mk870']['images']['small'],
                                              text='MK 870')
 
@@ -438,9 +438,9 @@ class App(customtkinter.CTk):
         self.monsgeekm1 = customtkinter.CTkButton(master=self.keyboardkit_frame,
                                                   command=self.monsgeek_m1,
                                                   corner_radius=20,
-                                                  fg_color=("#42043f"),
+                                                  fg_color=("#3e706d"),
                                                   border_width=0,
-                                                  border_color= "#42043f",
+                                                  border_color= "#3e706d",
                                                   image=kitImages['monsgeekm1']['images']['small'],
                                                   text='MG M1')
 
@@ -451,9 +451,9 @@ class App(customtkinter.CTk):
         self.nexttime75 = customtkinter.CTkButton(master=self.keyboardkit_frame,
                                                   command=self.nexttime_75,
                                                   corner_radius=20,
-                                                  fg_color=("#42043f"),
+                                                  fg_color=("#3e706d"),
                                                   border_width=0,
-                                                  border_color= "#42043f",
+                                                  border_color= "#3e706d",
                                                   image=kitImages['nexttime75']['images']['small'], 
                                                   text='NT 75')
 
@@ -464,9 +464,9 @@ class App(customtkinter.CTk):
         self.nj80 = customtkinter.CTkButton(master=self.keyboardkit_frame,
                                             command=self.nj_80,
                                             corner_radius=20,
-                                            fg_color=("#42043f"),
+                                            fg_color=("#3e706d"),
                                             border_width=0,
-                                            border_color= "#42043f",
+                                            border_color= "#3e706d",
                                             image=kitImages['nj80']['images']['small'],
                                             text='NJ 80')
 
@@ -477,9 +477,9 @@ class App(customtkinter.CTk):
         self.tm680 = customtkinter.CTkButton(master=self.keyboardkit_frame,
                                              command=self.tm_680,
                                              corner_radius=20,
-                                             fg_color=("#42043f"),
+                                             fg_color=("#3e706d"),
                                              border_width=0,
-                                             border_color= "#42043f",
+                                             border_color= "#3e706d",
                                              image=kitImages['tm680']['images']['small'],
                                              text='TM680')
                                              
@@ -493,9 +493,9 @@ class App(customtkinter.CTk):
         self.dcx9009 = customtkinter.CTkButton(master=self.keycaps_frame,
                                                command=self.dcx_9009,
                                                corner_radius=20,
-                                               fg_color=("#42043f"),
+                                               fg_color=("#3e706d"),
                                                border_width=0,
-                                               border_color= "#42043f",
+                                               border_color= "#3e706d",
                                                image=keycapImages['dcx_9009']['images']['small'],
                                                text='9009')
 
@@ -506,9 +506,9 @@ class App(customtkinter.CTk):
         self.dcxblackonwhite = customtkinter.CTkButton(master=self.keycaps_frame,
                                                        command=self.dcx_black_on_white,
                                                        corner_radius=20,
-                                                       fg_color=("#42043f"),
+                                                       fg_color=("#3e706d"),
                                                         border_width=0,
-                                                        border_color= "#42043f",
+                                                        border_color= "#3e706d",
                                                        image=keycapImages['dcx_bow']['images']['small'],
                                                        text='B.O.W')
 
@@ -519,9 +519,9 @@ class App(customtkinter.CTk):
         self.dcxwhiteonblack = customtkinter.CTkButton(master=self.keycaps_frame,
                                                        command=self.dcx_white_on_black,
                                                        corner_radius=20,
-                                                       fg_color=("#42043f"),
+                                                       fg_color=("#3e706d"),
                                                        border_width=0,
-                                                       border_color= "#42043f",
+                                                       border_color= "#3e706d",
                                                        image=keycapImages['dcx_wob']['images']['small'],
                                                        text='W.O.B')
 
@@ -532,9 +532,9 @@ class App(customtkinter.CTk):
         self.dcxcyber = customtkinter.CTkButton(master=self.keycaps_frame,
                                                 command=self.dcx_cyber,
                                                 corner_radius=20,
-                                                fg_color=("#42043f"),
+                                                fg_color=("#3e706d"),
                                                 border_width=0,
-                                                border_color= "#42043f",
+                                                border_color= "#3e706d",
                                                 image=keycapImages['dcx_cyber']['images']['small'],
                                                 text='Cyber')
 
@@ -545,9 +545,9 @@ class App(customtkinter.CTk):
         self.dcxhyperfuse = customtkinter.CTkButton(master=self.keycaps_frame,
                                                     command=self.dcx_hyperfuse,
                                                     corner_radius=20,
-                                                    fg_color=("#42043f"),
+                                                    fg_color=("#3e706d"),
                                                     border_width=0,
-                                                    border_color= "#42043f",
+                                                    border_color= "#3e706d",
                                                     image=keycapImages['dcx_hyperfuse']['images']['small'],
                                                     text='DCX HF')
 
@@ -558,9 +558,9 @@ class App(customtkinter.CTk):
         self.dcxkeyman = customtkinter.CTkButton(master=self.keycaps_frame,
                                                  command=self.dcx_keyman,
                                                  corner_radius=20,
-                                                 fg_color=("#42043f"),
+                                                 fg_color=("#3e706d"),
                                                  border_width=0,
-                                                 border_color= "#42043f",
+                                                 border_color= "#3e706d",
                                                  image=keycapImages['dcx_keyman']['images']['small'],
                                                  text='Keyman')
 
@@ -571,9 +571,9 @@ class App(customtkinter.CTk):
         self.dcxviolac = customtkinter.CTkButton(master=self.keycaps_frame,
                                                  command=self.dcx_violac,
                                                  corner_radius=20,
-                                                 fg_color=("#42043f"),
+                                                 fg_color=("#3e706d"),
                                                  border_width=0,
-                                                 border_color= "#42043f",
+                                                 border_color= "#3e706d",
                                                  image=keycapImages['dcx_violac']['images']['small'],
                                                  text='Violac')
         self.keycaps_frame_switches.append(self.dcxviolac)
@@ -583,9 +583,9 @@ class App(customtkinter.CTk):
         self.gmkarmstrong = customtkinter.CTkButton(master=self.keycaps_frame,
                                                     command=self.gmk_armstrong,
                                                     corner_radius=20,
-                                                    fg_color=("#42043f"),
+                                                    fg_color=("#3e706d"),
                                                     border_width=0,
-                                                    border_color= "#42043f",
+                                                    border_color= "#3e706d",
                                                     image=keycapImages['gmk_armstrong']['images']['small'],
                                                     text='GodS')
         self.keycaps_frame_switches.append(self.gmkarmstrong)
@@ -595,9 +595,9 @@ class App(customtkinter.CTk):
         self.gmkbluesamurai = customtkinter.CTkButton(master=self.keycaps_frame,
                                                       command=self.gmk_bluesamurai,
                                                       corner_radius=20,
-                                                      fg_color=("#42043f"),
+                                                      fg_color=("#3e706d"),
                                                       border_width=0,
-                                                      border_color= "#42043f",
+                                                      border_color= "#3e706d",
                                                       image=keycapImages['gmk_bluesamurai']['images']['small'],
                                                       text='BlueS')
         self.keycaps_frame_switches.append(self.gmkbluesamurai)
@@ -607,9 +607,9 @@ class App(customtkinter.CTk):
         self.gmkdots = customtkinter.CTkButton(master=self.keycaps_frame,
                                                command=self.gmk_dots,
                                                corner_radius=20,
-                                               fg_color=("#42043f"),
+                                               fg_color=("#3e706d"),
                                                border_width=0,
-                                               border_color= "#42043f",
+                                               border_color= "#3e706d",
                                                image=keycapImages['gmk_dots']['images']['small'],
                                                text='Dots')
         self.keycaps_frame_switches.append(self.gmkdots)
@@ -619,9 +619,9 @@ class App(customtkinter.CTk):
         self.gmkkaiju = customtkinter.CTkButton(master=self.keycaps_frame,
                                                 command=self.gmk_kaiju,
                                                 corner_radius=20,
-                                                fg_color=("#42043f"),
+                                                fg_color=("#3e706d"),
                                                 border_width=0,
-                                                border_color= "#42043f",
+                                                border_color= "#3e706d",
                                                 image=keycapImages['gmk_kaiju']['images']['small'],
                                                 text='Kaiju')
         self.keycaps_frame_switches.append(self.gmkkaiju)
@@ -631,9 +631,9 @@ class App(customtkinter.CTk):
         self.gmklaser = customtkinter.CTkButton(master=self.keycaps_frame,
                                                 command=self.gmk_laser,
                                                 corner_radius=20,
-                                                fg_color=("#42043f"),
+                                                fg_color=("#3e706d"),
                                                 border_width=0,
-                                                border_color= "#42043f",
+                                                border_color= "#3e706d",
                                                 image=keycapImages['gmk_laser']['images']['small'],
                                                 text='Laser')
         self.keycaps_frame_switches.append(self.gmklaser)
@@ -648,7 +648,7 @@ class App(customtkinter.CTk):
         # ALL THE SWITCHE SET BUTTONS
         self.c3kiwi = customtkinter.CTkButton(master=self.switches_frame,
                                               command=self.c3_kiwi,
-                                              fg_color=("#420420"),
+                                              fg_color=("#703E41"),
                                               image=switchImages['c3_kiwi']['images']['small'],
                                               text='C3 Kiwi',
                                               compound='left',
@@ -660,7 +660,7 @@ class App(customtkinter.CTk):
 
         self.c3tang = customtkinter.CTkButton(master=self.switches_frame,
                                               command=self.c3_tangerine,
-                                              fg_color=("#420420"),
+                                              fg_color=("#703E41"),
                                               image=switchImages['c3_tangerine']['images']['small'],
                                               text='C3 Tangerine',
                                               compound='left',
@@ -672,7 +672,7 @@ class App(customtkinter.CTk):
 
         self.boxjade = customtkinter.CTkButton(master=self.switches_frame,
                                                command=self.box_jade,
-                                               fg_color=("#420420"),
+                                               fg_color=("#703E41"),
                                                image=switchImages['box_jade']['images']['small'],
                                                text='Box Jade',
                                                compound='left',
@@ -684,7 +684,7 @@ class App(customtkinter.CTk):
 
         self.boxnavy = customtkinter.CTkButton(master=self.switches_frame,
                                                command=self.box_navy,
-                                               fg_color=("#420420"),
+                                               fg_color=("#703E41"),
                                                image=switchImages['box_navy']['images']['small'],
                                                text='Box Navy',
                                                compound='left',
@@ -696,7 +696,7 @@ class App(customtkinter.CTk):
 
         self.glopanda = customtkinter.CTkButton(master=self.switches_frame,
                                                 command=self.holy_panda,
-                                                fg_color=("#420420"),
+                                                fg_color=("#703E41"),
                                                 image=switchImages['holy_panda']['images']['small'],
                                                 text='Holy Panda',
                                                 compound='left',
@@ -708,7 +708,7 @@ class App(customtkinter.CTk):
 
         self.holpanda = customtkinter.CTkButton(master=self.switches_frame,
                                                 command=self.glorious_panda,
-                                                fg_color=("#420420"),
+                                                fg_color=("#703E41"),
                                                 image=switchImages['glorious_panda']['images']['small'],
                                                 text='Glor. Panda',
                                                 compound='left',
@@ -720,7 +720,7 @@ class App(customtkinter.CTk):
 
         self.gateronblackinkv2 = customtkinter.CTkButton(master=self.switches_frame,
                                                          command=self.gateron_black_ink_v2,
-                                                         fg_color=("#420420"),
+                                                         fg_color=("#703E41"),
                                                          image=switchImages['gateron_ink_black_v2']['images']['small'],
                                                          text='Gateron InkV2',
                                                          compound='left',
@@ -732,7 +732,7 @@ class App(customtkinter.CTk):
 
         self.gateronoilking = customtkinter.CTkButton(master=self.switches_frame,
                                                       command=self.gateron_oil_king,
-                                                      fg_color=("#420420"),
+                                                      fg_color=("#703E41"),
                                                       image=switchImages['gateron_oilking']['images']['small'],
                                                       text='Gateron OilKing',
                                                       compound='left',
@@ -744,7 +744,7 @@ class App(customtkinter.CTk):
 
         self.nkcreams = customtkinter.CTkButton(master=self.switches_frame,
                                                 command=self.nk_creams,
-                                                fg_color=("#420420"),
+                                                fg_color=("#703E41"),
                                                 image=switchImages['novelkey_cream']['images']['small'],
                                                 text='NkCreams',
                                                 compound='left',
@@ -756,7 +756,7 @@ class App(customtkinter.CTk):
 
         self.kangwhitev3 = customtkinter.CTkButton(master=self.switches_frame,
                                                    command=self.kang_white_v3,
-                                                   fg_color=("#420420"),
+                                                   fg_color=("#703E41"),
                                                    image=switchImages['ktt_kang_white_v3']['images']['small'],
                                                    text='Kang White V3',
                                                    compound='left', width=140, height=45)
@@ -766,7 +766,7 @@ class App(customtkinter.CTk):
 
         self.kttgrapefruit = customtkinter.CTkButton(master=self.switches_frame,
                                                      command=self.ktt_grapefruit,
-                                                     fg_color=("#420420"),
+                                                     fg_color=("#703E41"),
                                                      image=switchImages['ktt_grapefruit']['images']['small'],
                                                      text='KTT Grapefruit',
                                                      compound='left',
@@ -775,7 +775,7 @@ class App(customtkinter.CTk):
  
         self.kttpeach = customtkinter.CTkButton(master=self.switches_frame,
                                                 command=self.ktt_peach,
-                                                fg_color=("#420420"),
+                                                fg_color=("#703E41"),
                                                 image=switchImages['ktt_peach']['images']['small'],
                                                 text='KTT Peach',
                                                 compound='left',
@@ -786,7 +786,7 @@ class App(customtkinter.CTk):
 
         self.kttstrawberry = customtkinter.CTkButton(master=self.switches_frame,
                                                      command=self.ktt_strawberry,
-                                                     fg_color=("#420420"),
+                                                     fg_color=("#703E41"),
                                                      image=switchImages['ktt_strawberry']['images']['small'],
                                                      text='KTT Strawberry',
                                                      compound='left',
@@ -798,7 +798,7 @@ class App(customtkinter.CTk):
 
         self.lavenderpurp = customtkinter.CTkButton(master=self.switches_frame,
                                                     command=self.akko_lavender_purple,
-                                                    fg_color=("#420420"),
+                                                    fg_color=("#703E41"),
                                                     image=switchImages['akko_lavender_purple']['images']['small'],
                                                     text='Akko Purple',
                                                     compound='left',
@@ -810,7 +810,7 @@ class App(customtkinter.CTk):
 
         self.radiantred = customtkinter.CTkButton(master=self.switches_frame,
                                                   command=self.akko_radiant_red,
-                                                  fg_color=("#420420"),
+                                                  fg_color=("#703E41"),
                                                   image=switchImages['akko_radiant_red']['images']['small'],
                                                   text='Akko Red',
                                                   compound='left',
@@ -822,7 +822,7 @@ class App(customtkinter.CTk):
 
         self.rosered = customtkinter.CTkButton(master=self.switches_frame,
                                                command=self.akko_rose_red,
-                                               fg_color=("#420420"),
+                                               fg_color=("#703E41"),
                                                image=switchImages['akko_rose_red']['images']['small'],
                                                text='Akko Rose',
                                                compound='left',
@@ -834,7 +834,7 @@ class App(customtkinter.CTk):
 
         self.zealiosv2 = customtkinter.CTkButton(master=self.switches_frame,
                                                  command=self.zealios_v2,
-                                                 fg_color=("#420420"),
+                                                 fg_color=("#703E41"),
                                                  image=switchImages['zealios_v2']['images']['small'],
                                                  text='ZealiosV2',
                                                  compound='left',
@@ -846,7 +846,7 @@ class App(customtkinter.CTk):
 
         self.kttwinered = customtkinter.CTkButton(master=self.switches_frame,
                                                   command=self.ktt_winered,
-                                                  fg_color=("#420420"),
+                                                  fg_color=("#703E41"),
                                                   image=switchImages['ktt_wine_red']['images']['small'],
                                                   text='KTT WineRed',
                                                   compound='left',
@@ -858,7 +858,7 @@ class App(customtkinter.CTk):
 
         self.cherrymxbrown = customtkinter.CTkButton(master=self.switches_frame,
                                                     command=self.cherry_mx_brown,
-                                                    fg_color=("#420420"),
+                                                    fg_color=("#703E41"),
                                                     image=switchImages['cherry_mx_brown']['images']['small'],
                                                     text='Cherry Brown',
                                                     compound='left',
@@ -870,7 +870,7 @@ class App(customtkinter.CTk):
 
         self.cherrymxclear = customtkinter.CTkButton(master=self.switches_frame,
                             command=self.cherry_mx_clear,
-                            fg_color=("#420420"),
+                            fg_color=("#703E41"),
                             image=switchImages['cherry_mx_clear']['images']['small'],
                             text='Cherry Clear',
                             compound='left',
