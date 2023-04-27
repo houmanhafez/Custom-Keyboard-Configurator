@@ -96,9 +96,7 @@ class App(customtkinter.CTk):
                                             fg_color=("#003366"),
                                             bg_color=("#fbd3c7"),
                                             hover_color=("#ffb6c1"),
-                                            border_color= ("#003366"),
-                                            border_width=2,
-                                            corner_radius=20,
+                                            corner_radius=80,
                                             text= 'Start',
                                             command=self.show_the_frame,
                                             font= customtkinter.CTkFont(family= "Microsoft New Tai Lue" ,size=22,weight="bold"),
@@ -111,9 +109,7 @@ class App(customtkinter.CTk):
                                             fg_color=("#003366"),
                                             bg_color=("#fbd3c7"),
                                             hover_color=("#ffb6c1"),
-                                            border_color= ("#003366"),
-                                            border_width=2,
-                                            corner_radius=20,
+                                            corner_radius=80,
                                             text= 'Keyboards',
                                             command=self.show_keeb,
                                             font=customtkinter.CTkFont(family= "Microsoft New Tai Lue" ,size=22,weight="bold"),
@@ -347,7 +343,7 @@ class App(customtkinter.CTk):
                                               image=kitImages['tofu60']['images']['small'],
                                               corner_radius=20,
                                               fg_color=("#42043f"),
-                                              border_width=2,
+                                              border_width=0,
                                               border_color= "#42043f",
                                               text='Tofu60')
         self.keyboardkit_frame_switches.append(self.tofu60)
@@ -358,7 +354,7 @@ class App(customtkinter.CTk):
                                               command=self.tofu_65,
                                               corner_radius=20,
                                               fg_color=("#42043f"),
-                                              border_width=2,
+                                              border_width=0,
                                               border_color= "#42043f",
                                               image=kitImages['tofu65']['images']['small'],
                                               text='Tofu65')
@@ -370,7 +366,7 @@ class App(customtkinter.CTk):
                                                 command=self.tester_68,
                                                 corner_radius=20,
                                                 fg_color=("#42043f"),
-                                                border_width=2,
+                                                border_width=0,
                                                 border_color= "#42043f",
                                                 image=kitImages['tester68']['images']['small'],
                                                 text='Tester68')
@@ -381,7 +377,7 @@ class App(customtkinter.CTk):
                                                 command=self.tester_84,
                                                 corner_radius=20,
                                                 fg_color=("#42043f"),
-                                                border_width=2,
+                                                border_width=0,
                                                 border_color= "#42043f",
                                                 image=kitImages['tester84']['images']['small'],
                                                 text='Tester84')
@@ -393,7 +389,7 @@ class App(customtkinter.CTk):
                                             command=self.gmk_67,
                                             corner_radius=20,
                                             fg_color=("#42043f"),
-                                            border_width=2,
+                                            border_width=0,
                                             border_color= "#42043f",
                                             image=kitImages['gmk67']['images']['small'],
                                             text='Gmk 67')
@@ -405,7 +401,7 @@ class App(customtkinter.CTk):
                                             command=self.gas_67,
                                             corner_radius=20,
                                             fg_color=("#42043f"),
-                                            border_width=2,
+                                            border_width=0,
                                             border_color= "#42043f",   
                                             image=kitImages['gas67']['images']['small'],
                                             text='GAS 67')
@@ -417,7 +413,7 @@ class App(customtkinter.CTk):
                                                    command=self.everglide_75,
                                                    corner_radius=20,
                                                    fg_color=("#42043f"),
-                                                    border_width=2,
+                                                    border_width=0,
                                                     border_color= "#42043f",
                                                    image=kitImages['everglide75']['images']['small'],
                                                    text='EG 75')
@@ -430,7 +426,7 @@ class App(customtkinter.CTk):
                                              command=self.mk_870,
                                              corner_radius=20,
                                              fg_color=("#42043f"),
-                                            border_width=2,
+                                            border_width=0,
                                             border_color= "#42043f",
                                              image=kitImages['mk870']['images']['small'],
                                              text='MK 870')
@@ -443,7 +439,7 @@ class App(customtkinter.CTk):
                                                   command=self.monsgeek_m1,
                                                   corner_radius=20,
                                                   fg_color=("#42043f"),
-                                                  border_width=2,
+                                                  border_width=0,
                                                   border_color= "#42043f",
                                                   image=kitImages['monsgeekm1']['images']['small'],
                                                   text='MG M1')
@@ -456,7 +452,7 @@ class App(customtkinter.CTk):
                                                   command=self.nexttime_75,
                                                   corner_radius=20,
                                                   fg_color=("#42043f"),
-                                                  border_width=2,
+                                                  border_width=0,
                                                   border_color= "#42043f",
                                                   image=kitImages['nexttime75']['images']['small'], 
                                                   text='NT 75')
@@ -469,7 +465,7 @@ class App(customtkinter.CTk):
                                             command=self.nj_80,
                                             corner_radius=20,
                                             fg_color=("#42043f"),
-                                            border_width=2,
+                                            border_width=0,
                                             border_color= "#42043f",
                                             image=kitImages['nj80']['images']['small'],
                                             text='NJ 80')
@@ -482,7 +478,7 @@ class App(customtkinter.CTk):
                                              command=self.tm_680,
                                              corner_radius=20,
                                              fg_color=("#42043f"),
-                                             border_width=2,
+                                             border_width=0,
                                              border_color= "#42043f",
                                              image=kitImages['tm680']['images']['small'],
                                              text='TM680')
@@ -498,7 +494,7 @@ class App(customtkinter.CTk):
                                                command=self.dcx_9009,
                                                corner_radius=20,
                                                fg_color=("#42043f"),
-                                               border_width=2,
+                                               border_width=0,
                                                border_color= "#42043f",
                                                image=keycapImages['dcx_9009']['images']['small'],
                                                text='9009')
@@ -511,7 +507,7 @@ class App(customtkinter.CTk):
                                                        command=self.dcx_black_on_white,
                                                        corner_radius=20,
                                                        fg_color=("#42043f"),
-                                                        border_width=2,
+                                                        border_width=0,
                                                         border_color= "#42043f",
                                                        image=keycapImages['dcx_bow']['images']['small'],
                                                        text='B.O.W')
@@ -524,7 +520,7 @@ class App(customtkinter.CTk):
                                                        command=self.dcx_white_on_black,
                                                        corner_radius=20,
                                                        fg_color=("#42043f"),
-                                                       border_width=2,
+                                                       border_width=0,
                                                        border_color= "#42043f",
                                                        image=keycapImages['dcx_wob']['images']['small'],
                                                        text='W.O.B')
@@ -537,7 +533,7 @@ class App(customtkinter.CTk):
                                                 command=self.dcx_cyber,
                                                 corner_radius=20,
                                                 fg_color=("#42043f"),
-                                                border_width=2,
+                                                border_width=0,
                                                 border_color= "#42043f",
                                                 image=keycapImages['dcx_cyber']['images']['small'],
                                                 text='Cyber')
@@ -550,7 +546,7 @@ class App(customtkinter.CTk):
                                                     command=self.dcx_hyperfuse,
                                                     corner_radius=20,
                                                     fg_color=("#42043f"),
-                                                    border_width=2,
+                                                    border_width=0,
                                                     border_color= "#42043f",
                                                     image=keycapImages['dcx_hyperfuse']['images']['small'],
                                                     text='DCX HF')
@@ -563,7 +559,7 @@ class App(customtkinter.CTk):
                                                  command=self.dcx_keyman,
                                                  corner_radius=20,
                                                  fg_color=("#42043f"),
-                                                 border_width=2,
+                                                 border_width=0,
                                                  border_color= "#42043f",
                                                  image=keycapImages['dcx_keyman']['images']['small'],
                                                  text='Keyman')
@@ -576,7 +572,7 @@ class App(customtkinter.CTk):
                                                  command=self.dcx_violac,
                                                  corner_radius=20,
                                                  fg_color=("#42043f"),
-                                                 border_width=2,
+                                                 border_width=0,
                                                  border_color= "#42043f",
                                                  image=keycapImages['dcx_violac']['images']['small'],
                                                  text='Violac')
@@ -588,7 +584,7 @@ class App(customtkinter.CTk):
                                                     command=self.gmk_armstrong,
                                                     corner_radius=20,
                                                     fg_color=("#42043f"),
-                                                    border_width=2,
+                                                    border_width=0,
                                                     border_color= "#42043f",
                                                     image=keycapImages['gmk_armstrong']['images']['small'],
                                                     text='GodS')
@@ -600,7 +596,7 @@ class App(customtkinter.CTk):
                                                       command=self.gmk_bluesamurai,
                                                       corner_radius=20,
                                                       fg_color=("#42043f"),
-                                                      border_width=2,
+                                                      border_width=0,
                                                       border_color= "#42043f",
                                                       image=keycapImages['gmk_bluesamurai']['images']['small'],
                                                       text='BlueS')
@@ -612,7 +608,7 @@ class App(customtkinter.CTk):
                                                command=self.gmk_dots,
                                                corner_radius=20,
                                                fg_color=("#42043f"),
-                                               border_width=2,
+                                               border_width=0,
                                                border_color= "#42043f",
                                                image=keycapImages['gmk_dots']['images']['small'],
                                                text='Dots')
@@ -624,7 +620,7 @@ class App(customtkinter.CTk):
                                                 command=self.gmk_kaiju,
                                                 corner_radius=20,
                                                 fg_color=("#42043f"),
-                                                border_width=2,
+                                                border_width=0,
                                                 border_color= "#42043f",
                                                 image=keycapImages['gmk_kaiju']['images']['small'],
                                                 text='Kaiju')
@@ -636,7 +632,7 @@ class App(customtkinter.CTk):
                                                 command=self.gmk_laser,
                                                 corner_radius=20,
                                                 fg_color=("#42043f"),
-                                                border_width=2,
+                                                border_width=0,
                                                 border_color= "#42043f",
                                                 image=keycapImages['gmk_laser']['images']['small'],
                                                 text='Laser')
