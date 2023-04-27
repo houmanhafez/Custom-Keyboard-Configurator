@@ -6,7 +6,7 @@
                             
 #### Building Keyboards is a very popular hobby that started in the late 2000s. Since then, the hobby has gained numerous amount of fans and these days, it's definitely worth a try, if you don't want the expensive keyboards that feel scratchy and rattly.
 
-#### if you are interested in building a Custom Keyboard but you don't know which parts to pick or if you already know about the hobby and have heard somewhere about a config but you don't know how much it'll cost or how it'll sound like or you just wanna explore builds and hear what they sound like or look like, then this app helps you with that.
+#### if you are interested in building a Custom Keyboard and you want to explore the more known switches, keycaps and keyboard kits, this application helps you with that. 
 
 #### Simply choose a part and watch a recommended review about it. Then you can do the same for the other components (Kits, Keycap sets and switches) and at the end you can listen to sound tests usually at the end of each video. 
 
@@ -39,4 +39,4 @@ ________________________________________________________________________________
 
 ### Expect plenty more in the future!
 
-##### Custom Keyboard Configurator v.1.3.2
+##### Custom Keyboard Configurator v.1.3.3
