@@ -23,7 +23,7 @@ ________________________________________________________________________________
 ____________________________________________________________________________________________________________________________________________________________________
 #### After you click on ``Start``, choose a Keyboard Kit, a Keycap Set and a Switch Set. On the right side of each Keyboard part, there is an up to date price that changes during sales and so on. 
 ____________________________________________________________________________________________________________________________________________________________________
-![image](https://user-images.githubusercontent.com/120993360/234732944-16b05455-e762-4c0a-9b14-22eea33efc83.png)
+![image](https://user-images.githubusercontent.com/120993360/234740825-877beefb-8f23-4fda-acc6-07b5cf15c316.png)
 ____________________________________________________________________________________________________________________________________________________________________
 #### To watch a review about each part, select it from the scrollable Frames and click on them in the Main Frame. If you are interested in an item and it is in your budget, then you can click on the shopping cart icon and it will take you to the corresponding Website. 
 ____________________________________________________________________________________________________________________________________________________________________

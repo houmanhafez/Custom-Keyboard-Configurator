@@ -9,9 +9,9 @@
 #### We are currently seeking contributions in the following areas:
 
 
-#### - Bug reports and feature requests
-#### - Code contributions
-#### - Documentation improvements
+- ####  Bug reports and feature requests
+- ####  Code contributions
+- ####  Documentation improvements
 
 
 ## **How to Contribute**
@@ -30,17 +30,17 @@
 
 #### If you would like to contribute code, please follow these steps:
 
-1. ####   Fork the repository and create a new branch for your changes.
-2. ####  Make your changes and commit them.
-3. ####  Submit a pull request to the main repository.
+ #### 1.  Fork the repository and create a new branch for your changes.
+ #### 2. Make your changes and commit them.
+ #### 3. Submit a pull request to the main repository.
 
 ### Documentation Improvements
 
 #### If you would like to improve the documentation, please follow these steps:
 
-1. ####  Fork the repository and create a new branch for your changes.
-2. ####  Make your changes and commit them.
-3. ####  Submit a pull request to the main repository.
+ #### 1.  Fork the repository and create a new branch for your changes.
+ #### 2. Make your changes and commit them.
+ #### 3. Submit a pull request to the main repository.
 
 ### **Code Style**
 
