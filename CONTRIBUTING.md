@@ -9,7 +9,7 @@
 #### I am currently seeking contributions in the following areas:
 
 
-- ####  Bug reports and feature requests
+- ####  feature requests
 - ####  Code contributions
 - ####  Documentation improvements
 
