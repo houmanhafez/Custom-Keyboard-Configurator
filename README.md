@@ -12,7 +12,7 @@
 
 #### You can see the up to date price of a keyboard part and if it's available, you can click on the buy icon and it'll redirect you to the website.
 ____________________________________________________________________________________________________________________________________________________________________
-#### First of all, download ``Python`` from the Microsoft Store.
+#### First of all, download ``Python 3.x`` from the Microsoft Store.
 #### To run this application, make sure you have the following libraries installed like so:
 
 - ##### ``pip install customtkinter``
