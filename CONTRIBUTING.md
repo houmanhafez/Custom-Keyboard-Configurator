@@ -6,7 +6,7 @@
 
 ## **Types of Contributions**
 
-#### We are currently seeking contributions in the following areas:
+#### I am currently seeking contributions in the following areas:
 
 
 - ####  Bug reports and feature requests
