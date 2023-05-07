@@ -865,6 +865,21 @@ other = {
         }
             
     },
+    
+    "next" : {
+        "images" : {
+               
+            "small" : {
+                "path": "icons/next.png",
+                "size" : (40, 40),
+            },
+            "large": {
+                "path": "icons/next.png" ,
+                "size" : (200, 170)
+            },
+        }
+            
+    },
 }
 
 keyboards={
