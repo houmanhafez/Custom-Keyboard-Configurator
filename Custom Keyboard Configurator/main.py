@@ -115,7 +115,7 @@ class App(customtkinter.CTk):
                                             font=customtkinter.CTkFont(family= "Microsoft New Tai Lue" ,size=22,weight="bold"),
                                             height= 65,
                                             width=210,
-                                           # state="disabled"
+                                           
                                             )
         self.keeb_button.grid(row=2, column=1, columnspan= 4, rowspan= 4)
         self.keeb_button.place(x = 550, y = 720)
