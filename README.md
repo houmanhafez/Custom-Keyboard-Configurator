@@ -38,6 +38,6 @@ ________________________________________________________________________________
 
 
 
-### Expect plenty more in the future!
+### This application is not going to be updated again
 
 ##### Custom Keyboard Configurator v.1.3.3
