@@ -1,8 +1,4 @@
-
-
-
-                                    
-## Custom Keyboard Configurator
+# Custom Keyboard Configurator
                             
 Building Keyboards is a very popular hobby that started in the late 2000s. Since then, the hobby has gained numerous amount of fans and these days, it's definitely worth a try, if you don't want the expensive keyboards that feel scratchy and rattly.
 
@@ -14,6 +10,7 @@ You can see the up to date price of a keyboard part and if it's available, you c
 
 
 After you click on ``Start``, choose a Keyboard Kit, a Keycap Set and a Switch Set. On the right side of each Keyboard part, there is an up to date price that changes during sales and so on. 
+
 ![image](https://user-images.githubusercontent.com/120993360/234740825-877beefb-8f23-4fda-acc6-07b5cf15c316.png)
 
 To watch a review about each part, select it from the scrollable Frames and click on them in the Main Frame. If you are interested in an item and it is in your budget, then you can click on the shopping cart icon and it will take you to the corresponding Website. 
