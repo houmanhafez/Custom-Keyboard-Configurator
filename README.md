@@ -1,6 +1,6 @@
 A project i did when i was trying to learn python gui
 
-# Custom Keyboard Configurator
+## Custom Keyboard Configurator
                             
 You can see the up to date price of a keyboard part and if it's available, you can click on the buy icon and it'll redirect you to the website.
 
